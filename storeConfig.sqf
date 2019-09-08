@@ -58,6 +58,11 @@ dmrArray = compileFinal str
 	["MXM Rifle", "arifle_MXM_F", 300],
 	["MXM Rifle (Black)", "arifle_MXM_Black_F", 300],
 	["MXM Rifle (Khaki)", "arifle_MXM_khk_F", 300, "noDLC"],
+	
+	["Promet 6.5 MR", "arifle_MSBS65_Mark_F", 250, "noDLC"],
+	["Promet 6.5 MR (Camo)", "arifle_MSBS65_Mark_camo_F", 250, "noDLC"],
+	["Promet 6.5 MR (Sand)", "arifle_MSBS65_Mark_sand_F", 250, "noDLC"],
+	
 	["Rahim DMR Rifle", "srifle_DMR_01_F", 375],
 	["Mk18 ABR Rifle", "srifle_EBR_F", 450],
 
@@ -68,6 +73,7 @@ dmrArray = compileFinal str
 	["SPAR-17 Rifle", "arifle_SPAR_03_blk_F", 450],
 	["SPAR-17 Rifle (Khaki)", "arifle_SPAR_03_khk_F", 450],
 	["SPAR-17 Rifle (Sand)", "arifle_SPAR_03_snd_F", 450],
+	
 
 	["Mk14 Rifle (Camo)", "srifle_DMR_06_camo_F", 500],
 	["Mk14 Rifle (Olive)", "srifle_DMR_06_olive_F", 500],
@@ -89,12 +95,17 @@ arArray = compileFinal str
 [
 	// Underwater Gun
 	["SDAR Underwater Rifle", "arifle_SDAR_F", 100],
+	
+	// Shotguns
+	["Kozlice 12G", "sgun_HunterShotgun_01_F", 200],
+	["Sawed-Off Shotgun", "sgun_HunterShotgun_01_sawedoff_F", 150],
 
 	// Assault Rifles
 	["Mk20 Carbine", "arifle_Mk20C_plain_F", 150],
 	["Mk20 Carbine (Camo)", "arifle_Mk20C_F", 150],
 	["Mk20 Rifle", "arifle_Mk20_plain_F", 200],
 	["Mk20 Rifle (Camo)", "arifle_Mk20_F", 200],
+	
 	["Mk20 EGLM Rifle", "arifle_Mk20_GL_plain_F", 250],
 	["Mk20 EGLM Rifle (Camo)", "arifle_Mk20_GL_F", 250],
 
@@ -109,9 +120,11 @@ arArray = compileFinal str
 	["MX Carbine", "arifle_MXC_F", 150],
 	["MX Carbine (Black)", "arifle_MXC_Black_F", 150],
 	["MX Carbine (Khaki)", "arifle_MXC_khk_F", 150, "noDLC"],
+	
 	["MX Rifle", "arifle_MX_F", 200],
 	["MX Rifle (Black)", "arifle_MX_Black_F", 200],
 	["MX Rifle (Khaki)", "arifle_MX_khk_F", 200, "noDLC"],
+	
 	["MX 3GL Rifle", "arifle_MX_GL_F", 250],
 	["MX 3GL Rifle (Black)", "arifle_MX_GL_Black_F", 250],
 	["MX 3GL Rifle (Khaki)", "arifle_MX_GL_khk_F", 250, "noDLC"],
@@ -129,14 +142,25 @@ arArray = compileFinal str
 	["CAR-95 GL Rifle", "arifle_CTAR_GL_blk_F", 250],
 	["CAR-95 GL Rifle (Hex)", "arifle_CTAR_GL_hex_F", 250],
 	["CAR-95 GL Rifle (G Hex)", "arifle_CTAR_GL_ghex_F", 250],
+	
 	["Type 115 Stealth Rifle", "arifle_ARX_blk_F", 300],
 	["Type 115 Stealth Rifle (Hex)", "arifle_ARX_hex_F", 300],
 	["Type 115 Stealth Rifle (G Hex)", "arifle_ARX_ghex_F", 300],
 
 	["AKS-74U Carbine", "arifle_AKS_F", 150],
+	
 	["AKM Rifle", "arifle_AKM_F", 200],
+	
 	["AK-12 Rifle", "arifle_AK12_F", 250],
-	["AK-12 GL Rifle", "arifle_AK12_GL_F", 300]
+	["AK-12 Rifle (Arid)", "arifle_AK12_arid_F", 250],
+	["AK-12 Rifle (Lush)", "arifle_AK12_lush_F", 250],
+	["AK-12 GL Rifle", "arifle_AK12_GL_F", 300],
+	["AK-12 GL Rifle (Arid)", "arifle_AK12_GL_arid_F", 300],
+	["AK-12 GL Rifle (Lush)", "arifle_AK12_GL_lush_F", 300],
+	
+	["AKU-12 Carbine", "arifle_AK12U_F", 200],
+	["AKU-12 Carbine (Arid)", "arifle_AK12U_arid_F", 200],
+	["AKU-12 Carbine (Lush)", "arifle_AK12U_lush_F", 200]
 
 ];
 
@@ -150,6 +174,7 @@ ssarArray = compileFinal str
 	["Mk20 Carbine (Camo)", "arifle_Mk20C_F", 150],
 	["Mk20 Rifle", "arifle_Mk20_plain_F", 150],
 	["Mk20 Rifle (Camo)", "arifle_Mk20_F", 150],
+	
 	["Mk20 EGLM Rifle", "arifle_Mk20_GL_plain_F", 150],
 	["Mk20 EGLM Rifle (Camo)", "arifle_Mk20_GL_F", 150],
 
@@ -172,6 +197,7 @@ sniperArray = compileFinal str
 	["M320 LRR Sniper", "srifle_LRR_LRPS_F", 1000],
 	["M320 LRR Sniper (Camo)", "srifle_LRR_camo_LRPS_F", 1200],
 	["M320 LRR Sniper (Tropic)", "srifle_LRR_tna_LRPS_F", 1200, "noDLC"],
+	
 	["GM6 Lynx Sniper", "srifle_GM6_LRPS_F", 1250],
 	["GM6 Lynx Sniper (Camo)", "srifle_GM6_camo_LRPS_F", 1500],
 	["GM6 Lynx Sniper (G Hex)", "srifle_GM6_ghex_LRPS_F", 1500, "noDLC"],
@@ -182,23 +208,32 @@ sniperArray = compileFinal str
 
 lmgArray = compileFinal str
 [
-	["MX SW LMG", "arifle_MX_SW_F", 300],
-	["MX SW LMG (Black)", "arifle_MX_SW_Black_F", 325],
-	["MX SW LMG (Khaki)", "arifle_MX_SW_khk_F", 325, "noDLC"],
-	["Mk200 LMG", "LMG_Mk200_F", 400],
-	["Zafir LMG", "LMG_Zafir_F", 500],
-
 	["SPAR-16S LMG", "arifle_SPAR_02_blk_F", 300],
 	["SPAR-16S LMG (Khaki)", "arifle_SPAR_02_khk_F", 300],
 	["SPAR-16S LMG (Sand)", "arifle_SPAR_02_snd_F", 300],
+	
 	["CAR-95-1 LMG", "arifle_CTARS_blk_F", 300],
 	["CAR-95-1 LMG (Hex)", "arifle_CTARS_hex_F", 300],
 	["CAR-95-1 LMG (G Hex)", "arifle_CTARS_ghex_F", 300],
+	
 	["LIM-85 LMG", "LMG_03_F", 350],
-
+	
+	["MX SW LMG", "arifle_MX_SW_F", 300],
+	["MX SW LMG (Black)", "arifle_MX_SW_Black_F", 325],
+	["MX SW LMG (Khaki)", "arifle_MX_SW_khk_F", 325, "noDLC"],
+	
+	["Mk200 LMG", "LMG_Mk200_F", 400],
+	
+	["Zafir LMG", "LMG_Zafir_F", 500],
+	
+	["RPK-12", "arifle_RPK12_F", 300],
+	["RPK-12 (Arid)", "arifle_RPK12_arid_F", 300],
+	["RPK-12 (Lush)", "arifle_RPK12_lush_F", 300],
+	
 	["SPMG MMG (Sand)", "MMG_02_sand_F", 750],
 	["SPMG MMG (MTP)", "MMG_02_camo_F", 750],
 	["SPMG MMG (Black)", "MMG_02_black_F", 750],
+	
 	["Navid MMG (Tan)", "MMG_01_tan_F", 1000],
 	["Navid MMG (Hex)", "MMG_01_hex_F", 1000]
 ];
@@ -322,6 +357,8 @@ ammoArray = compileFinal str
 	["9mm 10Rnd Mag", "10Rnd_9x21_Mag", 5],
 	["9mm 16Rnd Mag", "16Rnd_9x21_Mag", 10],
 	["9mm 30Rnd Mag", "30Rnd_9x21_Mag", 15],
+	["RedSignal", "6Rnd_RedSignal_F", 10],
+	["GreenSignal", "6Rnd_GreenSignal_F", 10],
 	["9mm 30Rnd SMG Mag", "30Rnd_9x21_Mag_SMG_02", 15],
 	[".45 ACP 6Rnd Cylinder", "6Rnd_45ACP_Cylinder", 5],
 	[".45 ACP 9Rnd Mag", "9Rnd_45ACP_Mag", 10],
@@ -335,36 +372,55 @@ ammoArray = compileFinal str
 	["5.56mm 30Rnd STANAG Mag", "30Rnd_556x45_Stanag", 20],
 	["5.56mm 30Rnd Tracer (Green) Mag", "30Rnd_556x45_Stanag_Tracer_Green", 15],
 	["5.56mm 30Rnd Tracer (Yellow) Mag", "30Rnd_556x45_Stanag_Tracer_Yellow", 15],
+	["5.56mm 30Rnd Tracer Sand", "30Rnd_556x45_Stanag_Sand", 15],
 	["5.56mm 30Rnd Tracer (Red) Mag", "30Rnd_556x45_Stanag_Tracer_Red", 15],
 	["5.56mm 150Rnd Mag", "150Rnd_556x45_Drum_Mag_F", 100],
+	["5.56mm 150Rnd Mag (Sand)", "150Rnd_556x45_Drum_Sand_Mag_F", 100],
 	["5.56mm 150Rnd Tracer (Red) Mag", "150Rnd_556x45_Drum_Mag_Tracer_F", 75],
 	["5.56mm 200Rnd Box", "200Rnd_556x45_Box_F", 125],
 	["5.56mm 200Rnd Tracer (Yellow) Box", "200Rnd_556x45_Box_Tracer_F", 100],
 	["5.56mm 200Rnd Tracer (Red) Box", "200Rnd_556x45_Box_Tracer_Red_F", 100],
-	["5.7mm 50Rnd ADR-97 Mag", "50Rnd_570x28_SMG_03", 20],
+	["5.7mm 50Rnd Mag", "50Rnd_570x28_SMG_03", 50],
 	["5.8mm 30Rnd Mag", "30Rnd_580x42_Mag_F", 20],
 	["5.8mm 30Rnd Tracer (Green) Mag", "30Rnd_580x42_Mag_Tracer_F", 15],
 	["5.8mm 100Rnd Mag", "100Rnd_580x42_Mag_F", 100],
+	["5.8mm 100Rnd Mag (Hex)", "100Rnd_580x42_hex_Mag_F", 75],
+	["5.8mm 100Rnd Mag (GHex)", "100Rnd_580x42_ghex_Mag_F", 75],
 	["5.8mm 100Rnd Tracer (Green) Mag", "100Rnd_580x42_Mag_Tracer_F", 75],
 	["6.5mm 20Rnd Mag", "20Rnd_650x39_Cased_Mag_F", 15],
 	["6.5mm 30Rnd STANAG Mag", "30Rnd_65x39_caseless_mag", 20],
 	["6.5mm 30Rnd Tracer (Red) Mag", "30Rnd_65x39_caseless_mag_Tracer", 15],
 	["6.5mm 30Rnd Caseless Mag", "30Rnd_65x39_caseless_green", 20],
 	["6.5mm 30Rnd Tracer (Green) Mag", "30Rnd_65x39_caseless_green_mag_Tracer", 15],
+	["6.5mm 30Rnd Khaki", "30Rnd_65x39_caseless_khaki_mag", 15],
+	["6.5mm 30Rnd Black", "30Rnd_65x39_caseless_black_mag", 15],
+	["6.5mm 100Rnd Belt Case (Black)", "100Rnd_65x39_caseless_black_mag", 75],
+	["6.5mm 100Rnd Belt Case (Khaki)", "100Rnd_65x39_caseless_khaki_mag", 75],
 	["6.5mm 100Rnd Belt Case", "100Rnd_65x39_caseless_mag", 75],
 	["6.5mm 100Rnd Tracer (Red) Belt Case", "100Rnd_65x39_caseless_mag_Tracer", 50],
 	["6.5mm 200Rnd Belt Case", "200Rnd_65x39_cased_Box", 150],
 	["6.5mm 200Rnd Tracer (Yellow) Belt Case", "200Rnd_65x39_cased_Box_Tracer", 125],
-	//["7.62mm 10Rnd Mag", "10Rnd_762x51_Mag", 15],
+	["6.5mm 30rnd Promet Mag", "30Rnd_65x39_caseless_msbs_mag", 15],
+	
+	["7.62mm 10Rnd Mag", "10Rnd_762x51_Mag", 15],
 	["7.62mm 10Rnd Mag", "10Rnd_762x54_Mag", 15],
 	["7.62mm 20Rnd Mag", "20Rnd_762x51_Mag", 25],
+	["7.62mm 10Rnd Mag (Mk14)", "10Rnd_Mk14_762x51_Mag", 25],
 	["7.62mm 30Rnd Mag", "30Rnd_762x39_Mag_F", 20],
+	["7.62mm 30Rnd Mag", "30Rnd_762x39_AK12_Mag_F", 20],
 	["7.62mm 30Rnd Tracer (Yellow) Mag", "30Rnd_762x39_Mag_Tracer_F", 15],
+	["7.62mm 75rnd Drum", "75rnd_762x39_AK12_Mag_F", 55],
+	["7.62mm 75Rnd Drum (Arid)", "75rnd_762x39_AK12_Arid_Mag_F", 55],
+	["7.62mm 75Rnd Drum", "75rnd_762x39_AK12_blk_Mag_F", 55],
+	["7.62mm 75Rnd Drum (Lush)", "75rnd_762x39_AK12_Lush_Mag_F", 55],
 	["7.62mm 30Rnd Tracer (Green) Mag", "30Rnd_762x39_Mag_Tracer_Green_F", 15],
-	//["7.62mm 150Rnd Box", "150Rnd_762x51_Box", 150],
-	//["7.62mm 150Rnd Tracer (Green) Box", "150Rnd_762x51_Box_Tracer", 125],
+	["7.62mm 150Rnd Box", "150Rnd_762x51_Box", 150],
+	["7.62mm 150Rnd Tracer (Green) Box", "150Rnd_762x51_Box_Tracer", 125],
 	["7.62mm 150Rnd Box", "150Rnd_762x54_Box", 150],
 	["7.62mm 150Rnd Tracer (Green) Box", "150Rnd_762x54_Box_Tracer", 125],
+	["7.62mm 30Rnd Mag (Arid)", "30rnd_762x39_AK12_Arid_Mag_F", 20],
+	["7.62mm 30Rnd Mag (Lush)", "30rnd_762x39_AK12_Lush_Mag_F", 20],
+	["7.62mm 75Rnd Drum (AKM)", "75Rnd_762x39_Mag_F", 55],
 	[".338 LM 10Rnd Mag", "10Rnd_338_Mag", 50],
 	[".338 NM 130Rnd Belt", "130Rnd_338_Mag", 150],
 	["9.3mm 10Rnd Mag", "10Rnd_93x64_DMR_05_Mag", 50],
@@ -373,19 +429,24 @@ ammoArray = compileFinal str
 	["12.7mm 5Rnd Mag", "5Rnd_127x108_Mag", 50],
 	["12.7mm 5Rnd Armor-Piercing Mag", "5Rnd_127x108_APDS_Mag", 60],
 	["12.7mm 10Rnd Subsonic Mag", "10Rnd_127x54_Mag", 75],
-	
-	[".50 BW 10Rnd Mag", "10Rnd_50BW_Mag_F", 50],             //                 hit                      hit,  radius
-	["PG-7VM HEAT Grenade", "RPG7_F", 300],                   // Direct damage:  343     | Splash damage:  13,  3.0m     | Guidance: none
-	["RPG-42 AT Rocket", "RPG32_F", 400],                     //                 422     |                 28,  2.5m     |           none
-	["RPG-42 HE Rocket", "RPG32_HE_F", 300],                  //                 200     |                 50,  6.0m     |           none
-	["MAAWS HEAT 75 Rocket", "MRAWS_HEAT_F", 500],            //                 435     |                 14,  2.0m     |           none
-	["MAAWS HE 44 Rocket", "MRAWS_HE_F", 400],                //                 200     |                 50,  6.0m     |           none
-	["9M135 HEAT Missile", "Vorona_HEAT", 1000],              //                 634     |                 28,  2.5m     |           mouse
-	["9M135 HE Missile", "Vorona_HE", 750],                   //                 220     |                 45,  8.0m     |           mouse
-	["PCML AT Missile", "NLAW_F", 750],                       //                 462     |                 25,  2.4m     |           laser/IR, cold/hot ground vehicles
-	["Titan Anti-Tank Missile", "Titan_AT", 1000],            //                 515     |                 20,  2.0m     |           mouse, laser/IR, hot ground vehicles
-	["Titan Anti-Personnel Missile", "Titan_AP", 750],        //                 100     |                 25, 10.0m     |           mouse, laser/IR
-	["Titan AA Missile", "Titan_AA", 750],                    //                  80     |                 60,  6.0m     |           aircraft
+	[".50 BW 10Rnd Mag", "10Rnd_50BW_Mag_F", 50],              //                 hit                      hit,  radius
+ 
+	["PG-7VM HEAT Grenade", "RPG7_F", 4000],                   // Direct damage:  343     | Splash damage:  13,  3.0m     | Guidance: none
+	["RPG-42 AT Rocket", "RPG32_F", 5000],                     //                 422     |                 28,  2.5m     |           none
+	["RPG-42 HE Rocket", "RPG32_HE_F", 3000],                  //                 200     |                 50,  6.0m     |           none
+	["MAAWS HEAT 75 Rocket", "MRAWS_HEAT_F", 15000],           //                 435     |                 14,  2.0m     |           none
+	["MAAWS HE 44 Rocket", "MRAWS_HE_F", 15000],               //                 200     |                 50,  6.0m     |           none
+	["9M135 HEAT Missile", "Vorona_HEAT", 20000],              //                 634     |                 28,  2.5m     |           mouse
+	["9M135 HE Missile", "Vorona_HE", 18000],                  //                 220     |                 45,  8.0m     |           mouse
+	["PCML AT Missile", "NLAW_F", 5000],                       //                 462     |                 25,  2.4m     |           laser/IR, cold/hot ground vehicles
+	["Titan Anti-Tank Missile", "Titan_AT", 10000],            //                 515     |                 20,  2.0m     |           mouse, laser/IR, hot ground vehicles
+	["Titan Anti-Personnel Missile", "Titan_AP", 8000],        //                 100     |                 25, 10.0m     |           mouse, laser/IR
+	["Titan AA Missile", "Titan_AA", 7500],                    //                  80     |                 60,  6.0m     |           aircraft
+
+	["UBS 6rnd Pellets", "6Rnd_12Gauge_Pellets", 75],
+	["UBS 6rnd Slug", "6Rnd_12Gauge_Slug", 75],
+	["Kolzice 12g Pellets", "2Rnd_12Gauge_Pellets", 75],
+	["Kolzice 12g Slugs", "2Rnd_12Gauge_Slug", 75],
 	
 	["40mm HE Grenade Round", "1Rnd_HE_Grenade_shell", 125],
 	["40mm Smoke Round (White)", "1Rnd_Smoke_Grenade_shell", 50],
@@ -415,11 +476,11 @@ ammoArray = compileFinal str
 ssammoArray = compileFinal str
 [
 	["40mm 3Rnd HE Grenades", "3Rnd_HE_Grenade_shell", 300],
-	["40mm 3Rnd Toxic Gas", "3Rnd_SmokeYellow_Grenade_shell", 750],
-	["40mm Smoke Toxic Gas", "1Rnd_SmokeYellow_Grenade_shell", 250],
 	["9mm 10Rnd Mag", "10Rnd_9x21_Mag", 5],
 	["9mm 16Rnd Mag", "16Rnd_9x21_Mag", 10],
 	["9mm 30Rnd Mag", "30Rnd_9x21_Mag", 15],
+	["RedSignal", "6Rnd_RedSignal_F", 10],
+	["GreenSignal", "6Rnd_GreenSignal_F", 10],
 	["9mm 30Rnd SMG Mag", "30Rnd_9x21_Mag_SMG_02", 15],
 	[".45 ACP 6Rnd Cylinder", "6Rnd_45ACP_Cylinder", 5],
 	[".45 ACP 9Rnd Mag", "9Rnd_45ACP_Mag", 10],
@@ -433,35 +494,55 @@ ssammoArray = compileFinal str
 	["5.56mm 30Rnd STANAG Mag", "30Rnd_556x45_Stanag", 20],
 	["5.56mm 30Rnd Tracer (Green) Mag", "30Rnd_556x45_Stanag_Tracer_Green", 15],
 	["5.56mm 30Rnd Tracer (Yellow) Mag", "30Rnd_556x45_Stanag_Tracer_Yellow", 15],
+	["5.56mm 30Rnd Tracer Sand", "30Rnd_556x45_Stanag_Sand", 15],
 	["5.56mm 30Rnd Tracer (Red) Mag", "30Rnd_556x45_Stanag_Tracer_Red", 15],
 	["5.56mm 150Rnd Mag", "150Rnd_556x45_Drum_Mag_F", 100],
+	["5.56mm 150Rnd Mag (Sand)", "150Rnd_556x45_Drum_Sand_Mag_F", 100],
 	["5.56mm 150Rnd Tracer (Red) Mag", "150Rnd_556x45_Drum_Mag_Tracer_F", 75],
 	["5.56mm 200Rnd Box", "200Rnd_556x45_Box_F", 125],
 	["5.56mm 200Rnd Tracer (Yellow) Box", "200Rnd_556x45_Box_Tracer_F", 100],
 	["5.56mm 200Rnd Tracer (Red) Box", "200Rnd_556x45_Box_Tracer_Red_F", 100],
+	["5.7mm 50Rnd Mag", "50Rnd_570x28_SMG_03", 50],
 	["5.8mm 30Rnd Mag", "30Rnd_580x42_Mag_F", 20],
 	["5.8mm 30Rnd Tracer (Green) Mag", "30Rnd_580x42_Mag_Tracer_F", 15],
 	["5.8mm 100Rnd Mag", "100Rnd_580x42_Mag_F", 100],
+	["5.8mm 100Rnd Mag (Hex)", "100Rnd_580x42_hex_Mag_F", 75],
+	["5.8mm 100Rnd Mag (GHex)", "100Rnd_580x42_ghex_Mag_F", 75],
 	["5.8mm 100Rnd Tracer (Green) Mag", "100Rnd_580x42_Mag_Tracer_F", 75],
 	["6.5mm 20Rnd Mag", "20Rnd_650x39_Cased_Mag_F", 15],
 	["6.5mm 30Rnd STANAG Mag", "30Rnd_65x39_caseless_mag", 20],
 	["6.5mm 30Rnd Tracer (Red) Mag", "30Rnd_65x39_caseless_mag_Tracer", 15],
 	["6.5mm 30Rnd Caseless Mag", "30Rnd_65x39_caseless_green", 20],
 	["6.5mm 30Rnd Tracer (Green) Mag", "30Rnd_65x39_caseless_green_mag_Tracer", 15],
+	["6.5mm 30Rnd Khaki", "30Rnd_65x39_caseless_khaki_mag", 15],
+	["6.5mm 30Rnd Black", "30Rnd_65x39_caseless_black_mag", 15],
+	["6.5mm 100Rnd Belt Case (Black)", "100Rnd_65x39_caseless_black_mag", 75],
+	["6.5mm 100Rnd Belt Case (Khaki)", "100Rnd_65x39_caseless_khaki_mag", 75],
 	["6.5mm 100Rnd Belt Case", "100Rnd_65x39_caseless_mag", 75],
 	["6.5mm 100Rnd Tracer (Red) Belt Case", "100Rnd_65x39_caseless_mag_Tracer", 50],
 	["6.5mm 200Rnd Belt Case", "200Rnd_65x39_cased_Box", 150],
 	["6.5mm 200Rnd Tracer (Yellow) Belt Case", "200Rnd_65x39_cased_Box_Tracer", 125],
-	//["7.62mm 10Rnd Mag", "10Rnd_762x51_Mag", 15],
+	["6.5mm 30rnd Promet Mag", "30Rnd_65x39_caseless_msbs_mag", 15],
+	
+	["7.62mm 10Rnd Mag", "10Rnd_762x51_Mag", 15],
 	["7.62mm 10Rnd Mag", "10Rnd_762x54_Mag", 15],
 	["7.62mm 20Rnd Mag", "20Rnd_762x51_Mag", 25],
+	["7.62mm 10Rnd Mag (Mk14)", "10Rnd_Mk14_762x51_Mag", 25],
 	["7.62mm 30Rnd Mag", "30Rnd_762x39_Mag_F", 20],
+	["7.62mm 30Rnd Mag", "30Rnd_762x39_AK12_Mag_F", 20],
 	["7.62mm 30Rnd Tracer (Yellow) Mag", "30Rnd_762x39_Mag_Tracer_F", 15],
+	["7.62mm 75rnd Drum", "75rnd_762x39_AK12_Mag_F", 55],
+	["7.62mm 75Rnd Drum (Arid)", "75rnd_762x39_AK12_Arid_Mag_F", 55],
+	["7.62mm 75Rnd Drum", "75rnd_762x39_AK12_blk_Mag_F", 55],
+	["7.62mm 75Rnd Drum (Lush)", "75rnd_762x39_AK12_Lush_Mag_F", 55],
 	["7.62mm 30Rnd Tracer (Green) Mag", "30Rnd_762x39_Mag_Tracer_Green_F", 15],
-	//["7.62mm 150Rnd Box", "150Rnd_762x51_Box", 150],
-	//["7.62mm 150Rnd Tracer (Green) Box", "150Rnd_762x51_Box_Tracer", 125],
+	["7.62mm 150Rnd Box", "150Rnd_762x51_Box", 150],
+	["7.62mm 150Rnd Tracer (Green) Box", "150Rnd_762x51_Box_Tracer", 125],
 	["7.62mm 150Rnd Box", "150Rnd_762x54_Box", 150],
 	["7.62mm 150Rnd Tracer (Green) Box", "150Rnd_762x54_Box_Tracer", 125],
+	["7.62mm 30Rnd Mag (Arid)", "30rnd_762x39_AK12_Arid_Mag_F", 20],
+	["7.62mm 30Rnd Mag (Lush)", "30rnd_762x39_AK12_Lush_Mag_F", 20],
+	["7.62mm 75Rnd Drum (AKM)", "75Rnd_762x39_Mag_F", 55],
 	[".338 LM 10Rnd Mag", "10Rnd_338_Mag", 50],
 	[".338 NM 130Rnd Belt", "130Rnd_338_Mag", 150],
 	["9.3mm 10Rnd Mag", "10Rnd_93x64_DMR_05_Mag", 50],
@@ -469,20 +550,25 @@ ssammoArray = compileFinal str
 	[".408 7Rnd Cheetah Mag", "7Rnd_408_Mag", 50],
 	["12.7mm 5Rnd Mag", "5Rnd_127x108_Mag", 50],
 	["12.7mm 5Rnd Armor-Piercing Mag", "5Rnd_127x108_APDS_Mag", 60],
-	
 	["12.7mm 10Rnd Subsonic Mag", "10Rnd_127x54_Mag", 75],
-	[".50 BW 10Rnd Mag", "10Rnd_50BW_Mag_F", 50],             //                 hit                      hit,  radius
-	["PG-7VM HEAT Grenade", "RPG7_F", 300],                   // Direct damage:  343     | Splash damage:  13,  3.0m     | Guidance: none
-	["RPG-42 AT Rocket", "RPG32_F", 400],                     //                 422     |                 28,  2.5m     |           none
-	["RPG-42 HE Rocket", "RPG32_HE_F", 300],                  //                 200     |                 50,  6.0m     |           none
-	["MAAWS HEAT 75 Rocket", "MRAWS_HEAT_F", 500],            //                 435     |                 14,  2.0m     |           none
-	["MAAWS HE 44 Rocket", "MRAWS_HE_F", 400],                //                 200     |                 50,  6.0m     |           none
-	["9M135 HEAT Missile", "Vorona_HEAT", 1000],              //                 634     |                 28,  2.5m     |           mouse
-	["9M135 HE Missile", "Vorona_HE", 750],                   //                 220     |                 45,  8.0m     |           mouse
-	["PCML AT Missile", "NLAW_F", 750],                       //                 462     |                 25,  2.4m     |           laser/IR, cold/hot ground vehicles
-	["Titan Anti-Tank Missile", "Titan_AT", 1000],            //                 515     |                 20,  2.0m     |           mouse, laser/IR, hot ground vehicles
-	["Titan Anti-Personnel Missile", "Titan_AP", 750],        //                 100     |                 25, 10.0m     |           mouse, laser/IR
-	["Titan AA Missile", "Titan_AA", 750],                    //                  80     |                 60,  6.0m     |           aircraft
+	[".50 BW 10Rnd Mag", "10Rnd_50BW_Mag_F", 50],              //                 hit                      hit,  radius
+ 
+	["PG-7VM HEAT Grenade", "RPG7_F", 4000],                   // Direct damage:  343     | Splash damage:  13,  3.0m     | Guidance: none
+	["RPG-42 AT Rocket", "RPG32_F", 5000],                     //                 422     |                 28,  2.5m     |           none
+	["RPG-42 HE Rocket", "RPG32_HE_F", 3000],                  //                 200     |                 50,  6.0m     |           none
+	["MAAWS HEAT 75 Rocket", "MRAWS_HEAT_F", 15000],           //                 435     |                 14,  2.0m     |           none
+	["MAAWS HE 44 Rocket", "MRAWS_HE_F", 15000],               //                 200     |                 50,  6.0m     |           none
+	["9M135 HEAT Missile", "Vorona_HEAT", 20000],              //                 634     |                 28,  2.5m     |           mouse
+	["9M135 HE Missile", "Vorona_HE", 18000],                  //                 220     |                 45,  8.0m     |           mouse
+	["PCML AT Missile", "NLAW_F", 5000],                       //                 462     |                 25,  2.4m     |           laser/IR, cold/hot ground vehicles
+	["Titan Anti-Tank Missile", "Titan_AT", 10000],            //                 515     |                 20,  2.0m     |           mouse, laser/IR, hot ground vehicles
+	["Titan Anti-Personnel Missile", "Titan_AP", 8000],        //                 100     |                 25, 10.0m     |           mouse, laser/IR
+	["Titan AA Missile", "Titan_AA", 7500],                    //                  80     |                 60,  6.0m     |           aircraft
+
+	["UBS 6rnd Pellets", "6Rnd_12Gauge_Pellets", 75],
+	["UBS 6rnd Slug", "6Rnd_12Gauge_Slug", 75],
+	["Kolzice 12g Pellets", "2Rnd_12Gauge_Pellets", 75],
+	["Kolzice 12g Slugs", "2Rnd_12Gauge_Slug", 75],
 	
 	["40mm HE Grenade Round", "1Rnd_HE_Grenade_shell", 125],
 	["40mm Smoke Round (White)", "1Rnd_Smoke_Grenade_shell", 50],
