@@ -1596,7 +1596,8 @@ armoredArray = compileFinal str
 	["AMV-7 Marshall", "B_APC_Wheeled_01_cannon_F", 30000, "vehicle"],
 	["AFV-4 Gorgon", "I_APC_Wheeled_03_cannon_F", 35000, "vehicle"],
 	["Rhino MGS", "B_AFV_Wheeled_01_cannon_F", 45000, "vehicle"],
-	["Rhino MGS UP", "B_AFV_Wheeled_01_up_cannon_F", 55000, "vehicle"]
+	["Rhino MGS UP", "B_AFV_Wheeled_01_up_cannon_F", 55000, "vehicle"],
+	["Praetorian 1C AAA", "B_AAA_System_01_F", 22500, "variant_sam2"]
 	/*
 	
 	
@@ -1742,10 +1743,9 @@ uavPlanesArray = compileFinal str
 	//["K40 Ababil-3 Cluster UAV", "O_UAV_02_dynamicLoadout_F", 250000, "vehicle", "variant_greyhawkCluster"],
 	//["K40 Ababil-3 Cluster UAV", "I_UAV_02_dynamicLoadout_F", 250000, "vehicle", "variant_greyhawkCluster"],
 
-	["UCAV Sentinel Missile", "B_UAV_05_F", 65000, "vehicle", "variant_sentinelMissile"],
+	["UCAV Sentinel Missile", "B_UAV_05_F", 65000, "vehicle", "variant_sentinelMissile"]
 	//["Mk-21 Centurion SAM", "B_SAM_System_02_F", 450000],
-	["Mk-49 Spartan SAM", "B_SAM_System_01_F", 52500, "variant_sam1"],
-	["Praetorian 1C AAA", "B_AAA_System_01_F", 22500, "variant_sam2"]
+	//["Mk-49 Spartan SAM", "B_SAM_System_01_F", 52500, "variant_sam1"],
 	//["UCAV Sentinel Bomber", "B_UAV_05_F", 250000, "vehicle", "variant_sentinelBomber"],
 	//["UCAV Sentinel Cluster", "B_UAV_05_F", 250000, "vehicle", "variant_sentinelCluster"]
 ];
