@@ -141,7 +141,7 @@ if (_wepFilter) then
 	_wepFilterDropdown lbSetCurSel ([_wepFilterSel, 0] select (_wepFilterSel == -1));
 	_wepFilterData = _wepFilterDropdown lbData lbCurSel _wepFilterDropdown;
 
-	_wepFilterDropdown ctrlAddEventHandler ["LBSelChanged", { [7] call populateGunStore }];
+	_wepFilterDropdown ctrlAddEventHandler ["LBSelChanged", { [8] call populateGunStore }];
 };
 
 _wepFilterItems = if (_wepFilterData != "") then { [_wepFilterData] call BIS_fnc_compatibleItems } else { [] };
