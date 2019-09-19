@@ -12,7 +12,7 @@ disableSerialization;
 
 vehicleStore_noBuzzard = false;
 
-private ["_vehshopDialog", "_Dialog", "_playerMoney", "_owner", "_landButton", "_armorButton", "_tankButton", "_heliButton", "_planeButton", "_boatButton", "_subButton"];
+private ["_vehshopDialog", "_Dialog", "_playerMoney", "_owner", "_landButton", "_armorButton", "_tankButton", "_heliButton", "_attackHelicopters", "_planeButton", "_uavPlanesButton", "_boatButton", "_subButton"];
 _vehshopDialog = createDialog "vehshopd";
 
 _Dialog = findDisplay vehshop_DIALOG;
@@ -21,8 +21,10 @@ _landButton = _Dialog displayCtrl vehshop_button0;
 _armorButton = _Dialog displayCtrl vehshop_button1;
 _tankButton = _Dialog displayCtrl vehshop_button2;
 _heliButton = _Dialog displayCtrl vehshop_button3;
-_planeButton = _Dialog displayCtrl vehshop_button4;
-_boatButton = _Dialog displayCtrl vehshop_button5;
+_attackHelicopters = _Dialog displayCtrl vehshop_button4;
+_planeButton = _Dialog displayCtrl vehshop_button5;
+_uavPlaneButton = _Dialog displayCtrl vehshop_button6;
+_boatButton = _Dialog displayCtrl vehshop_button7;
 //_subButton = _Dialog displayCtrl vehshop_button6;
 _playerMoney ctrlSetText format["Cash: $%1", [player getVariable ["cmoney", 0]] call fn_numbersText];
 if (!isNil "_this") then { _owner = _this select 0 };
@@ -61,21 +63,21 @@ if (!isNil "_owner") then
 				};
 				case "attackHelicopters":
 				{
-					_heliButton ctrlEnable false;
+					_attackHelicopters ctrlEnable false;
 				};
 				case "planes":
 				{
 					_planeButton ctrlEnable false;
 				};
-				case "uavPlanes":
+				case "uavs":
 				{
-					_planeButton ctrlEnable false;
+					_uavPlaneButton ctrlEnable false;
 				};
-				/*case "boats":
+				case "boats":
 				{
 					_boatButton ctrlEnable false;
 				};
-				case "submarines":
+				/*case "submarines":
 				{
 					_subButton	ctrlShow false;
 				};*/
