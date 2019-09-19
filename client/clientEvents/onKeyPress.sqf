@@ -65,11 +65,6 @@ switch (true) do
 
 			_handled = true;
 	};
-	// Emergency Eject - Del Key
-	case (_key == 211):
-	{	
-		[-9, false, true, ""] execVM "client\actions\forceEject.sqf";
-	};
 	// U key
 	case (_key in A3W_customKeys_adminMenu):
 	{
