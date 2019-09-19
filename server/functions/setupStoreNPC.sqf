@@ -123,7 +123,7 @@ waitUntil {completedFSM _setDmg};
 
 if (isServer) then
 {
-	removeAllWeapons _npc;
+	//removeAllWeapons _npc;
 	_createStoreFurniture = compile preprocessFileLineNumbers "server\functions\createStoreFurniture.sqf";
 
 	waitUntil {!isNil "storeConfigDone"};
@@ -225,6 +225,7 @@ if (isServer) then
 			_npc setVariable ["storeNPC_cashDesk", netId _desk, true];
 		};
 	} forEach (call storeOwnerConfig);
+	
 };
 
 if (isServer) then
