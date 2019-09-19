@@ -4,7 +4,7 @@
 //	@file Name: sellVehicleItems.sqf
 //	@file Author: AgentRev
 
-#define VEHICLE_MAX_SELLING_DISTANCE 50
+#define _VEHICLE_MAX_SELLING_DISTANCE 150
 
 #include "sellIncludesStart.sqf";
 
@@ -24,10 +24,10 @@ storeSellingHandle = _this spawn
 
 	_checkValidDistance =
 	{
-		if (_veh distance _storeNPC > VEHICLE_MAX_SELLING_DISTANCE) then
+		if (_veh distance _storeNPC > _VEHICLE_MAX_SELLING_DISTANCE) then
 		{
 			playSound "FD_CP_Not_Clear_F";
-			[format ['"%1" is further away than %2m from the store.', _objName, VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
+			[format ['"%1" is further away than %2m from the store.', _objName, _VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
 			false
 		} else { true };
 	};

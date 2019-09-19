@@ -11,7 +11,7 @@
 storeSellingHandle = _this spawn
 {
 	#define CHOPSHOP_PRICE_RELATIONSHIP 2
-	#define VEHICLE_MAX_SELLING_DISTANCE 50
+	#define _VEHICLE_MAX_SELLING_DISTANCE 150
 
 	_storeNPC = _this select 0;
 	_vehicle = objectFromNetId (player getVariable ["lastVehicleRidden", ""]);
@@ -37,10 +37,10 @@ storeSellingHandle = _this spawn
 
 	_checkValidDistance =
 	{
-		if (_vehicle distance _storeNPC > VEHICLE_MAX_SELLING_DISTANCE) then
+		if (_vehicle distance _storeNPC > _VEHICLE_MAX_SELLING_DISTANCE) then
 		{
 			playSound "FD_CP_Not_Clear_F";
-			[format ['"%1" is further away than %2m from the store.', _objName, VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
+			[format ['"%1" is further away than %2m from the store.', _objName, _VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
 			false
 		} else { true };
 	};
@@ -82,10 +82,10 @@ storeSellingHandle = _this spawn
 			if (!call _checkValidDistance) exitWith {};
 			if (!call _checkValidOwnership) exitWith {};
 
-			if (_vehicle distance _storeNPC > VEHICLE_MAX_SELLING_DISTANCE) exitWith
+			if (_vehicle distance _storeNPC > _VEHICLE_MAX_SELLING_DISTANCE) exitWith
 			{
 				playSound "FD_CP_Not_Clear_F";
-				[format ['The %1 has already been sold!', _objname, VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
+				[format ['The %1 has already been sold!', _objname, _VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
 			};
 
 			private _attachedObjs = attachedObjects _vehicle;
@@ -95,7 +95,7 @@ storeSellingHandle = _this spawn
 
 			//player setVariable ["cmoney", (player getVariable ["cmoney",0]) + _price, true];
 			[player, _price] call A3W_fnc_setCMoney;
-			[format ['The %1 has been sold!', _objname, VEHICLE_MAX_SELLING_DISTANCE], "Thank You"] call  BIS_fnc_guiMessage;
+			[format ['The %1 has been sold!', _objname, _VEHICLE_MAX_SELLING_DISTANCE], "Thank You"] call  BIS_fnc_guiMessage;
 
 			if (["A3W_playerSaving"] call isConfigOn) then
 			{

@@ -5,7 +5,7 @@
 //	@file Author: AgentRev
 
 #define VEHICLE_REPAINT_PRICE_RATIO 0.02
-#define VEHICLE_REPAINT_MAX_DISTANCE 50
+#define _VEHICLE_REPAINT_MAX_DISTANCE 150
 
 #include "dialog\vehiclestoreDefines.hpp";
 
@@ -38,10 +38,10 @@ _checkAlive =
 
 _checkValidDistance =
 {
-	if (_vehicle distance player > VEHICLE_REPAINT_MAX_DISTANCE) then
+	if (_vehicle distance player > _VEHICLE_REPAINT_MAX_DISTANCE) then
 	{
 		playSound "FD_CP_Not_Clear_F";
-		[format ['"%1" is further away than %2m from the store.', _objName, VEHICLE_REPAINT_MAX_DISTANCE], "Error"] spawn BIS_fnc_guiMessage;
+		[format ['"%1" is further away than %2m from the store.', _objName, _VEHICLE_REPAINT_MAX_DISTANCE], "Error"] spawn BIS_fnc_guiMessage;
 		_dialog closeDisplay 2;
 		false
 	} else { true };
