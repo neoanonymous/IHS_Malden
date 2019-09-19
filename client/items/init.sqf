@@ -16,6 +16,13 @@
 [_this, "warchest"] call mf_init;
 [_this, "cratemoney"] call mf_init;
 
+// #*#*#*#*# CUSTOM #*#*#*#*#
+
+[_this, "quad"] call mf_init; 
+
+// #*#*#*#*# CUSTOM #*#*#*#*#
+
+
 if (["A3W_artilleryStrike"] call isConfigOn) then
 {
 	[_this, "artillery"] call mf_init;
