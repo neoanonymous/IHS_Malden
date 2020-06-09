@@ -8,7 +8,7 @@ class EditorData
 	toggles=586;
 	class ItemIDProvider
 	{
-		nextID=4933;
+		nextID=4945;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=638;
+		nextID=642;
 	};
 	class Camera
 	{
-		pos[]={12044.697,33.78949,5111.9082};
-		dir[]={0.88508755,-0.39113945,0.25271019};
-		up[]={0.37617275,0.92029828,0.10740277};
-		aside[]={0.27457941,-6.2654726e-007,-0.9616915};
+		pos[]={8037.6802,58.9557,10566.065};
+		dir[]={0.62767464,-0.61326617,0.47957927};
+		up[]={0.48730209,0.78987533,0.37232658};
+		aside[]={0.60714531,4.8245056e-007,-0.79463273};
 	};
 };
 binarizationWanted=0;
@@ -321,7 +321,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=778;
+		items=786;
 		class Item0
 		{
 			dataType="Group";
@@ -23115,59 +23115,16 @@ class Mission
 		class Item760
 		{
 			dataType="Marker";
-			position[]={12058.944,-18.640694,4949.9209};
+			position[]={12062.666,-18.640694,4935.4976};
 			name="marker_198";
 			text="VLS";
 			type="mil_dot";
 			colorName="ColorYellow";
 			angle=31.048325;
 			id=3605;
-			atlOffset=1.3488846;
+			atlOffset=0.53560829;
 		};
 		class Item761
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={12060.375,24.384201,4950.6353};
-				angles[]={6.2821198,2.5297954,0.0012168076};
-			};
-			side="Empty";
-			class Attributes
-			{
-				lock="LOCKEDPLAYER";
-				init="vls11 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls11_1";
-				disableSimulation=1;
-			};
-			id=3606;
-			type="Land_Billboard_02_blank_F";
-			atlOffset=40.294792;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item762
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23209,7 +23166,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item763
+		class Item762
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23249,7 +23206,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item764
+		class Item763
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23291,7 +23248,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item765
+		class Item764
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23331,7 +23288,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item766
+		class Item765
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23373,7 +23330,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item767
+		class Item766
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23391,7 +23348,7 @@ class Mission
 			type="Land_HBarrier_5_F";
 			atlOffset=-0.0070037842;
 		};
-		class Item768
+		class Item767
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23408,7 +23365,7 @@ class Mission
 			id=3718;
 			type="Land_HBarrier_5_F";
 		};
-		class Item769
+		class Item768
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23424,7 +23381,7 @@ class Mission
 			id=4513;
 			type="Land_HelipadRescue_F";
 		};
-		class Item770
+		class Item769
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23486,7 +23443,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item771
+		class Item770
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23504,7 +23461,7 @@ class Mission
 			type="Land_Pier_F";
 			atlOffset=70.538986;
 		};
-		class Item772
+		class Item771
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23522,7 +23479,7 @@ class Mission
 			type="Land_Pier_F";
 			atlOffset=25.074444;
 		};
-		class Item773
+		class Item772
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23539,7 +23496,7 @@ class Mission
 			type="Land_Pier_Box_F";
 			atlOffset=117.60234;
 		};
-		class Item774
+		class Item773
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23556,7 +23513,7 @@ class Mission
 			type="Land_Pier_Box_F";
 			atlOffset=117.55956;
 		};
-		class Item775
+		class Item774
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23573,7 +23530,7 @@ class Mission
 			type="Land_Pier_Box_F";
 			atlOffset=117.57486;
 		};
-		class Item776
+		class Item775
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23590,7 +23547,7 @@ class Mission
 			type="Land_Pier_Box_F";
 			atlOffset=118.08983;
 		};
-		class Item777
+		class Item776
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23607,6 +23564,272 @@ class Mission
 			id=4929;
 			type="Land_Pier_F";
 			atlOffset=44.767643;
+		};
+		class Item777
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12062.68,25.506063,4935.6587};
+				angles[]={6.2827492,0.97638953,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="LOCKEDPLAYER";
+				init="vls11 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls11_2";
+				disableSimulation=1;
+			};
+			id=4934;
+			type="Land_Billboard_02_blank_F";
+			atlOffset=43.494289;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item778
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5158.3525,25.226038,1044.5863};
+				angles[]={0,6.2649989,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="LOCKEDPLAYER";
+				init="vls3 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls3_1";
+				disableSimulation=1;
+			};
+			id=4936;
+			type="Land_Billboard_02_blank_F";
+			atlOffset=32.779625;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item779
+		{
+			dataType="Marker";
+			position[]={5158.2866,0,1044.6274};
+			name="marker_199";
+			text="VLS";
+			type="mil_dot";
+			colorName="ColorYellow";
+			angle=31.048325;
+			id=4937;
+			atlOffset=8.6983824;
+		};
+		class Item780
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={817.15234,24.042267,697.8111};
+				angles[]={0,1.537622,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKEDPLAYER";
+				init="vls7 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls7_1";
+				disableSimulation=1;
+			};
+			id=4938;
+			type="Land_Billboard_02_blank_F";
+			atlOffset=0.0090618134;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item781
+		{
+			dataType="Marker";
+			position[]={817.17377,0,697.89966};
+			name="marker_200";
+			text="VLS";
+			type="mil_dot";
+			colorName="ColorYellow";
+			angle=31.048325;
+			id=4939;
+			atlOffset=19.909512;
+		};
+		class Item782
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8092.7656,32.00444,10695.148};
+				angles[]={0,1.4798114,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKEDPLAYER";
+				init="vls1 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls1_1";
+				disableSimulation=1;
+			};
+			id=4941;
+			type="Land_Billboard_02_blank_F";
+			atlOffset=0.009557724;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item783
+		{
+			dataType="Marker";
+			position[]={8092.8477,32.449963,10694.362};
+			name="marker_201";
+			text="VLS";
+			type="mil_dot";
+			colorName="ColorYellow";
+			angle=114.93421;
+			id=4942;
+			atlOffset=1.6274052;
+		};
+		class Item784
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1271.3584,29.347446,12335.399};
+				angles[]={0,0.015725417,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKEDPLAYER";
+				init="vls1 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls1_2";
+				disableSimulation=1;
+			};
+			id=4943;
+			type="Land_Billboard_02_blank_F";
+			atlOffset=-0.10626602;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item785
+		{
+			dataType="Marker";
+			position[]={1273.7106,29.874979,12333.359};
+			name="marker_202";
+			text="VLS";
+			type="mil_dot";
+			colorName="ColorYellow";
+			angle=31.048325;
+			id=4944;
+			atlOffset=1.6543694;
 		};
 	};
 };
