@@ -34,3 +34,6 @@ if (!isNil "_owner") then
 		sleep 0.1;
 	};
 };
+
+playSound "O_Store";
+

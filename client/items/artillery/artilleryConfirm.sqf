@@ -27,7 +27,7 @@
 
 		[player, _pos] remoteExecCall ["A3W_fnc_artilleryStrike", 2];
 		["Strike request sent...", 5] call a3w_actions_notify;
-		playSound "Orange_Access_FM";
+		playSound "MyMissionInLife";
 
 		waitUntil {closeDialog 0; !dialog};
 	};

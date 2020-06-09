@@ -183,6 +183,19 @@ class spawnshop1
 			w = 0.1173 * SZ_SCALE;
 			h = 0.040 * SZ_SCALE;
 		};
+
+		class StoreButton2: w_RscButton
+		{
+			idc = -1;
+			action = "[2] call populateGunStore1";
+			text = "DMR's";
+			sizeEx = GunStoreButton_textSize;
+
+			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
+			y = GunStoreMainBG_Y + (0.175 * SZ_SCALE);
+			w = 0.0586 * SZ_SCALE;
+			h = 0.020 * SZ_SCALE;
+		};
 		
 		class StoreButton3: w_RscButton
 		{
@@ -195,6 +208,58 @@ class spawnshop1
 			y = GunStoreMainBG_Y + (0.175 * SZ_SCALE);
 			w = 0.0586 * SZ_SCALE;
 			h = 0.020 * SZ_SCALE;
+		};
+		
+		class StoreButton4: w_RscButton
+		{
+			idc = -1;
+			action = "[4] call populateGunStore1";
+			text = "Snipers";
+			sizeEx = GunStoreButton_textSize;
+
+			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
+			y = GunStoreMainBG_Y + (0.195 * SZ_SCALE);
+			w = 0.1173 * SZ_SCALE;
+			h = 0.020 * SZ_SCALE;
+		};
+
+		class StoreButton5: w_RscButton
+		{
+			idc = -1;
+			action = "[5] call populateGunStore1";
+			text = "LMGs";
+			sizeEx = GunStoreButton_textSize;
+
+			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
+			y = GunStoreMainBG_Y + (0.225 * SZ_SCALE);
+			w = 0.1173 * SZ_SCALE;
+			h = 0.040 * SZ_SCALE;
+		};
+
+		class StoreButton6: w_RscButton
+		{
+			idc = -1;
+			action = "[6] call populateGunStore1";
+			text = "Launchers";
+			sizeEx = GunStoreButton_textSize;
+
+			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
+			y = GunStoreMainBG_Y + (0.275 * SZ_SCALE);
+			w = 0.1173 * SZ_SCALE;
+			h = 0.040 * SZ_SCALE;
+		};
+
+		class StoreButton7: w_RscButton
+		{
+			idc = -1;
+			action = "[7] call populateGunStore1";
+			text = "Ordnance";
+			sizeEx = GunStoreButton_textSize;
+
+			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
+			y = GunStoreMainBG_Y + (0.325 * SZ_SCALE);
+			w = 0.1173 * SZ_SCALE;
+			h = 0.040 * SZ_SCALE;
 		};
 
 		class StoreButton8: w_RscButton
@@ -224,6 +289,73 @@ class spawnshop1
 			h = 0.020 * SZ_SCALE;
 
 		};
+		
+		class StoreButton10: w_RscButton
+		{
+			idc = -1;
+			action = "[10] call populateGunStore1";
+			text = "Silencers";
+			sizeEx = GunStoreButton_textSize;
+
+			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
+			y = GunStoreMainBG_Y + (0.395 * SZ_SCALE);
+			w = 0.1173 * SZ_SCALE;
+			h = 0.020 * SZ_SCALE;
+
+		};
+		
+		class SellWeapon: w_RscButton
+		{
+			idc = -1;
+			action = "[] execVM 'client\systems\selling\sellWeapon.sqf'";
+			text = "Sell Weapon";
+			sizeEx = GunStoreButton_textSize;
+
+			x = GunStoreMainBG_X + (0.23 * SZ_SCALE);
+			y = GunStoreMainBG_Y + (0.59 * SZ_SCALE);
+			w = 0.1173 * SZ_SCALE;
+			h = 0.040 * SZ_SCALE;
+		};
+
+		class SellUniform: w_RscButton
+		{
+			idc = -1;
+			action = "[] execVM 'client\systems\selling\sellUniform.sqf'";
+			text = "Sell Uniform";
+			sizeEx = GunStoreButton_textSize;
+
+			x = GunStoreMainBG_X + ((0.604 - 0.25) * SZ_SCALE);
+			y = GunStoreMainBG_Y + (0.59 * SZ_SCALE);
+			w = 0.1173 * SZ_SCALE;
+			h = 0.040 * SZ_SCALE;
+		};
+
+		class SellVest: w_RscButton
+		{
+			idc = -1;
+			action = "[] execVM 'client\systems\selling\sellVest.sqf'";
+			text = "Sell Vest";
+			sizeEx = GunStoreButton_textSize;
+
+			x = GunStoreMainBG_X + (0.478 * SZ_SCALE);
+			y = GunStoreMainBG_Y + (0.59 * SZ_SCALE);
+			w = 0.1173 * SZ_SCALE;
+			h = 0.040 * SZ_SCALE;
+		};
+
+		class SellBackpack: w_RscButton
+		{
+			idc = -1;
+			action = "[] execVM 'client\systems\selling\sellBackpack.sqf'";
+			text = "Sell Backpack";
+			sizeEx = GunStoreButton_textSize;
+
+			x = GunStoreMainBG_X + (0.602 * SZ_SCALE);
+			y = GunStoreMainBG_Y + (0.59 * SZ_SCALE);
+			w = 0.1173 * SZ_SCALE;
+			h = 0.040 * SZ_SCALE;
+		};
+
 		class CancelButton: w_RscButton
 		{
 			idc = -1;

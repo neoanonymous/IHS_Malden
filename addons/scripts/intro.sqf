@@ -3,16 +3,18 @@ sleep 80;
 private ["_messages", "_timeout"];
 
 _messages = [
-	["IHS Wastelnad", "Isaac Harding's Wasteland is the next level shitz, no really, try it out!"],
 	["Welcome", (name player)],
-	["A3Wasteland", worldName],
-	["Invite A Friend", "If you invite a new friend onto the server you and them get 500k."],
-	["New Player Bonus", "Our admins will give new players 100k to help them as a freshie."],
-	["Bank Transfer", "To transfer from Fractured Wasteland, TrailerPark and CGC, just ask an admin for more details."],
-	["Bounty Bonus Invite", "If you invite a friend or player onto the server from Fractured Wasteland, TrailerPark or CGC, you and them will get 2.5 million."],
+	["IHS Wasteland+", worldName],
+	["Inviting Friends", "Inviting friends allows for more heads to be deaded, so invite em all!  Lets get this server to #1 US wasteland server."],
+	
+	
+	//["Invite A Friend", "If you invite a new friend onto the server you and them get 50k."],
+	//["New Player Bonus", "Our admins will give new players 100k to help them as a freshie."],
+	//["Bank Transfer", "To transfer from Fractured Wasteland, TrailerPark and CGC, just ask an admin for more details."],
+	//["Bounty Bonus Invite", "If you invite a friend or player onto the server from Fractured Wasteland, TrailerPark or CGC, you and them will get 2.5 million."],
 	["Competition Creates Improvement", "Advertise all you want here, don't spam though, let the best server win."],
-	["Earplugs", "EarPlugs = END key."],
-	["REPORT HACKERS", "If you suspect someone of hacking report it to a admin in our discord: https://discord.gg/C4G87Be"],
+	["Earplugs", "EarPlugs = END 80% Mute, DEL 99% Mute"],
+	["REPORT HACKERS", "If you suspect someone of hacking report it to a admin in our discord browse to: discord.me/ihs"],
 	["Lets Make Wasteland Great Again", "Invite all your friends so that make something EPIC together!!!"],
 	["DONATIONS", "Are very much appreciated, donations can be made at the paypal: isaachardingcap@gmail.com"],
 	["REBOOTS", "Server reboots at 12 and 6 AM/PM est."]	

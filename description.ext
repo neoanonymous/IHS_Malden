@@ -1,15 +1,15 @@
 respawn="BASE";
 respawnDelay=15;
 disabledAI=1;
-disableChannels[] = {{0,false,true}, {2,true,true}}; // 0 = global, 1 = side, 2 = command // new syntax: {{channel<number>, disableText<bool>, disableVoice<bool>}, ...};
+disableChannels[] = {{0,false,true}}; // 0 = global, 1 = side, 2 = command // new syntax: {{channel<number>, disableText<bool>, disableVoice<bool>}, ...};
 // side voice is disabled for indies in client\preInit.sqf
 joinUnassigned = 0;
 enableItemsDropping = 0;
 forceRotorLibSimulation = 0; // if you set this to 1, you deny freedom of choice to the players, which is the very principle this mission is built upon
 weaponPool = 0;
 corpseManagerMode = 1;
-corpseRemovalMinTime = 5*60;
-corpseRemovalMaxTime = 5*60;
+corpseRemovalMinTime = 15*60;
+corpseRemovalMaxTime = 15*60;
 wreckManagerMode = 1;
 wreckRemovalMinTime = 5*60;
 wreckRemovalMaxTime = 10*60;
@@ -131,11 +131,19 @@ class CfgNotifications
 
 class CfgSounds
 {
+	
+	
+	
+	
+	#include "client\CfgSounds.hpp" //Humming bird
+	
 	sounds[] = 
 	{
 		beep, beep2, beep3, beep4, beep5, beep6, beep7, beep8, beep9, Mine_Detector_Sound_1,Mine_Detector_Sound_2,Mine_Detector_Sound_3,Mine_Detector_Sound_4,Mine_Detector_Sound_5
 	};
-	#include "client\CfgSounds.hpp" //Humming bird
+	
+	
+	
 		class beep
 			{
                                 sound[] = {"addons\beacondetector\sound\beep.wav", db-10, 0.5};
@@ -216,7 +224,167 @@ class CfgSounds
 								sound[] = {"addons\Mine_detector\sound\5.ogg", 1, 1};
 								titles[] = {};
 			};
+	
+	
+	
+	
+	/***********Game sounds***********/
+	
+	class PickUpCash
+   {
 
+        name = "PickUpCash";
+        sound[] = {"client\sounds\Picking_Up_Cash.ogg", db+75,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class WD_ATM
+   {
+
+        name = "WD_ATM";
+        sound[] = {"client\sounds\WD_ATM.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class O_ATM
+   {
+
+        name = "O_ATM";
+        sound[] = {"client\sounds\O_ATM.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class D_ATM
+   {
+
+        name = "D_ATM";
+        sound[] = {"client\sounds\D_ATM.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class DA_ATM
+   {
+
+        name = "DA_ATM";
+        sound[] = {"client\sounds\DA_ATM.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class SellCrate
+   {
+
+        name = "SellCrate";
+        sound[] = {"client\sounds\SellCrate.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class MyMissionInLife
+   {
+
+        name = "MyMissionInLife";
+        sound[] = {"client\sounds\MyMissionInLife.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class ZoomZoom
+   {
+
+        name = "ZoomZoom";
+        sound[] = {"client\sounds\ZoomZoom.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class O_Walmart
+   {
+
+        name = "O_Walmart";
+        sound[] = {"client\sounds\O_Walmart.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class O_Store
+   {
+
+        name = "O_Store";
+        sound[] = {"client\sounds\O_Store.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class TimeForAReboot
+   {
+
+        name = "TimeForAReboot";
+        sound[] = {"client\sounds\TimeForAReboot.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class AccessStorage
+   {
+
+        name = "AccessStorage";
+        sound[] = {"client\sounds\AccessStorage.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class O_PLS
+   {
+
+        name = "O_PLS";
+        sound[] = {"client\sounds\O_PLS.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class OParking_Park
+   {
+
+        name = "OParking_Park";
+        sound[] = {"client\sounds\OParking_Park.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class ParkVik
+   {
+
+        name = "ParkVik";
+        sound[] = {"client\sounds\ParkVik.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class OParking_Get
+   {
+
+        name = "OParking_Get";
+        sound[] = {"client\sounds\OParking_Get.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	class GetVik
+   {
+
+        name = "GetVik";
+        sound[] = {"client\sounds\GetVik.ogg", db+5,1};//filename with path, loudness, pitch, distance
+		titles[] = {};
+
+    };
+	
+	
+	/***********Game sounds***********/
 };
 
 

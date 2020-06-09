@@ -83,7 +83,8 @@ storePurchaseHandle = _this spawn
 	{
 		_itemText = _this select 0;
 		hint format ["""%1"" has been spawned outside, in front of the store.", _itemText];
-		playSound "FD_Finish_F";
+		
+		//playSound "FD_Finish_F";
 	};
 
 	_applyVehProperties =
@@ -182,8 +183,19 @@ storePurchaseHandle = _this spawn
 	{
 		missionNamespace setVariable [_requestKey, nil];
 	};
-
+	
+	if (_vehicle isKindOf "C_Hatchback_01_sport_F")then
+	{
+		playSound "ZoomZoom";
+	}
+	else
+	{
+		playSound "FD_Finish_F";
+	};
+	
 	sleep 0.5; // double-click protection
+	
+	
 };
 
 if (typeName storePurchaseHandle == "SCRIPT") then

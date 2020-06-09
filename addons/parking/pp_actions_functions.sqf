@@ -116,7 +116,7 @@ pp_create_terminals = {
     _marker_pos = markerPos _marker;
     //if (isARRAY(pp_cities_whitelist) && {count(pp_cities_whitelist) > 0 && {not(_town_name in pp_cities_whitelist)}}) exitWith {};
 
-    _garage = (nearestObjects [_marker_pos, ["Land_i_Shed_Ind_F", "Land_Carrier_01_base_F"], 50]) select 0;
+    _garage = (nearestObjects [_marker_pos, ["Land_i_Shed_Ind_F", "Land_Carrier_01_base_F", "Land_i_House_Small_03_V1_F", "Land_Offices_01_V1_F"], 50]) select 0;
     if (!isOBJECT(_garage)) exitWith {
       diag_log format["No garage near %1", _marker];
     };
@@ -236,7 +236,8 @@ pp_retrieve_allowed = {
 
     if (not([_msg, "Confirm", "Yes", "No"] call BIS_fnc_guiMessage)) exitWith {false};
     if (not([_player, _cost] call pp_retrieve_transaction_ok)) exitWith {false};
-
+	
+	playSound "GetVik";
     true
   };
 
@@ -264,13 +265,16 @@ pp_park_allowed = {
     [_msg, "Full Parking", "Ok", false] call BIS_fnc_guiMessage;
     false
   };
-
+  playSound	"ParkVik";
   true
 };
 
 
 
 pp_park_vehicle_action = {
+
+  playSound "OParking_Park";
+
   init(_player,player);
 
   def(_vehicles);
@@ -300,6 +304,9 @@ pp_park_vehicle_action = {
 };
 
 pp_retrieve_vehicle_action = {
+
+  playSound "OParking_Get";
+
   init(_player,player);
 
   def(_parked_vehicles);

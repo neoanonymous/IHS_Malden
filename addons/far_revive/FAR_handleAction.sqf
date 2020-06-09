@@ -39,6 +39,7 @@ switch (toLower _action) do
 	case "action_slay":
 	{
 		call FAR_Slay_Target;
+		playSound3D [call currMissionDir + "client\sounds\FinishOff.ogg", vehicle player, false, getPosASL player, 10, 1, 25];
 	};
 
 	case "action_load":

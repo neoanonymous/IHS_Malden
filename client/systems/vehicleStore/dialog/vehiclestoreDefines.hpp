@@ -12,10 +12,9 @@
 #define vehshop_button1 5291 // Armored
 #define vehshop_button2 5292 // Tanks
 #define vehshop_button3 5293 // Helis
-#define vehshop_button4 5294 // Attk Helis
-#define vehshop_button5 5295 // Planes
-#define vehshop_button6 5296 // UAV's
-#define vehshop_button7 5297 // Boats
+#define vehshop_button4 5294 // Planes
+#define vehshop_button5 5295 // Boats
+#define vehshop_button6 5296 // Submarines (unused)
 #define vehshop_BuyButton_IDC 100
 
 #define A3W_vehPaintIDD 5785

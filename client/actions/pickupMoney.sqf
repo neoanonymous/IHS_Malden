@@ -47,3 +47,6 @@ sleep 0.25;
 
 sleep 0.75;
 mutexScriptInProgress = false;
+
+
+playSound "PickUpCash";

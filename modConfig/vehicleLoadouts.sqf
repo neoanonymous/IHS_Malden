@@ -745,7 +745,7 @@ switch (true) do
 			["weapon_rim116Launcher", [0]]
 		];
 	};
-	//UberTigris
+
 	// OP cheatah
 	case (_class isKindOf "B_APC_Tracked_01_AA_F" && _variant == "cheetahOP"):
 	{
@@ -763,7 +763,7 @@ switch (true) do
 			["missiles_titan", [0]]
 		];
 	};
-	// OP cheatah
+
 	//UberCheatah
 	case (_class isKindOf "B_APC_Tracked_01_AA_F" && _variant == "cheetahUber"):
 	{

@@ -8,4 +8,4 @@
 #define CARGO_STRING(OBJ) ([getWeaponCargo OBJ, getMagazineCargo OBJ, getItemCargo OBJ, getBackpackCargo OBJ] joinString "")
 #define GET_HALF_PRICE(PRICE) ((ceil (((PRICE) / 2) / 5)) * 5)
 
-if (!isNil "storeSellingHandle" && {typeName storeSellingHandle == "SCRIPT"} && {!scriptDone storeSellingHandle}) exitWith {hint "Please wait, your previous sale is being processed"};
+if (!isNil "storeSellingHandle" && {typeName storeSellingHandle == "SCRIPT"} && {!scriptDone storeSellingHandle}) exitWith {hint "Please wait, your previous transaction is being processed"};

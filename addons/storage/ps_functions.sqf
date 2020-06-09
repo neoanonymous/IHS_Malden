@@ -216,6 +216,11 @@ ps_access = {
   player action ["Gear",  _box];
   player removeAllEventHandlers "InventoryOpened";
   [_box] spawn ps_inventory_ui_mod;
+  
+  sleep 0.25;
+  
+  playsound "AccessStorage";
+  
 };
 
 ps_cameraDir = {

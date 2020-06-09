@@ -51,3 +51,5 @@ if (!isServer) then { player setVariable ["cmoney", (player getVariable ["cmoney
 // pvar_processTransaction = ["atm", player, _amount];
 // publicVariableServer "pvar_processTransaction";
 ["atm", player, _amount] call A3W_fnc_processTransaction;
+
+playSound "DA_ATM";

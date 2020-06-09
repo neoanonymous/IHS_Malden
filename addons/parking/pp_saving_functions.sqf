@@ -158,7 +158,7 @@ if (isServer) then {
       ["parked_vehicles", _parked_vehicles] remoteExecCall ["A3W_fnc_setVarPlayer", _player];
       //[_player] call fn_saveAccount;
       [_player, format["%1, your %2 has been parked.", (name _player), _display_name]] call pp_notify;
-    };
+	};
   };
 
   pp_retrieve_vehicle_request_handler = {
@@ -236,6 +236,7 @@ if (isServer) then {
     _display_name = [typeOf _vehicle] call generic_display_name;
     [_player, _vehicle] call pp_mark_vehicle;
     [_player, format["%1, your %2 has been retrieved (marked on map)", (name _player), _display_name]] call pp_notify;
+	playSound "GetVik";
   };
 
   "pp_park_vehicle_request" addPublicVariableEventHandler pp_park_vehicle_request_handler;

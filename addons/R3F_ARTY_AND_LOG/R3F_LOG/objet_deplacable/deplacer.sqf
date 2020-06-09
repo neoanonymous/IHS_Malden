@@ -150,12 +150,12 @@ else
 					};
 				};
 
-				if ([(velocity player) select 0,(velocity player) select 1,0] call BIS_fnc_magnitude > 3.5) then
+				/*if ([(velocity player) select 0,(velocity player) select 1,0] call BIS_fnc_magnitude > 3.5) then
 				{
 					player globalChat STR_R3F_LOG_courir_trop_vite;
 					player playMove "AmovPpneMstpSnonWnonDnon";
 					sleep 1;
-				};
+				};*/
 
 				sleep 0.25;
 			};

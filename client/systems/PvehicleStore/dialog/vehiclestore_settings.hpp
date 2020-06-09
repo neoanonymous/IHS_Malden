@@ -254,7 +254,7 @@ class vehshopdP
 		
 		class StoreButton4: w_RscButton
 		{
-			idc = vehshop_button4;
+			idc = vehshop_button3;
 			action = "[4] call populateVehicleStoreP";
 			text = "Attack Heli's";
 			sizeEx = VehStoreButton_textSize;
@@ -267,7 +267,7 @@ class vehshopdP
 
 		class StoreButton5: w_RscButton
 		{
-			idc = vehshop_button5;
+			idc = vehshop_button4;
 			action = "[5] call populateVehicleStoreP";
 			text = "Planes";
 			sizeEx = VehStoreButton_textSize;
@@ -280,7 +280,7 @@ class vehshopdP
 		
 		class StoreButton6: w_RscButton
 		{
-			idc = vehshop_button6;
+			idc = vehshop_button4;
 			action = "[6] call populateVehicleStoreP";
 			text = "UAV's";
 			sizeEx = VehStoreButton_textSize;

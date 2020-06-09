@@ -1,4 +1,4 @@
-//GOM_fnc_aircraftLoadout V1.34 made by Grumpy Old Man 17-5-2017
+//GOM_fnc_aircraftLoadout V1.35 made by Grumpy Old Man 17-5-2017
 /*
 feel free to use as you like, as long as I'm credited as the original author
 
@@ -38,6 +38,10 @@ setRepairCargo
 setFuel
 
 Changelog:
+
+V1.35
+Fixed: Players are no longer able to load presets created with a different pylon restriction setting
+	Due to this change all presets needed to be reset
 
 V1.34
 Fixed: Proper removal of weapons if not used by other pylons
@@ -143,148 +147,6 @@ Files needed:
 
 */
 
-private _magtypes =
-[
-
-	//Magazine,									Maxx		What it actually is
-	//Aircraft Dynamic Pylons
-	["PylonMissile_1Rnd_Bomb_03_F",				25000],		//LOM-250G GUIDED BOMB CSAT X1
-	["PylonMissile_1Rnd_Bomb_04_F",				25000],		//GBU-12 GUIDED BOMB NATO X1
-	["PylonMissile_1Rnd_Mk82_F",				25000],		//MK-82 DUMB BOMB X1
-	["PylonMissile_Bomb_GBU12_x1",				25000],		//GBU-12 LASER GUIDIED BOMB X1
-	["PylonMissile_Bomb_KAB250_x1",				25000],		//KAB250 GUIDED BOMB X1
-	["PylonMissile_Missile_AA_R73_x1",			25000],		//R-73 X1
-	["PylonMissile_Missile_AA_R77_x1",			25000],		//R-77 X1
-	["PylonMissile_Missile_AGM_02_x2",			25000],		//MACER AGM X2
-	["PylonMissile_Missile_AGM_KH25_x1",		25000],		//KH-25 X1
-	["PylonMissile_Missile_AMRAAM_D_INT_x1",	25000],		//AMRAAM D X1
-	["PylonMissile_Missile_BIM9X_x1",			25000],		//BIM8X X1
-	["PylonRack_12Rnd_PG_missiles",				25000],		//DAGR X12
-	["PylonRack_12Rnd_missiles",				25000],		//DAR ROCKETS X12
-	["PylonRack_19Rnd_Rocket_Skyfire",			25000],		//SKYFIRE X19
-	["PylonRack_1Rnd_AAA_missiles",				25000],		//ASRAAM X1
-	["PylonRack_1Rnd_GAA_missiles",				25000],		//ZYPHER X1
-	["PylonRack_1Rnd_LG_scalpel",				25000],		//SCALPEL X1
-	["PylonRack_1Rnd_Missile_AA_03_F",			25000],		//SAHR-3
-	["PylonRack_1Rnd_Missile_AA_04_F",			25000],		//FALCHION 22 X1
-	["PylonRack_1Rnd_Missile_AGM_01_F",			25000],		//SHARUR X1
-	["PylonRack_1Rnd_Missile_AGM_02_F",			25000],		//MACER AGM X1
-	["PylonRack_20Rnd_Rocket_03_AP_F",			25000],		//TRATNYR AP ROCKETS X20
-	["PylonRack_20Rnd_Rocket_03_HE_F",			25000],		//TRATNYR HE ROCKETS X20
-	["PylonRack_3Rnd_LG_scalpel",				25000],		//SCALPEL X3
-	["PylonRack_3Rnd_Missile_AGM_02_F",			25000],		//MACER AGM X3
-	["PylonRack_4Rnd_BombDemine_01_F",			25000],		//Demining Drone Charges
-	["PylonRack_4Rnd_LG_scalpel",				25000],		//SCALPEL X4
-	["PylonRack_7Rnd_Rocket_04_AP_F",			25000],		//SHRIEKER AP ROCKETS X7
-	["PylonRack_7Rnd_Rocket_04_HE_F",			25000],		//SHRIEKER HE ROCKETS X7
-	["PylonRack_Bomb_GBU12_x2",					25000],		//GBU-12 LASER GUIDED BOMB X2
-	["PylonRack_Missile_AGM_02_x1",				25000],		//MACER II AGM X1
-	["PylonRack_Missile_AGM_02_x2",				25000],		//MACER II X2
-	["PylonRack_Missile_AMRAAM_C_x1",			25000],		//AMRAAM C X1
-	["PylonRack_Missile_AMRAAM_C_x2",			25000],		//AMRAAM C X2
-	["PylonRack_Missile_AMRAAM_D_x2",			25000],		//AMRAAM D X2
-	["PylonRack_Missile_BIM9X_x2",				25000],		//BIM9X X2
-	["PylonWeapon_2000Rnd_65x39_belt",			25000],		//6.5mm GATTLING GUN (RIGHT SIDE)
-	["PylonWeapon_300Rnd_20mm_shells",			25000],		//20mm TWIN CANNON
-	
-	//Non Dynamic magazines
-	["1000Rnd_20mm_shells",						25000],		//Blackfoot cannon ammo
-	["1000Rnd_65x39_Belt_Green",				25000],		//6.5 coax ammo
-	["1000Rnd_65x39_Belt_Yellow",				25000],
-	["1000Rnd_762x51_Belt_Yellow",				25000],
-	["1000Rnd_Gatling_30mm_Plane_CAS_01_F", 	25000],		//Wipeout cannon ammo
-	["100Rnd_105mm_HEAT_MP",					25000],		//Blackfish 102mm cannon rounds
-	["100Rnd_127x99_mag_Tracer_Red",			25000],
-	["100Rnd_127x99_mag_Tracer_Yellow",			25000],
-	["12Rnd_125mm_HEAT_T_Green",				25000],
-	["12Rnd_125mm_HE_T_Green",					25000],
-	["12Rnd_230mm_rockets",						25000],
-	["130Rnd_338_Mag",							25000],
-	["140Rnd_30mm_MP_shells_Tracer_Green",		25000],		//30mm/Kamysh MP rounds
-	["140Rnd_30mm_MP_shells_Tracer_Yellow",		25000],
-	["14Rnd_120mm_HE_shells_Tracer_Yellow",		25000],		//Kuma cannon HE rounds
-	["160Rnd_40mm_APFSDS_Tracer_Red_shells",	25000],		//blackfish 40mm cannon APFSDS rounds
-	["16Rnd_120mm_HE_shells_Tracer_Red",		25000],
-	["1Rnd_GAA_missiles",						25000],
-	["1Rnd_GAT_missiles",						25000],
-	["2000Rnd_65x39_Belt_Tracer_Green_Splash",	25000],		//Orca minigun ammo
-	["2000Rnd_65x39_Belt_Tracer_Red",			25000],		//Helicopter Door gunner minigun ammo
-	["2000Rnd_65x39_Belt_Tracer_Yellow",		25000],
-	["2000Rnd_65x39_belt",						25000],		//6.5 LMG ammo
-	["2000Rnd_762x51_Belt_Green",				25000],
-	["2000Rnd_762x51_Belt_Yellow",				25000],		//Kuma coax ammo
-	["200Rnd_127x99_mag_Tracer_Green",			25000],
-	["200Rnd_127x99_mag_Tracer_Yellow",			25000],
-	["200Rnd_40mm_G_belt",						25000],
-	["20Rnd_105mm_HEAT_MP_T_Red",				25000],		//Slammer Cannon HEAT rounds
-	["240Rnd_40mm_GPR_Tracer_Red_shells",		25000],		//Blackfish 40mm cannon GP rounds
-	["24Rnd_125mm_APFSDS_T_Green",				25000],
-	["250Rnd_30mm_APDS_shells_Tracer_Green",	25000],		//Kajman/Xian cannon APDS ammo
-	["250Rnd_30mm_HE_shells_Tracer_Green",		25000],		//Kajman/Xian cannon HE ammo
-	["28Rnd_120mm_APFSDS_shells_Tracer_Yellow", 25000],		//Kuma cannon AP rounds
-	["2Rnd_155mm_Mo_Cluster",					25000],
-	["2Rnd_155mm_Mo_LG",						25000],
-	["2Rnd_155mm_Mo_guided",					25000],
-	["2Rnd_155mm_Mo_guided",					25000],
-	["2Rnd_GAT_missiles",						25000],		//Kamysh/Gorgon AT missiles
-	["300Rnd_20mm_shells",						25000],		//Buzzard Cannon ammo
-	["32Rnd_120mm_APFSDS_shells_Tracer_Red",	25000],
-	["32Rnd_155mm_Mo_shells",					25000],
-	["4000Rnd_20mm_Tracer_Red_shells",			25000],		//Blackfish gattling cannon rounds
-	["40Rnd_105mm_APFSDS_T_Red",				25000],		//Slammer Cannon AP rounds
-	["40Rnd_40mm_APFSDS_Tracer_Red_shells",		25000],		//Marshal 40mm AP ammo
-	["450Rnd_127x108_Ball",						25000],
-	["4Rnd_LG_Jian",							25000],		//Fenhuang missiles
-	["4Rnd_Titan_long_missiles",				25000],		//Cheetah/Tigris AA missiles
-	["5000Rnd_762x51_Belt",						25000],		//Pawne minigun ammo
-	["5000Rnd_762x51_Yellow_Belt",				25000],		//Hellcat minigun ammo
-	["500Rnd_127x99_mag_Tracer_Green",			25000],
-	["500Rnd_127x99_mag_Tracer_Red",			25000],		//12.7 MG ammo
-	["500Rnd_127x99_mag_Tracer_Yellow",			25000],		//Kuma Commander MG ammo
-	["500Rnd_65x39_Belt_Tracer_Green_Splash",	25000],
-	["500Rnd_Cannon_30mm_Plane_CAS_02_F",		25000],		//Neophran cannon ammo
-	["60Rnd_30mm_APFSDS_shells_Tracer_Green",	25000],		//30mm/Kamysh AP rounds
-	["60Rnd_30mm_APFSDS_shells_Tracer_Yellow",	25000],
-	["60Rnd_40mm_GPR_Tracer_Red_shells",		25000],		//Marshal 40mm	GP ammo
-	["680Rnd_35mm_AA_shells_Tracer_Green",		25000],		//Tigris Autocannon ammo
-	["680Rnd_35mm_AA_shells_Tracer_Red",		25000],		//Cheetah autocannon ammo
-	["6Rnd_155mm_Mo_AT_mine",					25000],
-	["6Rnd_155mm_Mo_mine",						25000],
-	["6Rnd_155mm_Mo_smoke",						25000],
-	["8Rnd_82mm_Mo_Flare_white",				25000],
-	["8Rnd_82mm_Mo_Smoke_white",				25000],
-	["8Rnd_82mm_Mo_shells",						25000],
-	["96Rnd_40mm_G_belt",						25000],
-	["96Rnd_40mm_G_belt",						25000],		//40mm GP rounds
-	["magazine_Missile_rim116_x21",				25000],		//Spartan Turret missiles
-	["magazine_Cannon_Phalanx_x1550",			25000],		//Preatorian Ammo
-	["magazine_Missile_rim162_x8",				25000],		//Centurion Missiles
-	["Pylon_1Rnd_Leaflets_West_F",				25000],
-	["Pylon_1Rnd_Leaflets_East_F",				25000],
-	["Pylon_1Rnd_Leaflets_Guer_F",				25000],
-	["Pylon_1Rnd_Leaflets_Civ_F",				25000],
-	["Pylon_1Rnd_Leaflets_Custom_01_F",			25000],
-	["Pylon_1Rnd_Leaflets_Custom_02_F",			25000],
-	["Pylon_1Rnd_Leaflets_Custom_03_F",			25000],
-	["Pylon_1Rnd_Leaflets_Custom_04_F",			25000],
-	["Pylon_1Rnd_Leaflets_Custom_05_F",			25000],
-	["Pylon_1Rnd_Leaflets_Custom_06_F",			25000],
-	["Pylon_1Rnd_Leaflets_Custom_07_F",			25000],
-	["Pylon_1Rnd_Leaflets_Custom_08_F",			25000],
-	["Pylon_1Rnd_Leaflets_Custom_09_F",			25000],
-	["Pylon_1Rnd_Leaflets_Custom_10_F",			25000],
-	
-	//Countermeasures
-	["120Rnd_CMFlare_Chaff_Magazine",			25000],
-	["168Rnd_CMFlare_Chaff_Magazine",			25000],
-	["192Rnd_CMFlare_Chaff_Magazine",			25000],
-	["240Rnd_CMFlare_Chaff_Magazine",			25000],
-	["SmokeLauncherMag",						25000],
-
-	//Support magazines
-	["Laserbatteries",							25000]
-];	
-
 GOM_fnc_addAircraftLoadout = {
 
 	params [["_unit",objnull]];
@@ -341,9 +203,11 @@ GOM_fnc_addAircraftLoadoutToObject = {
 
 	params ["_object"];
 
-	_action = ["Service Vehicle",{params ["_caller"];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"",""];
+	_action = ["Edit Aircraft Loadout",{params ["_caller"];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"","_this isEqualTo vehicle _this AND {weaponLowered _this} AND {speed _this < 3} AND {alive _this} AND {alive _target}"];
 	[_object,_action] remoteExec ["addAction",[0,-2] select isDedicated,true];//compatibility check added, and JIP
+
 	true
+
 };
 
 
@@ -369,15 +233,23 @@ _out
 GOM_fnc_setRepairCargo = {
 
 	params ["_veh","_amount"];
-	_veh setvariable ["GOM_fnc_repairCargo",_amount max 0,true];
+	_veh setvariable ["GOM_fnc_repairCargo",_amount max 0,false];
 	true
 
 };
 
+if !(profileNamespace getVariable ["GOM_fnc_prepareUI",false]) then {
+
+	profileNamespace setVariable ["GOM_fnc_aircraftLoadoutPresets",[]];
+	profileNamespace setVariable ["GOM_fnc_prepareUI",true];
+
+};
+
+
 GOM_fnc_setFuelCargo = {
 
 	params ["_veh","_amount"];
-	_veh setvariable ["GOM_fnc_fuelCargo",_amount max 0,true];
+	_veh setvariable ["GOM_fnc_fuelCargo",_amount max 0,false];
 	true
 
 
@@ -386,7 +258,7 @@ GOM_fnc_setFuelCargo = {
 GOM_fnc_setAmmoCargo = {
 
 	params ["_veh","_amount"];
-	_veh setvariable ["GOM_fnc_ammoCargo",_amount max 0,true];
+	_veh setvariable ["GOM_fnc_ammoCargo",_amount max 0,false];
 	true
 
 
@@ -469,7 +341,7 @@ _getText = (_repairVehs call BIS_fnc_consolidateArray) apply {_t = (_t + " " + s
 	};
 
 
-	_text = format ["<t shadow='2' t size='0.75'><t align='center'>Repairing: %1<br />Refueling: %2<br />Rearming: %3<br /><t align='left'>%4<br />%5<br />%6",(_availableTexts select _canRepair),(_availableTexts select _canRefuel),(_availableTexts select _canRearm),_repairtext,_fueltext,_rearmtext];
+	_text = format ["<t shadow='2' size='0.75'><t align='center'>Repairing: %1<br />Refueling: %2<br />Rearming: %3<br /><t align='left'>%4<br />%5<br />%6",(_availableTexts select _canRepair),(_availableTexts select _canRefuel),(_availableTexts select _canRearm),_repairtext,_fueltext,_rearmtext];
 
 	(finddisplay 66 displayctrl 1100) ctrlSetStructuredText parsetext _text;
 
@@ -514,7 +386,7 @@ _getText = (_repairVehs call BIS_fnc_consolidateArray) apply {_t = (_t + " " + s
 		_pylonInfoText = _pylonInfoText + format ["%1Pyl%2: %3 Prio. %4 %5 (%6).%7",_setAlign,_count,_owner,_priority,_pylonDispname,_pylonAmmoCounts select _forEachIndex,_break];
 
 	} forEach _pylons;
-			_text = format ["<t align='center' t size='0.75'>Selected %1 preset: %2 Tail No. %5<br /><br /><t align='left'>Livery: %3<br />%4",_dispName,_presetName,_textureName,_pylonInfoText,_serialNumber];
+			_text = format ["<t align='center' size='0.75'>Selected %1 preset: %2 Tail No. %5<br /><br /><t align='left'>Livery: %3<br />%4",_dispName,_presetName,_textureName,_pylonInfoText,_serialNumber];
 
 	(finddisplay 66 displayctrl 1100) ctrlSetStructuredText parsetext _text;
 
@@ -548,7 +420,7 @@ _getText = (_repairVehs call BIS_fnc_consolidateArray) apply {_t = (_t + " " + s
 		_pylonInfoText = _pylonInfoText + format ["%1Pyl%2: %3 Prio. %4 %5 (%6).%7",_setAlign,_count,_owner,_priority,_pylonDispname,_ammo,_break];
 
 	} forEach GetPylonMagazines _veh;
-			_text = format ["<t align='center' t size='0.75'>%1 current loadout:<br /><br /><t align='left' t size='0.75'><br />%2",_dispName,_pylonInfoText];
+			_text = format ["<t align='center' size='0.75'>%1 current loadout:<br /><br /><t align='left' size='0.75'><br />%2",_dispName,_pylonInfoText];
 
 	(finddisplay 66 displayctrl 1100) ctrlSetStructuredText parsetext _text;
 
@@ -624,7 +496,7 @@ if (lbcursel 1502 >= 0) then {_landingtext = "";_killtext = ""};
 	_tailNumber = [] call GOM_fnc_aircraftGetSerialNumber;
 
 
-	_text = format ["<t align='center' t size='0.75'>%1 - %11, Integrity: %2%3<br />Pilot: %4%5<br />Fuel: %6l / %7l<br />%8<br />%9<br />%10",_dispName,_integrity,"%",_rank,_driverName,_fuel,_maxFuel,_pylontext,_landingtext,_killtext,_tailnumber];
+	_text = format ["<t align='center' size='0.75'>%1 - %11, Integrity: %2%3<br />Pilot: %4%5<br />Fuel: %6l / %7l<br />%8<br />%9<br />%10",_dispName,_integrity,"%",_rank,_driverName,_fuel,_maxFuel,_pylontext,_landingtext,_killtext,_tailnumber];
 
 	(finddisplay 66 displayctrl 1100) ctrlSetStructuredText parsetext _text;
 true
@@ -867,7 +739,7 @@ params ["_source","_mag","_veh"];
 
 };
 
-GOM_fnc_rearmCheck = {
+/*GOM_fnc_rearmCheck = {
 
 	params ["_veh"];
 	if (!GOM_fnc_aircraftLoadout_NeedsAmmoSource) exitWith {[false,"",objnull]};
@@ -881,7 +753,7 @@ _vehs = ((_veh nearEntities ["All",50]) select {speed _x < 1 AND {alive _x} AND 
 	_vehs params ["_source"];
 	_cargo = _source getVariable ["GOM_fnc_ammoCargo",0];
 
-	//if (_cargo <= 0) then {_abort = true;_text = "Your ammo is depleted!"};
+	if (_cargo <= 0) then {_abort = true;_text = "Your ammo is depleted!"};
 
 	_notBusy = _vehs select {!(_x getVariable ["GOM_fnc_aircraftLoadoutBusyAmmoSource",false])};
 
@@ -926,13 +798,14 @@ if (_abort) then {systemchat _text;playsound "Simulation_Fatal"};
 	[_abort,_text,_source]
 
 
-};
+};*/
 
 GOM_fuelLeak = {
 
 	params ["_veh"];
 
 	_hitparts = getAllHitPointsDamage _veh;
+	if (_hitparts isEqualTo []) exitWith {diag_log format ["%1 has no hitpoints defined!",typeof _veh];[false,0]};
 	_hitparts params ["_hitpoints","_selections","_damages"];
 	_count = -1;
 
@@ -966,7 +839,7 @@ GOM_fuelLeak = {
 
 
 
-GOM_fnc_repairCheck = {
+/*GOM_fnc_repairCheck = {
 	params ["_veh"];
 
 	if (!GOM_fnc_aircraftLoadout_NeedsRepairSource) exitWith {[false,"",objnull]};
@@ -993,111 +866,144 @@ _vehs = ((_veh nearEntities ["All",50]) select {speed _x < 1 AND {alive _x} AND 
 	[_abort,_text,_source]
 
 
-};
+};*/
 
-GOM_fnc_setPylonsRearm = 
-{
+GOM_fnc_setPylonsRearm = {
+
 	if (lbCursel 1500 < 0) exitWith {systemchat "No aircraft selected!";false};
 	params ["_obj",["_rearm",false],["_pylons",[]],["_pylonAmmoCounts",[]]];
-	_nul = [_obj,_rearm,_pylons,_pylonAmmoCounts] spawn 
-	{
-		params ["_obj",["_rearm",false],["_pylons",[]],["_pylonAmmoCounts",[]]];
+_nul = [_obj,_rearm,_pylons,_pylonAmmoCounts] spawn {
+
+	params ["_obj",["_rearm",false],["_pylons",[]],["_pylonAmmoCounts",[]]];
+
 		_veh = call compile lbData [1500,lbcursel 1500];
-		_check = _veh call GOM_fnc_rearmCheck;
-		_check params ["_abort","_text","_ammosource"];
-		if (_abort) exitWith {true};
-		if (!alive _veh) exitWith {systemchat "Aircraft is destroyed!"};
-		if (_veh getVariable ["GOM_fnc_aircraftLoadoutRearmingInProgress",false]) exitWith {systemchat "Aircraft is currently being rearmed!"};
-		_veh setVariable ["GOM_fnc_aircraftLoadoutRearmingInProgress",true,true];
-		_activePylonMags = GetPylonMagazines _veh;
-		if (_rearm) exitWith 
-		{
-			[_obj] call GOM_fnc_clearAllPylons;
+
+
+_check = _veh call GOM_fnc_rearmCheck;
+_check params ["_abort","_text","_ammosource"];
+if (_abort) exitWith {true};
+
+	if (!alive _veh) exitWith {systemchat "Aircraft is destroyed!"};
+	if (_veh getVariable ["GOM_fnc_aircraftLoadoutRearmingInProgress",false]) exitWith {systemchat "Aircraft is currently being rearmed!"};
+	_veh setVariable ["GOM_fnc_aircraftLoadoutRearmingInProgress",true,true];
+	_activePylonMags = GetPylonMagazines _veh;
+	if (_rearm) exitWith {
+
+		[_obj] call GOM_fnc_clearAllPylons;
 			_pylonOwners = _veh getVariable ["GOM_fnc_aircraftLoadoutPylonOwners",[]];
-			{
-				_pylonOwner = if (_pylonOwners isequalto []) then {[]} else {_pylonOwners select (_foreachindex + 1)};
-				[_veh,[_foreachindex+1,_x,true,_pylonOwner]] remoteexec ["setPylonLoadOut",0] ;
-				[_veh,[_foreachIndex + 1,0]] remoteexec ["SetAmmoOnPylon",0] ;
-			} foreach _pylons;
-			sleep random [0,1,2];
-			_check = _veh call GOM_fnc_rearmCheck;
-			_check params ["_abort","_text","_ammosource"];
-			if (_abort) exitWith {true};
-			{
-				_mag = _activePylonMags select _forEachIndex;
-				_pylonOwners = _veh getVariable ["GOM_fnc_aircraftLoadoutPylonOwners",[]];
-				_pylonOwner = if (_pylonOwners isequalto []) then {[]} else {_pylonOwners select (_foreachindex + 1)};
-				_maxAmount = (_pylonAmmoCounts select _forEachIndex);
-				sleep random [0,1,2];
-				[_ammosource,_x,_veh] call GOM_fnc_handleAmmoCost;
-				_cargo = _ammosource getVariable ["GOM_fnc_ammoCargo",0];
-				//if (_cargo <= 0) exitwith {_abort = true;systemchat "Your ammo is depleted!"};
-				if (_maxamount < 24) then 
-				{
-					for "_i" from 0 to _maxamount do 
-					{
-						sleep random [0.1,0.5,1.5];
-						[_veh,[_foreachIndex + 1,_i]] remoteexec ["SetAmmoOnPylon",0];
-						if (_i > 0) then 
-						{
-							_sound = [_veh,_foreachIndex] call GOM_fnc_pylonSound;
-						};
-					};
-				} else 
-				{
-					[_veh,[_foreachIndex + 1,_maxamount]] remoteexec ["SetAmmoOnPylon",0] ;
-					_sound = [_veh,_foreachIndex] call GOM_fnc_pylonSound;
-				};
-			} forEach _pylons;
-			playSound "Click";
-			_ammosource setVariable ["GOM_fnc_aircraftLoadoutBusyAmmoSource",false,true];
-			_veh setVariable ["GOM_fnc_aircraftLoadoutRearmingInProgress",false,true];
-			if (_abort) exitWith {true};
-			_veh setVehicleAmmo 1;
-			systemchat "All pylons, counter measures and board guns rearmed!";
-			true
-		};
-		sleep random [0,2,5];
-		_check = _veh call GOM_fnc_rearmCheck;
-		_check params ["_abort","_text","_ammosource"];
-		if (_abort) exitWith {true};
-		_mounts = [];
+
 		{
-			_mount = [_veh,_forEachIndex+1,_x,_ammosource] spawn 
-			{
+			_pylonOwner = if (_pylonOwners isequalto []) then {[]} else {_pylonOwners select (_foreachindex + 1)};
+
+		[_veh,[_foreachindex+1,_x,true,_pylonOwner]] remoteexec ["setPylonLoadOut",0] ;
+		[_veh,[_foreachIndex + 1,0]] remoteexec ["SetAmmoOnPylon",0] ;
+		} foreach _pylons;
+
+
+		sleep random [0,1,2];
+_check = _veh call GOM_fnc_rearmCheck;
+_check params ["_abort","_text","_ammosource"];
+if (_abort) exitWith {true};
+{
+
+_mag = _activePylonMags select _forEachIndex;
+
+
+			_pylonOwners = _veh getVariable ["GOM_fnc_aircraftLoadoutPylonOwners",[]];
+			_pylonOwner = if (_pylonOwners isequalto []) then {[]} else {_pylonOwners select (_foreachindex + 1)};
+			_maxAmount = (_pylonAmmoCounts select _forEachIndex);
+
+		sleep random [0,1,2];
+
+		[_ammosource,_x,_veh] call GOM_fnc_handleAmmoCost;
+
+
+		_cargo = _ammosource getVariable ["GOM_fnc_ammoCargo",0];
+		if (_cargo <= 0) exitwith {_abort = true;systemchat "Your ammo is depleted!"};
+
+
+		if (_maxamount < 24) then {
+
+		for "_i" from 0 to _maxamount do {
+		sleep random [0.1,0.5,1.5];
+		[_veh,[_foreachIndex + 1,_i]] remoteexec ["SetAmmoOnPylon",0];
+		if (_i > 0) then {
+
+		_sound = [_veh,_foreachIndex] call GOM_fnc_pylonSound;
+		};
+		};
+		} else {
+
+		[_veh,[_foreachIndex + 1,_maxamount]] remoteexec ["SetAmmoOnPylon",0] ;
+		_sound = [_veh,_foreachIndex] call GOM_fnc_pylonSound;
+		};
+
+
+
+	} forEach _pylons;
+	playSound "Click";
+	_ammosource setVariable ["GOM_fnc_aircraftLoadoutBusyAmmoSource",false,true];
+	_veh setVariable ["GOM_fnc_aircraftLoadoutRearmingInProgress",false,true];
+	if (_abort) exitWith {true};
+	_veh setVehicleAmmo 1;
+	systemchat "All pylons, counter measures and board guns rearmed!";
+true
+};
+
+
+		sleep random [0,2,5];
+_check = _veh call GOM_fnc_rearmCheck;
+_check params ["_abort","_text","_ammosource"];
+if (_abort) exitWith {true};
+
+_mounts = [];
+	{
+
+
+
+			_mount = [_veh,_forEachIndex+1,_x,_ammosource] spawn {
 				params ["_veh","_ind","_mag","_ammosource"];
-				_maxAmount = getNumber (configfile >> "CfgMagazines" >> _mag >> "count");
-				sleep random [0,2,5];
-				[_ammosource,_mag,_veh] call GOM_fnc_handleAmmoCost;
-				_cargo = _ammosource getVariable ["GOM_fnc_ammoCargo",0];
-				//if (_cargo <= 0) exitwith {_abort = true;systemchat "Your ammo is depleted!"};
-				if (_maxamount < 24) then 
-				{
-					for "_i" from (_veh AmmoOnPylon _ind) to _maxamount do 
-					{
-						sleep random [0.1,0.5,1.5];
-						[_veh,[_ind,_i]] remoteexec ["SetAmmoOnPylon",0];
-						if (_i > 0) then 
-						{
-							_sound = [_veh,_ind - 1] call GOM_fnc_pylonSound;
-						}
-					};
-				} else 
-				{
-					[_veh,[_ind,_maxamount]] remoteexec ["SetAmmoOnPylon",0];
-					_sound = [_veh, _ind - 1] call GOM_fnc_pylonSound;
-				};
-			};
-			_mounts pushback _mount;
-		} forEach _activePylonMags;
-		waituntil {!alive _veh OR {scriptdone _x} count _mounts isequalto count _mounts};
-		_ammosource setVariable ["GOM_fnc_aircraftLoadoutBusyAmmoSource",false,true];
-		playSound "Click";
-		_veh setVariable ["GOM_fnc_aircraftLoadoutRearmingInProgress",false,true];
-		if (_abort) exitWith {true};
-		_veh setVehicleAmmo 1;
-		systemchat "All pylons, counter measures and board guns rearmed!";
+
+	_maxAmount = getNumber (configfile >> "CfgMagazines" >> _mag >> "count");
+		sleep random [0,2,5];
+
+
+
+		[_ammosource,_mag,_veh] call GOM_fnc_handleAmmoCost;
+
+		_cargo = _ammosource getVariable ["GOM_fnc_ammoCargo",0];
+		if (_cargo <= 0) exitwith {_abort = true;systemchat "Your ammo is depleted!"};
+
+		if (_maxamount < 24) then {
+
+		for "_i" from (_veh AmmoOnPylon _ind) to _maxamount do {
+		sleep random [0.1,0.5,1.5];
+				[_veh,[_ind,_i]] remoteexec ["SetAmmoOnPylon",0];
+
+		if (_i > 0) then {
+
+		_sound = [_veh,_ind - 1] call GOM_fnc_pylonSound;
+		}
+		};
+		} else {
+				[_veh,[_ind,_maxamount]] remoteexec ["SetAmmoOnPylon",0];
+
+		_sound = [_veh, _ind - 1] call GOM_fnc_pylonSound;
+		};
 	};
+	_mounts pushback _mount;
+
+	} forEach _activePylonMags;
+	waituntil {!alive _veh OR {scriptdone _x} count _mounts isequalto count _mounts};
+	_ammosource setVariable ["GOM_fnc_aircraftLoadoutBusyAmmoSource",false,true];
+	playSound "Click";
+	_veh setVariable ["GOM_fnc_aircraftLoadoutRearmingInProgress",false,true];
+	if (_abort) exitWith {true};
+	_veh setVehicleAmmo 1;
+
+	systemchat "All pylons, counter measures and board guns rearmed!";
+
+};
 true
 };
 
@@ -1483,7 +1389,7 @@ GOM_fnc_aircraftGetSerialNumber = {
 
 };
 
-GOM_fnc_aircraftSetSerialNumber = {
+/*GOM_fnc_aircraftSetSerialNumber = {
 
 
 	params [["_veh",call compile (lbData [1500,lbcursel 1500])],["_number",ctrltext 1400]];
@@ -1525,7 +1431,7 @@ GOM_fnc_aircraftSetSerialNumber = {
 	_vehDispName = getText (configfile >> "CfgVehicles" >> typeof _veh >> "displayName");
 	systemchat format ["Changed %1 tail number to: %2",_vehDispName,str _number];
 
-};
+};*/
 
 
 //using BIS_fnc_numberDigits for _yeararray: 0.0742 ms
@@ -1591,7 +1497,7 @@ GOM_fnc_titleText = {
 	_t = toString [71,114,117,109,112,121,32,79,108,100,32,77,97,110,115,32,65,105,114,99,114,97,102,116,32,76,111,97,100,111,117,116];
 
 	_time = [daytime,"HH:MM:SS"] call BIS_fnc_timeToString;
-	_text = format ["<t align='left' t size='0.75'>%1Grid ""%2""<t align='center'>--- %3 ---<t align='right'>%4<br />%5",_nearestloc,_coords,_t,_date,_time];
+	_text = format ["<t align='left' size='0.75'>%1Grid ""%2""<t align='center'>--- %3 ---<t align='right'>%4<br />%5",_nearestloc,_coords,_t,_date,_time];
 
 
 	(finddisplay 66 displayctrl 1101) ctrlSetStructuredText parsetext _text;
@@ -1820,7 +1726,7 @@ GOM_fnc_updatePresetLB = {
 	_veh = call compile  lbData [1500,lbcursel 1500];
 	_presets = profileNamespace getVariable ["GOM_fnc_aircraftLoadoutPresets",[]];
 
-	_validPresets = _presets select {_x select 0 isequalTo typeof _veh};
+	_validPresets = _presets select {_x#0 isequalTo typeof _veh AND _x#8 isEqualTo GOM_fnc_allowAllPylons};
 	lbClear 2101;
 	{
 
@@ -1977,7 +1883,7 @@ GOM_fnc_aircraftLoadoutSavePreset = {
 		_pylonOwners = _veh getVariable ["GOM_fnc_aircraftLoadoutPylonOwners",[]];
 	_priorities = _veh getVariable ["GOM_fnc_pylonPriorities",[]];
 
-	_preset = [typeof _veh,ctrlText 1401,GetPylonMagazines _veh,((GetPylonMagazines _veh) apply {_index = _index + 1;_veh AmmoOnPylon _index}),[lbText [2100,lbCursel 2100],getObjectTextures _veh],_pylonOwners,_priorities,[_veh] call GOM_fnc_aircraftGetSerialNumber];
+	_preset = [typeof _veh,ctrlText 1401,GetPylonMagazines _veh,((GetPylonMagazines _veh) apply {_index = _index + 1;_veh AmmoOnPylon _index}),[lbText [2100,lbCursel 2100],getObjectTextures _veh],_pylonOwners,_priorities,[_veh] call GOM_fnc_aircraftGetSerialNumber,GOM_fnc_allowAllPylons];
 
 	if (!(_presets isEqualTo []) AND {count (_presets select {ctrlText 1401 isequalTo (_x select 1)}) > 0}) exitWith {systemchat "Preset exists! Chose another name!";playsound "Simulation_Fatal"};
 
@@ -2020,8 +1926,9 @@ GOM_fnc_aircraftLoadoutLoadPreset = {
 	if (lbCursel 2101 < 0) exitWith {systemchat "No preset selected."};
 	_veh = call compile  lbData [1500,lbcursel 1500];
 	_presets = profileNamespace getVariable ["GOM_fnc_aircraftLoadoutPresets",[]];
-	_preset = (_presets select {(_x select 0) isEqualTo typeOf _veh AND (_x select 1) isEqualTo lbText [2101,lbcursel 2101]}) select 0;
-	_preset params ["_vehType","_presetName","_pylons","_pylonAmmoCounts","_textureParams","_pylonOwners","_pylonPriorities",["_serialNumber","N/A"]];
+	_preset = (_presets select {(_x#0) isEqualTo typeOf _veh AND (_x#1) isEqualTo lbText [2101,lbcursel 2101] AND (_x#8 isEqualTo GOM_fnc_allowAllPylons)}) select 0;
+	_preset params ["_vehType","_presetName","_pylons","_pylonAmmoCounts","_textureParams","_pylonOwners","_pylonPriorities",["_serialNumber","N/A"],["_restrictedLoadout",GOM_fnc_allowAllPylons]];
+
 	[_veh,_serialNumber] call GOM_fnc_aircraftSetSerialNumber;
 	[_obj,true,_pylons,_pylonAmmoCounts] call	GOM_fnc_setPylonsRearm;
 	[_veh,_pylonPriorities] remoteExec ["setPylonsPriority",0,true];
@@ -2042,7 +1949,7 @@ GOM_fnc_updateVehiclesLB = {
 	params ["_obj"];
 
 
-	_vehicles = (_obj nearEntities [["Car_F", "Tank_F", "Air"],50]) select {speed _x < 5 AND {alive _x} AND {isTouchingGround _x}};
+	_vehicles = (_obj nearEntities ["Air",50]) select {speed _x < 5 AND {alive _x} AND {isTouchingGround _x}};
 	_lastVehs = _obj getVariable ["GOM_fnc_setPylonLoadoutVehicles",[]];
 	if (_vehicles isEqualTo []) exitWith {true};
 	if (_vehicles isEqualTo _lastVehs AND !(lbsize 1500 isequalto 0)) exitWith {true};//only update this when really needed, called on each frame
@@ -2201,6 +2108,7 @@ if (GOM_fnc_removeFuelFromMapObjects) then {
 };
 
 };
+
 
 
 true

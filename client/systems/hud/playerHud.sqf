@@ -167,10 +167,12 @@ while {true} do
 	_vitals ctrlSetStructuredText parseText _str;
 	_vitals ctrlSetPosition _vitalsPos;
 	_vitals ctrlCommit 0;
-
-	_tempString = "";
-	_yOffset = _yOffsetVitals + 0.04;
 	*/
+	
+	/*
+	_yOffset = _yOffsetVitals + 0.04;
+	
+	_tempString = "";
 
 	if (isStreamFriendlyUIEnabled) then
 	{
@@ -199,7 +201,9 @@ while {true} do
 			} forEach crew _vehicle;
 		};
 	};
-
+	
+	*/
+	
 	/*_hudVehiclePos = ctrlPosition _hudVehicle;
 	_hudVehiclePos set [1, safeZoneY + safeZoneH - _yOffset]; // x
 	_hudVehiclePos set [3, _yOffset - _yOffsetVitals]; // h

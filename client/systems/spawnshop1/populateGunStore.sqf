@@ -21,6 +21,9 @@ _ammoBtn = _dialog displayCtrl gunshop_but_butammo;
 _ammoLbl = _dialog displayCtrl gunshop_ammo_TEXT;
 _gunDesc = _dialog displayCtrl gunshop_gun_desc;
 
+//_wepFilterText = _dialog displayCtrl SSgunshop_WeaponFilterText_IDC;
+//_wepFilterDropdown = _dialog displayCtrl SSgunshop_WeaponFilterDropdown_IDC;
+
 _ammoLbl ctrlSetText "";
 
 lbClear _gunlist;
@@ -28,6 +31,7 @@ lbClear _ammolist;
 _gunlist lbSetCurSel -1;
 
 _showAmmo = false;
+_wepFilter = false;
 
 _playerSideNum = switch (playerSide) do
 {
@@ -81,14 +85,17 @@ switch(_switch) do
 	case 8:
 	{
 		_itemsArray = call accessoriesArray;
+		_wepFilter = true;
 	};
 	case 9:
 	{
 		_itemsArray = call ssscopesArray;
+		_wepFilter = true;
 	};
 	case 10:
 	{
 		_itemsArray = call silencersArray;
+		_wepFilter = true;
 	};
 	default
 	{

@@ -65,6 +65,16 @@ updateTerritoryMarkers = "territory\client\updateTerritoryMarkers.sqf" call mf_c
 vehicleSideCfg = "client\functions\vehicleSideCfg.sqf" call mf_compile;
 weaponDisassembledEvent = "client\functions\weaponDisassembledEvent.sqf" call mf_compile;
 
+//GearLevels
+GearLevel1 = "client\functions\loadout\GearLevel1.sqf" call mf_compile;
+GearLevel2 = "client\functions\loadout\GearLevel2.sqf" call mf_compile;
+GearLevel3 = "client\functions\loadout\GearLevel3.sqf" call mf_compile;
+GearLevel4 = "client\functions\loadout\GearLevel4.sqf" call mf_compile;
+GearLevel5 = "client\functions\loadout\GearLevel5.sqf" call mf_compile;
+GearLevel6 = "client\functions\loadout\GearLevel6.sqf" call mf_compile;
+GearLevel7 = "client\functions\loadout\GearLevel7.sqf" call mf_compile;
+GearLevel8 = "client\functions\loadout\GearLevel8.sqf" call mf_compile;
+
 // Player details and actions
 loadPlayerMenu = "client\systems\playerMenu\init.sqf" call mf_compile;
 playerSpawn = "client\functions\playerSpawn.sqf" call mf_compile;

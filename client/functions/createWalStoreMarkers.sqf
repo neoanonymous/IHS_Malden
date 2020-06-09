@@ -229,7 +229,7 @@ _setStatus =
 		};
 	};
 
-	if (["A3W_gunStoreIntruderWarning"] call isConfigOn) then
+	if (["A3W_WalMartIntruderWarning"] call isConfigOn) then
 	{
 		if((_this select 2) && ((_this select 1) in ["ENEMY", "MIXED"])) then {
 			hintSilent parseText format ["<t size='2' color='#ff0000'>%1</t><br/><br/>%2.","Warning!","Enemy player just entered the area"];

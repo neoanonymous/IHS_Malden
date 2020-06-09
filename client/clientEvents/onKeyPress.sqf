@@ -99,6 +99,21 @@ switch (true) do
 		};
 	};
 	
+	// Earplugs - Del Key
+	case (_key in A3W_customKeys_earPlugs_del):
+	{
+		if (soundVolume > 0.5) then
+		{
+			0.5 fadeSound 0.01;
+			["You've inserted your earplugs.", 5] call mf_notify_client;
+		}
+		else
+		{
+			0.5 fadeSound 1;
+			["You've taken out your earplugs.", 5] call mf_notify_client;
+		};
+	};
+	
 	
 };
 

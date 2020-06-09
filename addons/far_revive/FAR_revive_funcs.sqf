@@ -4,7 +4,7 @@
 #include "FAR_defines.sqf"
 #include "gui_defines.hpp"
 
-#define FAR_Max_Distance 2.5
+#define FAR_Max_Distance 3
 #define FAR_Revive_Duration 10 //seconds
 
 ////////////////////////////////////////////////

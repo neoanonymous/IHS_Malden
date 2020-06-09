@@ -286,6 +286,8 @@ if (isPlayer _unit) then
 	_unit setVariable ["ace_sys_wounds_uncon", true];
 };
 
+closeDialog 0;
+
 _unit spawn
 {
 	_unit = _this;
@@ -470,6 +472,7 @@ if (alive _unit && !UNCONSCIOUS(_unit)) then // Player got revived
 	if (_unitWeapon == secondaryWeapon _unit) then { _unitWeapon = primaryWeapon _unit };
 	if (_unitWeapon == "") then { _unitWeapon = handgunWeapon _unit };
 	_unit selectWeapon _unitWeapon;
+	[_unit, "amovppnemstpsraswrfldnon"] call switchMoveGlobal;
 }
 else // Player bled out
 {

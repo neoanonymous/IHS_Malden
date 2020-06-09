@@ -45,6 +45,8 @@ switch (toLower _type) do
 			_moneyObj = createVehicle ["Land_Money_F", [_player, [0,1,0]] call relativePos, [], 0, "CAN_COLLIDE"];
 			_moneyObj setVariable ["cmoney", _amount, true];
 			_moneyObj setVariable ["owner", "world", true];
+			sleep 3;
+			_moneyObj enableSimulation false;
 			[_moneyObj] spawn A3W_fnc_setItemCleanup;
 
 			_result = _amount;

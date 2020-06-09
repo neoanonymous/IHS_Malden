@@ -51,3 +51,5 @@ spawn
 		uiSleep 0.1;
 	};
 };
+
+playsound "O_ATM";

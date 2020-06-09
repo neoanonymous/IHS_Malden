@@ -7,8 +7,8 @@
 //						this may deter players from logging out as a high-value-target (toggable on/off via #define). Added in condition
 //						to disable abort/respawn buttons if player is a HVT. once player drops money, HVT condition is reset and marker deleted.
 
-#define HVT_AMOUNT 650000  // how much a player needs to be carrying to become a HVT
-#define HINT_DELAY 60  // number of seconds between each HVT reminder hint
+#define HVT_AMOUNT 75000  // how much a player needs to be carrying to become a HVT
+#define HINT_DELAY 5  // number of seconds between each HVT reminder hint
 #define MARKER_REFRESH 5  // number of seconds between each HVT marker refresh
 #define __PUNISH_HVT_LOGOUT__ // punish user if logged out as HVT?
 #define __PREVENT_HVT_LOGOUT__ // disables the abort and respawn button if player is marked as a HVT

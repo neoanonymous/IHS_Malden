@@ -50,7 +50,7 @@ if (hasInterface) then
 		};
 		case (["WalMart", _npcName] call _startsWith):
 		{
-			_npc addAction ["<img image='client\icons\store.paa'/> Open WALMART", "client\systems\walmart\loadgunStore.sqf", [], 1, true, true, "", STORE_ACTION_CONDITION];
+			_npc addAction ["<img image='client\icons\store.paa'/> Open WALMART", "client\systems\walmart\loadgunStore1.sqf", [], 1, true, true, "", STORE_ACTION_CONDITION];
 			_npc addAction ["Open PLS", "[] call pAx_fnc_initGUI", [], 1, true, true, "", STORE_ACTION_CONDITION];
 		};
 		case (["spawnshop", _npcName] call _startsWith):

@@ -111,11 +111,17 @@ if (hasInterface || isServer) then
 };
 
 // Remove line drawings from map
-(createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
+/*(createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
 [
 	"!triggerActivated thisTrigger", 
 	"thisTrigger setTriggerTimeout [30,30,30,false]",
 	"{if (markerShape _x == 'POLYLINE') then {deleteMarker _x}} forEach allMapMarkers"
-];
+];*/
 
-enableDynamicSimulationSystem true;
+//Remove those bastrad small walls
+/*
+Land_Concrete_SmallWall_8m_F
+Land_Concrete_SmallWall_4m_F
+_x isKindOf "Land_Concrete_SmallWall_4m_F" ||
+*/
+

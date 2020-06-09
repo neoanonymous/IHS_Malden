@@ -1,4 +1,4 @@
-//GOM_fnc_aircraftLoadout V1.34 made by Grumpy Old Man 17-5-2017
+//GOM_fnc_aircraftLoadout V1.342 made by Grumpy Old Man 17-5-2017
 #define GUI_GRID_X      (0)
 #define GUI_GRID_Y      (0)
 #define GUI_GRID_W      (0.025)

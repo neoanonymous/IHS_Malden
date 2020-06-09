@@ -70,7 +70,7 @@ class wvehshopd
 		/*
 		class PlayerMoneyText: w_RscText
 		{
-			idc = wvehshop_money;
+			idc = vehshop_money;
 			text = "Cash:";
 			sizeEx = 0.04 * TEXT_SCALE;
 
@@ -202,7 +202,7 @@ class wvehshopd
 
 		class StoreButton0: w_RscButton
 		{
-			idc = wvehshop_button0;
+			idc = vehshop_button0;
 			action = "[0] call populateVehicleStore";
 			text = "Land";
 			sizeEx = VehStoreButton_textSize;
@@ -215,7 +215,7 @@ class wvehshopd
 
 		class StoreButton1: w_RscButton
 		{
-			idc = wvehshop_button1;
+			idc = vehshop_button1;
 			action = "[1] call populateVehicleStore";
 			text = "Armored";
 			sizeEx = VehStoreButton_textSize;
@@ -228,7 +228,7 @@ class wvehshopd
 
 		class StoreButton2: w_RscButton
 		{
-			idc = wvehshop_button2;
+			idc = vehshop_button2;
 			action = "[2] call populateVehicleStore";
 			text = "Tanks";
 			sizeEx = VehStoreButton_textSize;
@@ -241,7 +241,7 @@ class wvehshopd
 
 		class StoreButton3: w_RscButton
 		{
-			idc = wvehshop_button3;
+			idc = vehshop_button3;
 			action = "[3] call populateVehicleStore";
 			text = "Helicopters";
 			sizeEx = VehStoreButton_textSize;
@@ -254,7 +254,7 @@ class wvehshopd
 		
 		class StoreButton4: w_RscButton
 		{
-			idc = wvehshop_button4;
+			idc = vehshop_button3;
 			action = "[4] call populateVehicleStore";
 			text = "Attack Heli's";
 			sizeEx = VehStoreButton_textSize;
@@ -267,7 +267,7 @@ class wvehshopd
 
 		class StoreButton5: w_RscButton
 		{
-			idc = wvehshop_button5;
+			idc = vehshop_button4;
 			action = "[5] call populateVehicleStore";
 			text = "Planes";
 			sizeEx = VehStoreButton_textSize;
@@ -280,7 +280,7 @@ class wvehshopd
 		
 		class StoreButton6: w_RscButton
 		{
-			idc = wvehshop_button6;
+			idc = vehshop_button4;
 			action = "[6] call populateVehicleStore";
 			text = "UAV's";
 			sizeEx = VehStoreButton_textSize;
@@ -293,7 +293,7 @@ class wvehshopd
 
 		class StoreButton7: w_RscButton
 		{
-			idc = wvehshop_button7;
+			idc = vehshop_button5;
 			action = "[7] call populateVehicleStore";
 			text = "Boats";
 			sizeEx = VehStoreButton_textSize;

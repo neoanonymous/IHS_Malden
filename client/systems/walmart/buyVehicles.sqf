@@ -182,6 +182,15 @@ storePurchaseHandle = _this spawn
 	{
 		missionNamespace setVariable [_requestKey, nil];
 	};
+	
+	if (_vehicle isKindOf "C_Hatchback_01_sport_F")then
+	{
+		playSound "ZoomZoom";
+	}
+	else
+	{
+		playSound "FD_Finish_F";
+	};
 
 	sleep 0.5; // double-click protection
 };

@@ -113,7 +113,7 @@ storeSellingHandle = _this spawn
 		[player, _sellValue] call A3W_fnc_setCMoney;
 
 		hint format ['You sold the inventory of "%1" for $%2', _objName, _sellValue];
-		playSound "FD_Finish_F";
+		playSound "SellCrate";
 	};
 };
 
