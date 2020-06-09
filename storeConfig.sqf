@@ -2001,7 +2001,7 @@ uavPlanesArray = compileFinal str
 	
 	["Mk-49 Spartan SAM",                                                 "B_SAM_System_01_F",                            52500, "variant_sam1", "HIDDEN"],
 	["Praetorian 1C AAA",                                                 "B_AAA_System_01_F",                            22500, "variant_sam2", "HIDDEN"],
-	[Mk21 Centurion",													  "B_SAM_System_02_F",							  85000, "variant_sam3", "HIDDEN"]
+	["Mk21 Centurion",													  "B_SAM_System_02_F",							  85000, "variant_sam3", "HIDDEN"]
 	//["MQ4A Greyhawk Bomber UAV", "B_UAV_02_dynamicLoadout_F", 250000, "vehicle", "variant_greyhawkBomber"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones
 	//["K40 Ababil-3 Bomber UAV", "O_UAV_02_dynamicLoadout_F", 250000, "vehicle", "variant_greyhawkBomber"],
 	//["K40 Ababil-3 Bomber UAV", "I_UAV_02_dynamicLoadout_F", 250000, "vehicle", "variant_greyhawkBomber"],
