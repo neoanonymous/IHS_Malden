@@ -5,10 +5,10 @@ private ["_messages", "_timeout"];
 _messages = [
 	["Welcome", (name player)],
 	["IHS Wasteland+", worldName],
-	["Inviting Friends", "Inviting friends allows for more heads to be deaded, so invite em all!  Lets get this server to #1 US wasteland server."],
+	["Inviting Friends", "Inviting friends allows for more FUN for everyone, so invite em all!  Lets get this server to #1 US wasteland server."],
 	
 	
-	//["Invite A Friend", "If you invite a new friend onto the server you and them get 50k."],
+	["Invite A Friend", "If you invite a new friend onto the server you and them get 300k."],
 	//["New Player Bonus", "Our admins will give new players 100k to help them as a freshie."],
 	//["Bank Transfer", "To transfer from Fractured Wasteland, TrailerPark and CGC, just ask an admin for more details."],
 	//["Bounty Bonus Invite", "If you invite a friend or player onto the server from Fractured Wasteland, TrailerPark or CGC, you and them will get 2.5 million."],
