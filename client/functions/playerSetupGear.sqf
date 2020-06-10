@@ -55,10 +55,10 @@ switch (true) do
 		removeAllWeapons _player;
 		
 		// TRG21
-		_player addMagazines ["30Rnd_556x45_Stanag", 7]; //Add mags first so that gun comes with one in the mag weld.
-		_player addWeapon "arifle_Mk20C_plain_F"; //The Weapon.
-		_player addPrimaryWeaponItem  "optic_Aco"; //The Scope.
-		_player selectWeapon "arifle_Mk20C_plain_F"; //Selects Weapon To Have it at the ready.
+		_player addMagazines ["50Rnd_570x28_SMG_03", 7]; //Add mags first so that gun comes with one in the mag weld.
+		_player addWeapon "SMG_03C_TR_hex"; //The Weapon.
+		_player addPrimaryWeaponItem  "optic_Aco_smg"; //The Scope.
+		_player selectWeapon "SMG_03C_TR_hex"; //Selects Weapon To Have it at the ready.
 
 		//Handgun
 		_player addMagazines ["9Rnd_45ACP_Mag", 5],; //Add mags first so that gun comes with one in the mag weld.
@@ -75,10 +75,11 @@ switch (true) do
 		removeAllWeapons _player;
 
 		// TRG21
-		_player addMagazines ["30Rnd_556x45_Stanag", 7]; //Add mags first so that gun comes with one in the mag weld.
-		_player addWeapon "arifle_Mk20C_plain_F"; //The Weapon.
-		_player addPrimaryWeaponItem  "optic_Aco"; //The Scope.
-		_player selectWeapon "arifle_Mk20C_plain_F"; //Selects Weapon To Have it at the ready.
+		_player addMagazines ["30Rnd_580x42_Mag_Tracer_F", 7]; //Add mags first so that gun comes with one in the mag weld.
+		_player addMagazines ["1Rnd_HE_Grenade_shell", 7]; //Add mags first so that gun comes with one in the mag weld.
+		_player addWeapon "arifle_CTAR_GL_ghex_F"; //The Weapon.
+		_player addPrimaryWeaponItem  "optic_SOS"; //The Scope.
+		_player selectWeapon "arifle_CTAR_GL_ghex_F"; //Selects Weapon To Have it at the ready.
 
 		//Handgun
 		_player addMagazines ["9Rnd_45ACP_Mag", 5],; //Add mags first so that gun comes with one in the mag weld.
@@ -100,10 +101,10 @@ switch (true) do
 		removeAllWeapons _player;
 		
 		// TRG21
-		_player addMagazines ["30Rnd_556x45_Stanag", 7]; //Add mags first so that gun comes with one in the mag weld.
-		_player addWeapon "arifle_TRG21_F"; //The Weapon.
-		_player addPrimaryWeaponItem  "optic_SOS"; //The Scope.
-		_player selectWeapon "arifle_TRG21_F"; //Selects Weapon To Have It At The Ready.
+		_player addMagazines ["20Rnd_762x51_Mag", 7]; //Add mags first so that gun comes with one in the mag weld.
+		_player addWeapon "srifle_EBR_F"; //The Weapon.
+		_player addPrimaryWeaponItem  "optic_Arco_arid_F"; //The Scope.
+		_player selectWeapon "srifle_EBR_F"; //Selects Weapon To Have It At The Ready.
 
 		//Handgun
 		_player addMagazines ["9Rnd_45ACP_Mag", 5],; //Add mags first so that gun comes with one in the mag weld.
