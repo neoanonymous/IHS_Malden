@@ -2041,7 +2041,7 @@ boatsArray = compileFinal str
 	["SDV Submarine (AAF)",                                               "I_SDV_01_F",                                   100, "submarine", "SKIPSAVE"]
 ];
 
-allVehStoreVehicles = compileFinal str (call landArray + call armoredArray + call tanksArray + call helicoptersArray + call planesArray + call boatsArray);
+allVehStoreVehicles = compileFinal str (call landArray + call armoredArray + call tanksArray + call helicoptersArray + call planesArray + call boatsArray + call uavPlanesArray + call attackHelicoptersArray);
 
 uavArray = compileFinal str
 [
