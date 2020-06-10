@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=642;
+		nextID=646;
 	};
 	class Camera
 	{
-		pos[]={8037.6802,58.9557,10566.065};
-		dir[]={0.62767464,-0.61326617,0.47957927};
-		up[]={0.48730209,0.78987533,0.37232658};
-		aside[]={0.60714531,4.8245056e-007,-0.79463273};
+		pos[]={8069.2617,66.062836,10615.818};
+		dir[]={0.30752808,-0.43786141,0.84485173};
+		up[]={0.1497709,0.89903718,0.41145593};
+		aside[]={0.9397161,6.4691994e-007,-0.34205851};
 	};
 };
 binarizationWanted=0;
@@ -11102,8 +11102,8 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls1 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls1";
+				init="vls5 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls5";
 				disableSimulation=1;
 			};
 			id=2070;
@@ -11138,21 +11138,21 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8051.311,29.21446,10087.23};
-				angles[]={0,3.1505029,0};
+				position[]={8051.311,29.214169,10087.23};
+				angles[]={0,3.1505113,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls2 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]; [this] call A3W_fnc_setupMissionObject;";
-				name="vls2";
+				init="vls6 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]; [this] call A3W_fnc_setupMissionObject;";
+				name="vls6";
 				disableSimulation=1;
 			};
 			id=2072;
 			type="Land_Billboard_02_blank_F";
-			atlOffset=-1.6177101;
+			atlOffset=-1.6180019;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11190,8 +11190,8 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls6 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls6";
+				init="vls1 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls1";
 				disableSimulation=1;
 			};
 			id=2080;
@@ -11298,8 +11298,8 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls7 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls7";
+				init="vls10 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls10";
 				disableSimulation=1;
 			};
 			id=2506;
@@ -11940,8 +11940,8 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls9 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls9";
+				init="vls8 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls8";
 				disableSimulation=1;
 			};
 			id=2571;
@@ -12191,8 +12191,8 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls12 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls12";
+				init="vls3 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls3";
 				disableSimulation=1;
 			};
 			id=2593;
@@ -15508,20 +15508,21 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3619.6929,33.687019,3430.3777};
-				angles[]={0,2.8504696,0};
+				position[]={3619.6931,33.687023,3430.3779};
+				angles[]={0,2.8504717,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls13 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls13";
+				init="vls11 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls11";
 				disableSimulation=1;
 			};
 			id=2882;
 			type="Land_Billboard_02_blank_F";
+			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -17938,8 +17939,8 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls14 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls14";
+				init="vls7 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls7";
 				disableSimulation=1;
 			};
 			id=3044;
@@ -18176,20 +18177,20 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4983.3608,25.238165,1062.6594};
+				position[]={4983.3608,25.237633,1062.6591};
 				angles[]={0,6.2649989,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls3 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls3";
+				init="vls12 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls12";
 				disableSimulation=1;
 			};
 			id=3077;
 			type="Land_Billboard_02_blank_F";
-			atlOffset=45.79047;
+			atlOffset=45.790001;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20505,20 +20506,20 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11981.289,25.50705,5091.6802};
-				angles[]={0,0.96901631,0};
+				position[]={11981.289,25.507147,5091.6802};
+				angles[]={0,0.96902424,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls11 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls11";
+				init="vls15 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls15";
 				disableSimulation=1;
 			};
 			id=3376;
 			type="Land_Billboard_02_blank_F";
-			atlOffset=56.975906;
+			atlOffset=56.976002;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23570,20 +23571,20 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12062.68,25.506063,4935.6587};
+				position[]={12062.68,25.505816,4935.6592};
 				angles[]={6.2827492,0.97638953,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls11 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls11_2";
+				init="vls14 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls14";
 				disableSimulation=1;
 			};
 			id=4934;
 			type="Land_Billboard_02_blank_F";
-			atlOffset=43.494289;
+			atlOffset=43.493999;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23613,20 +23614,20 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5158.3525,25.226038,1044.5863};
+				position[]={5158.353,25.226381,1044.5861};
 				angles[]={0,6.2649989,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls3 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls3_1";
+				init="vls13 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls13";
 				disableSimulation=1;
 			};
 			id=4936;
 			type="Land_Billboard_02_blank_F";
-			atlOffset=32.779625;
+			atlOffset=32.780212;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23668,21 +23669,21 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={817.15234,24.042267,697.8111};
-				angles[]={0,1.537622,-0};
+				position[]={817.15198,24.042459,697.81097};
+				angles[]={0,1.5376176,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls7 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls7_1";
+				init="vls9 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls9";
 				disableSimulation=1;
 			};
 			id=4938;
 			type="Land_Billboard_02_blank_F";
-			atlOffset=0.0090618134;
+			atlOffset=0.0092544556;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23724,21 +23725,21 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8092.7656,32.00444,10695.148};
-				angles[]={0,1.4798114,-0};
+				position[]={8092.7661,32.004883,10695.148};
+				angles[]={0,1.4798124,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls1 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls1_1";
+				init="vls4 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls4";
 				disableSimulation=1;
 			};
 			id=4941;
 			type="Land_Billboard_02_blank_F";
-			atlOffset=0.009557724;
+			atlOffset=0.010000229;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23780,7 +23781,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1271.3584,29.347446,12335.399};
+				position[]={1271.358,29.347746,12335.399};
 				angles[]={0,0.015725417,0};
 			};
 			side="Empty";
@@ -23788,13 +23789,13 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="vls1 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
-				name="vls1_2";
+				init="vls2 addAction [""VLS Menu"",{params [""_caller""];[_caller] spawn GOM_fnc_aircraftLoadout},[],0,true,true,"""",""""]; this allowdamage false; this setObjectTexture [0, ""mapConfig\vls.jpg""]";
+				name="vls2";
 				disableSimulation=1;
 			};
 			id=4943;
 			type="Land_Billboard_02_blank_F";
-			atlOffset=-0.10626602;
+			atlOffset=-0.10599899;
 			class CustomAttributes
 			{
 				class Attribute0
