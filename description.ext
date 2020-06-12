@@ -76,6 +76,7 @@ briefing = 0; // if 0, skip Continue button
 #include "addons\GOM\dialogs\GOM_dialog_controls.hpp"
 #include "addons\PlayerLoadOutSystem\gui\loadoutgui.hpp" // PLS
 #include "addons\PlayerLoadOutSystem\gui\loadoutguiss.hpp" // PLS
+#include "addons\laptop\downloadData.hpp" //Hack top
 //Walmart block
 #include "client\systems\walmart\dialog\wgunshop_settings.hpp"
 #include "client\systems\walmart\dialog\wgenstore_settings.hpp"

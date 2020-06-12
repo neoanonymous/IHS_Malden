@@ -54,7 +54,7 @@ _setupObjects =
 	_laptop setVariable [ "Done", false, true ];
 
 	_aiGroup = createGroup CIVILIAN;
-	[_aiGroup,_missionPos,24,20] spawn createCustomGroup3;
+	[_aiGroup,_missionPos,24,20] spawn createCustomGroup;
 
 	_aiGroup setCombatMode "RED";
 	_aiGroup setBehaviour "COMBAT";
