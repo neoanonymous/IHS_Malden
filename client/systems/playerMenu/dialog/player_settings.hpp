@@ -95,6 +95,15 @@ class playerSettings {
 			x = 0.03; y = 0.40;
 			w = 0.3; h = 0.02;
 		};*/
+		
+		class btnCompass : w_RscButton {
+			idc = -1;
+			text = "Compass";
+			tooltip = "Set and save compass settings to client";
+			onButtonClick = "[] execVM 'addons\compass\settings.sqf'";
+			x = 0.02; y = 0.425;
+			w = 0.16; h = 0.033 * safezoneH;
+		};
 
 		class uptimeText : w_RscText {
 			idc = uptime_text;
