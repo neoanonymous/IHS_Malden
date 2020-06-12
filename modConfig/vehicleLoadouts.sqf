@@ -903,13 +903,19 @@ switch (true) do
 			["12Rnd_125mm_HEAT", [0]],
 			["12Rnd_125mm_HEAT", [0]],
 			["12Rnd_125mm_HE", [0]],
-			["12Rnd_125mm_HE", [0]]
+			["12Rnd_125mm_HE", [0]],
+			
+			["Missile_AGM_01_F", [0]],
+			["Missile_AGM_01_F", [0]],
+			["Missile_AGM_01_F", [0]],
+			["Missile_AGM_01_F", [0]]
 		];
 		_weapons =
 		[
 			["cannon_125mm", [0]],
 			["missiles_titan", [0]],
-			["LMG_coax", [0]]
+			["LMG_coax", [0]],
+			["Missile_AGM_01_Plane_CAS_02_F", [0]]
 		];
 		_customCode =
 		{

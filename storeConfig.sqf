@@ -1895,6 +1895,8 @@ tanksArray = compileFinal str
 	
 	["T-100 Varsuk",                                                      "O_MBT_02_cannon_F",                            15000, "vehicle"],
 	
+	["T-100 AA Varsuk",                                                   "O_MBT_02_cannon_F",                            40000, "vehicle", "variant_AAT100"],
+	
 	["MBT-52 Kuma",                                                       "I_MBT_03_cannon_F",                            13000, "vehicle"],
 	
 	["T-140 Angara Sand",                                                 "O_MBT_04_cannon_F",                            15000, "vehicle"],
