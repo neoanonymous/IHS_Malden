@@ -872,6 +872,8 @@ headArray = compileFinal str
 	["Crew Helmet (NATO)",                                                "H_HelmetCrew_B",                               60, "hat"],
 	["Crew Helmet (CSAT)",                                                "H_HelmetCrew_O",                               60, "hat"],
 	["Crew Helmet (AAF)",                                                 "H_HelmetCrew_I",                               60, "hat"],
+	["Crew Helmet (Soft)(LDF)",                                           "Headgear_H_Tank_eaf_F",                        60, "hat"],
+	["Crew Helmet (LDF)",                                                 "Headgear_H_HelmetCrew_I_E",                    60, "hat"],
 	["Heli Pilot Helmet (NATO)",                                          "H_PilotHelmetHeli_B",                          50, "hat"],
 	["Heli Pilot Helmet (CSAT)",                                          "H_PilotHelmetHeli_O",                          50, "hat"],
 	["Heli Pilot Helmet (AAF)",                                           "H_PilotHelmetHeli_I",                          50, "hat"],
@@ -919,6 +921,7 @@ headArray = compileFinal str
 	["Booniehat (Green)",                                                 "H_Booniehat_grn",                              10, "hat"],
 	["Booniehat (Khaki)",                                                 "H_Booniehat_indp",                             10, "hat"],
 	["Booniehat (AAF)",                                                   "H_Booniehat_dgtl",                             10, "hat"],
+	["Booniehat (LDF)",                                                   "Headgear_H_Booniehat_eaf",                     10, "hat"],
 	["Booniehat (Headset)",                                               "H_Booniehat_khk_hs",                           10, "hat"],
 	["Booniehat (Khaki)",                                                 "H_Booniehat_khk",                              10, "hat"],
 	["Booniehat (MTP)",                                                   "H_Booniehat_mcamo",                            10, "hat"],
@@ -993,6 +996,7 @@ uniformArray = compileFinal str
 	["CTRG Stealth Uniform",                                              "U_B_CTRG_Soldier_F",                           300, "uni"],
 	["Special Purpose Suit (Hex)",                                        "U_O_V_Soldier_Viper_hex_F",                    300, "uni"],
 	["Special Purpose Suit (G Hex)",                                      "U_O_V_Soldier_Viper_F",                        300, "uni"],
+	["CBRN Suit (LDF)",													  "Item_U_I_E_CBRN_Suit_01_EAF_F"				  200, "uni"],
 	["Survival Fatigues (NATO)",                                          "U_B_survival_uniform",                         200, "uni"],
 	["Default Uniform (NATO)",                                            "U_B_CombatUniform_mcam",                       20, "uni"],
 	["Default Uniform (CSAT)",                                            "U_O_OfficerUniform_ocamo",                     20, "uni"],
@@ -1002,6 +1006,11 @@ uniformArray = compileFinal str
 	["Combat Fatigues (Tee)",                                             "U_B_CombatUniform_mcam_tshirt",                20, "uni"],
 	["Combat Fatigues (Gangsta)",                                         "U_I_G_resistanceLeader_F",                     20, "uni"],
 	["Combat Fatigues (Rolled-up)",                                       "U_I_CombatUniform_shortsleeve",                20, "uni"],
+	["Combat Fatigues (Officer)(LDF)",                                    "Item_U_I_E_Uniform_01_officer_F",              20, "uni"],
+	["Combat Fatigues (Rolled-up)(LDF)",                                  "Item_U_I_E_Uniform_01_shortsleeve_F",          20, "uni"],
+	["Combat Fatigues (Sweater)(LDF)",                                    "Item_U_I_E_Uniform_01_sweater_F",              20, "uni"],
+	["Combat Fatigues (Tank Top)(LDF)",                                   "Item_U_I_E_Uniform_01_tanktop_F",              20, "uni"],
+	["Combat Fatigues (LDF)",                                		      "Item_U_I_E_Uniform_01_F",          		      20, "uni"],
 	["CTRG Combat Uniform",                                               "U_B_CTRG_1",                                   20, "uni"],
 	["CTRG Combat Uniform (Tee)",                                         "U_B_CTRG_2",                                   20, "uni"],
 	["CTRG Combat Uniform (Rolled-up)",                                   "U_B_CTRG_3",                                   20, "uni"],
@@ -1014,6 +1023,7 @@ uniformArray = compileFinal str
 	["Pilot Coveralls",                                                   "U_I_pilotCoveralls",                           20, "uni"],
 	["Heli Pilot Coveralls",                                              "U_B_HeliPilotCoveralls",                       20, "uni"],
 	["Heli Pilot Coveralls",                                              "U_I_HeliPilotCoveralls",                       20, "uni"],
+	["Heli Pilot Coveralls (LDF)",                                        "Item_U_I_E_Uniform_01_coveralls_F",            20, "uni"],
 	["Guerilla Garment",                                                  "U_BG_Guerilla1_1",                             20, "uni"],  // BLUFOR
 	["Guerilla Outfit (Plain, Dark)",                                     "U_BG_Guerilla2_1",                             20, "uni"],
 	["Guerilla Outfit (Pattern)",                                         "U_BG_Guerilla2_2",                             20, "uni"],
@@ -1037,25 +1047,25 @@ uniformArray = compileFinal str
 	["Guerilla Uniform",                                                  "U_IG_leader",                                  20, "uni"],
 	["Polo (Competitor)",                                                 "U_Competitor",                                 20, "uni"],
 	["Polo (Rangemaster)",                                                "U_Rangemaster",                                20, "uni"]
-	/*["Worker Coveralls", "U_C_WorkerCoveralls", 25, "uni"], // can only be worn by civilian units
-	["T-Shirt (Blue)", "U_C_Poor_1", 25, "uni"],
-	["Polo (Red/white)", "U_C_Poloshirt_redwhite", 25, "uni"],
-	["Polo (Salmon)", "U_C_Poloshirt_salmon", 25, "uni"],
-	["Polo (Tri-color)", "U_C_Poloshirt_tricolour", 25, "uni"],
-	["Polo (Navy)", "U_C_Poloshirt_blue", 25, "uni"],
-	["Polo (Burgundy)", "U_C_Poloshirt_burgundy", 25, "uni"],
-	["Polo (Blue/green)", "U_C_Poloshirt_stripped", 25, "uni"],*/
-	/*["Racing Suit (Black)", "U_C_Driver_1_black", 25, "uni"], // can only be worn by civilian units
-	["Racing Suit (Blue)", "U_C_Driver_1_blue", 25, "uni"],
-	["Racing Suit (Green)", "U_C_Driver_1_green", 25, "uni"],
-	["Racing Suit (Yellow)", "U_C_Driver_1_yellow", 25, "uni"],
-	["Racing Suit (Orange)", "U_C_Driver_1_orange", 25, "uni"],
-	["Racing Suit (Red)", "U_C_Driver_1_red", 25, "uni"],
-	["Racing Suit (White)", "U_C_Driver_1_white", 25, "uni"],
-	["Racing Suit (Fuel)", "U_C_Driver_1", 25, "uni"],
-	["Racing Suit (Bluking)", "U_C_Driver_2", 25, "uni"],
-	["Racing Suit (Redstone)", "U_C_Driver_3", 25, "uni"],
-	["Racing Suit (Vrana)", "U_C_Driver_4", 25, "uni"],*/
+	["Worker Coveralls", 												  "U_C_WorkerCoveralls", 						  25, "uni"], // can only be worn by civilian units
+	["T-Shirt (Blue)", 													  "U_C_Poor_1", 						  	      25, "uni"],
+	["Polo (Red/white)", 												  "U_C_Poloshirt_redwhite",  					  25, "uni"],
+	["Polo (Salmon)", 													  "U_C_Poloshirt_salmon",  						  25, "uni"],
+	["Polo (Tri-color)", 												  "U_C_Poloshirt_tricolour", 				      25, "uni"],
+	["Polo (Navy)", 													  "U_C_Poloshirt_blue",  						  25, "uni"],
+	["Polo (Burgundy)",													  "U_C_Poloshirt_burgundy",  				      25, "uni"],
+	["Polo (Blue/green)",												  "U_C_Poloshirt_stripped",  					  25, "uni"],*/
+	["Racing Suit (Black)", 											  "U_C_Driver_1_black",  						  25, "uni"], // can only be worn by civilian units
+	["Racing Suit (Blue)",												  "U_C_Driver_1_blue",  						  25, "uni"],
+	["Racing Suit (Green)", 											  "U_C_Driver_1_green",  						  25, "uni"],
+	["Racing Suit (Yellow)",											  "U_C_Driver_1_yellow",  						  25, "uni"],
+	["Racing Suit (Orange)", 											  "U_C_Driver_1_orange", 						  25, "uni"],
+	["Racing Suit (Red)", 											      "U_C_Driver_1_red",  						  	  25, "uni"],
+	["Racing Suit (White)", 											  "U_C_Driver_1_white",  						  25, "uni"],
+	["Racing Suit (Fuel)",  											  "U_C_Driver_1",  						 		  25, "uni"],
+	["Racing Suit (Bluking)", 											  "U_C_Driver_2",  						 		  25, "uni"],
+	["Racing Suit (Redstone)",  										  "U_C_Driver_3",  						  		  25, "uni"],
+	["Racing Suit (Vrana)",  											  "U_C_Driver_4", 						  		  25, "uni"]
 ];
 
 vestArray = compileFinal str
@@ -1163,6 +1173,7 @@ genItemArray = compileFinal str
 	["UAV Terminal (NATO)",                                               "B_UavTerminal",                                150, "gps"],
 	["UAV Terminal (CSAT)",                                               "O_UavTerminal",                                150, "gps"],
 	["UAV Terminal (AAF)",                                                "I_UavTerminal",                                150, "gps"],
+	["UAV Terminal (LDF)",                                                "Item_I_E_UavTerminal",                         150, "gps"],
 	["GPS",                                                               "ItemGPS",                                      100, "gps"],
 	["Quadcopter UAV (NATO)",                                             "B_UAV_01_backpack_F",                          3500, "backpack"],
 	["Quadcopter UAV (CSAT)",                                             "O_UAV_01_backpack_F",                          3500, "backpack"],
@@ -1290,12 +1301,15 @@ ssheadArray = compileFinal str
 	["Pilot Helmet (NATO)",                                               "H_PilotHelmetFighter_B",                       60, "hat"],
 	["Pilot Helmet (CSAT)",                                               "H_PilotHelmetFighter_O",                       60, "hat"],
 	["Pilot Helmet (AAF)",                                                "H_PilotHelmetFighter_I",                       60, "hat"],
+	["Pilot Helmet (LDF)",                                                "Headgear_H_PilotHelmetFighter_I_E",            60, "hat"],
 	["Crew Helmet (NATO)",                                                "H_HelmetCrew_B",                               60, "hat"],
 	["Crew Helmet (CSAT)",                                                "H_HelmetCrew_O",                               60, "hat"],
 	["Crew Helmet (AAF)",                                                 "H_HelmetCrew_I",                               60, "hat"],
+	["Heli Crew Helmet (LDF)",                                            "Headgear_H_CrewHelmetHeli_I_E",                50, "hat"],
 	["Heli Pilot Helmet (NATO)",                                          "H_PilotHelmetHeli_B",                          50, "hat"],
 	["Heli Pilot Helmet (CSAT)",                                          "H_PilotHelmetHeli_O",                          50, "hat"],
 	["Heli Pilot Helmet (AAF)",                                           "H_PilotHelmetHeli_I",                          50, "hat"],
+	["Heli Pilot Helmet (LDF)",                                           "Headgear_H_PilotHelmetHeli_I_E",               50, "hat"],
 	
 	["Military Cap (Blue)",                                               "H_MilCap_blue",                                25, "hat"],
 	["Military Cap (Gray)",                                               "H_MilCap_gry",                                 25, "hat"],
@@ -1304,6 +1318,7 @@ ssheadArray = compileFinal str
 	["Military Cap (MTP)",                                                "H_MilCap_mcamo",                               25, "hat"],
 	["Military Cap (Hex)",                                                "H_MilCap_ocamo",                               25, "hat"],
 	["Military Cap (AAF)",                                                "H_MilCap_dgtl",                                25, "hat"],
+	["Military Cap (LDF)",                                                "Headgear_H_MilCap_eaf",                        25, "hat"],
 	["Rangemaster Cap",                                                   "H_Cap_headphones",                             25, "hat"],
 	["Bandana (Black)",                                                   "H_Bandanna_gry",                               10, "hat"],
 	["Bandana (Blue)",                                                    "H_Bandanna_blu",                               10, "hat"],
@@ -1329,6 +1344,7 @@ ssheadArray = compileFinal str
 	["Beret (Black)",                                                     "H_Beret_blk",                                  10, "hat"],
 	["Beret (Colonel)",                                                   "H_Beret_Colonel",                              10, "hat"],
 	["Beret (NATO)",                                                      "H_Beret_02",                                   10, "hat"],
+	["Beret (LDF)",                                                       "H_Beret_EAF_01_F",                             10, "hat"],
 	["Beret (Green)",                                                     "H_Beret_grn",                                  10, "hat"],
 	["Beret (Police)",                                                    "H_Beret_blk_POLICE",                           10, "hat"],
 	["Beret (Red)",                                                       "H_Beret_red",                                  10, "hat"],
@@ -1557,7 +1573,9 @@ ssbackpackArray = compileFinal str
 	["Assault Pack (Green)",                                              "B_AssaultPack_rgr",                            100, "backpack"],
 	["Assault Pack (MTP)",                                                "B_AssaultPack_mcamo",                          100, "backpack"],
 	["Assault Pack (Hex)",                                                "B_AssaultPack_ocamo",                          100, "backpack"],
-	["Assault Pack (Tropic)",                                             "B_AssaultPack_tna_F",                          100, "backpack", "noDLC"]
+	["Assault Pack (Tropic)",                                             "B_AssaultPack_tna_F",                          100, "backpack", "noDLC"],
+	
+	["Radio Pack LDF (Geometric)",										  "B_RadioBag_01_eaf_F",						  100, "backpack"]
 ];
 
 ssgenItemArray = compileFinal str
@@ -1575,6 +1593,7 @@ ssgenItemArray = compileFinal str
 	["Hexacopter Medical UAV (NATO)",                                     "B_UAV_06_medical_backpack_F",                  1650, "backpack"],
 	["Hexacopter Medical UAV (CSAT)",                                     "O_UAV_06_medical_backpack_F",                  1650, "backpack"],
 	["Hexacopter Medical UAV (AAF)",                                      "I_UAV_06_medical_backpack_F",                  1650, "backpack"],
+	["Hexacopter Medical UAV (LDF)",                                      "I_E_UAV_06_medical_backpack_F",                1650, "backpack"],
 	//["Hexacopter Demining UAV",                                         "C_IDAP_UAV_06_antimine_backpack_F", 1000000000, "backpack"],
 	["UVG Bag ED-1D (CIV)", 											  "C_IDAP_UGV_02_Demining_backpack_F", 20000, "backpack"],
     ["UVG Bag ED-1D (AAF)", 											  "I_UGV_02_Demining_backpack_F", 				  10000, "backpack"],
@@ -1692,6 +1711,15 @@ genObjectsArray = compileFinal str
 	["Toilet Box",                                                        "Land_ToiletBox_F",                             25, "object"],
 	["Lamp Post (Harbour)",                                               "Land_LampHarbour_F",                           100, "object"],
 	["Lamp Post (Shabby)",                                                "Land_LampShabby_F",                            100, "object"],
+	["Connector Tent (Closed) (LDF)",                                     "Land_ConnectorTent_01_wdl_closed_F",           100, "object"],
+	["Connector Tent (Cross) (LDF)",                                      "Land_ConnectorTent_01_wdl_cross_F",            100, "object"],
+	["Connector Tent (Open) (LDF))",                                      "Land_ConnectorTent_01_wdl_open_F",             100, "object"],
+	["Decon Tent (LDF)",                                                  "Land_DeconTent_01_wdl_F",                      100, "object"],
+	["Medical Tent (LDF))",                                               "Land_MedicalTent_01_wdl_closed_F",             100, "object"],
+	["Tent (Field, Closed) (LDF)",                                        "Land_MedicalTent_01_wdl_generic_closed_F",     100, "object"],
+	["Tent (Field, Inner) (LDF)",                                         "Land_MedicalTent_01_wdl_generic_inner_F",      100, "object"],
+	["Tent (Field, Open) (LDF)",                                          "Land_MedicalTent_01_wdl_generic_open_F",       100, "object"],
+	["Tent (Field, Outer) (LDF)",                                         "Land_MedicalTent_01_wdl_generic_outer_F",      100, "object"],
 	["Boom Gate",                                                         "Land_BarGate_F",                               150, "object"],
 	["Pipes",                                                             "Land_Pipes_Large_F",                           200, "object"],
 	["Concrete Frame",                                                    "Land_CncShelter_F",                            200, "object"],
@@ -1936,9 +1964,8 @@ attackHelicoptersArray = compileFinal str
 	["PO-30 Orca (DAR)",                                                  "O_Heli_Light_02_dynamicLoadout_F",             15000, "vehicle", "variant_orcaGUNDAR"], 
 	["WY-55 Hellcat (x24 DAR)",                                           "I_Heli_light_03_dynamicLoadout_F",             15000, "vehicle", "variant_HellDAR"], // Armed AW159
 	["AH-99 Blackfoot",                                                   "B_Heli_Attack_01_dynamicLoadout_F",            35000, "vehicle"], // RAH-66 with gunner
-	["Mi-48 Kajman",                                                      "O_Heli_Attack_02_dynamicLoadout_F",            35000, "vehicle"], // Mi-28 with gunner 
-	
-	["MQ-12 Falcon UAV",                                                  "B_T_UAV_03_dynamicLoadout_F",                  125000, "vehicle"] // Do NOT use "B_T_UAV_03_dynamicLoadout_F" (doesn't support ASRAAM pylons)                                           
+	["Mi-48 Kajman",                                                      "O_Heli_Attack_02_dynamicLoadout_F",            35000, "vehicle"] // Mi-28 with gunner 
+	                                           
 	//["AH-9 Pawnee (Gun-Only)", "B_Heli_Light_01_dynamicLoadout_F", 25000, "vehicle", "variant_pawneeGun"], 
 	
 	//["AH-9 Pawnee (20mm X600)", "B_Heli_Light_01_dynamicLoadout_F", 75000, "vehicle", "variant_pawnee20mm"],
@@ -1998,10 +2025,11 @@ uavPlanesArray = compileFinal str
 	["K40 Ababil-3 Missile UAV",                                          "O_UAV_02_dynamicLoadout_F",                    125000, "vehicle", "variant_greyhawkMissile"],
 	["K40 Ababil-3 Missile UAV",                                          "I_UAV_02_dynamicLoadout_F",                    125000, "vehicle", "variant_greyhawkMissile"],
 	["UCAV Sentinel Missile",                                             "B_UAV_05_F",                                   125000, "vehicle", "variant_sentinelMissile"],
+	["MQ-12 Falcon UAV",                                                  "B_T_UAV_03_dynamicLoadout_F",                  125000, "vehicle"], // Do NOT use "B_T_UAV_03_dynamicLoadout_F" (doesn't support ASRAAM pylons)
 	
 	["Mk-49 Spartan SAM",                                                 "B_SAM_System_01_F",                            52500, "variant_sam1", "HIDDEN"],
 	["Praetorian 1C AAA",                                                 "B_AAA_System_01_F",                            22500, "variant_sam2", "HIDDEN"],
-	["Mk21 Centurion",													  "B_SAM_System_02_F",							  85000, "variant_sam3", "HIDDEN"]
+	["Mk21 Centurion",													  "B_SAM_System_02_F",							  85000, "variant_sam3"]
 	//["MQ4A Greyhawk Bomber UAV", "B_UAV_02_dynamicLoadout_F", 250000, "vehicle", "variant_greyhawkBomber"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones
 	//["K40 Ababil-3 Bomber UAV", "O_UAV_02_dynamicLoadout_F", 250000, "vehicle", "variant_greyhawkBomber"],
 	//["K40 Ababil-3 Bomber UAV", "I_UAV_02_dynamicLoadout_F", 250000, "vehicle", "variant_greyhawkBomber"],
