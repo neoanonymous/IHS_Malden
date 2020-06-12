@@ -946,10 +946,20 @@ switch (true) do
 			_veh setAutonomous false;
 		};
 	};
-	
+	//UAV's
 	
 	//UAV's
 	case (_class isKindOf "B_AAA_System_01_F" && _variant == "sam2"):
+	{
+		_customCode =
+		{
+			_veh setAutonomous false;
+		};
+	};
+	//UAV's
+	
+	//UAV's
+	case (_class isKindOf "B_SAM_System_02_F" && _variant == "sam3"):
 	{
 		_customCode =
 		{
