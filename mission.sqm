@@ -8,7 +8,7 @@ class EditorData
 	toggles=586;
 	class ItemIDProvider
 	{
-		nextID=4945;
+		nextID=4958;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=646;
+		nextID=654;
 	};
 	class Camera
 	{
-		pos[]={8069.2617,66.062836,10615.818};
-		dir[]={0.30752808,-0.43786141,0.84485173};
-		up[]={0.1497709,0.89903718,0.41145593};
-		aside[]={0.9397161,6.4691994e-007,-0.34205851};
+		pos[]={8074.04,51.008942,10038.039};
+		dir[]={0.076841332,-0.30776677,0.94848794};
+		up[]={0.024857441,0.95140529,0.30688167};
+		aside[]={0.99682558,4.4188891e-007,-0.080759987};
 	};
 };
 binarizationWanted=0;
@@ -321,7 +321,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=786;
+		items=790;
 		class Item0
 		{
 			dataType="Group";
@@ -23831,6 +23831,174 @@ class Mission
 			angle=31.048325;
 			id=4944;
 			atlOffset=1.6543694;
+		};
+		class Item786
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8061.3335,34.423065,10071.772};
+				angles[]={1.5707964,1.5707964,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="[this] call A3W_fnc_setupMissionObject; ";
+				disableSimulation=1;
+			};
+			id=4952;
+			type="Land_Canal_WallSmall_10m_F";
+			atlOffset=5.8353119;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item787
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8061.3252,40.938438,10071.746};
+				angles[]={1.5707964,1.5707964,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="[this] call A3W_fnc_setupMissionObject; ";
+				disableSimulation=1;
+			};
+			id=4953;
+			type="Land_Canal_WallSmall_10m_F";
+			atlOffset=12.350685;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item788
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8007.6162,40.836395,10118.875};
+				angles[]={4.712389,4.712389,1.5695515};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="[this] call A3W_fnc_setupMissionObject; ";
+				disableSimulation=1;
+			};
+			id=4956;
+			type="Land_Canal_WallSmall_10m_F";
+			atlOffset=12.388062;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item789
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8007.5874,34.321022,10118.902};
+				angles[]={4.712389,4.712389,1.5695515};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="[this] call A3W_fnc_setupMissionObject; ";
+				disableSimulation=1;
+			};
+			id=4957;
+			type="Land_Canal_WallSmall_10m_F";
+			atlOffset=5.8726883;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
