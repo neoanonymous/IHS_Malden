@@ -734,15 +734,12 @@ switch (true) do
 		_mags =
 		[
 			["SmokeLauncherMag",    [-1]],
-			["ammo_Missile_rim162", [0]],
-			["ammo_Missile_rim162", [0]],
-			["ammo_Missile_rim162", [0]],
-			["ammo_Missile_rim162", [0]],
+			["magazine_Missile_rim162_x8", [0]],
 			
-			["ammo_Missile_AA_R77", [0]],
-			["ammo_Missile_AA_R77", [0]],
+			["magazine_Missile_AA_R77_x1", [0]],
+			["magazine_Missile_AA_R77_x1", [0]],
 			
-			["M_Air_AA_MI02",       [0]],
+			["4Rnd_AAA_missiles",       [0]],
 			
 			["magazine_Cannon_Phalanx_x1550", [0]],
 			["magazine_Cannon_Phalanx_x1550", [0]]
@@ -905,10 +902,10 @@ switch (true) do
 			["12Rnd_125mm_HE", [0]],
 			["12Rnd_125mm_HE", [0]],
 			
-			["Missile_AGM_01_F", [0]],
-			["Missile_AGM_01_F", [0]],
-			["Missile_AGM_01_F", [0]],
-			["Missile_AGM_01_F", [0]]
+			["PylonRack_1Rnd_Missile_AGM_01_F", [0]],
+			["PylonRack_1Rnd_Missile_AGM_01_F", [0]],
+			["PylonRack_1Rnd_Missile_AGM_01_F", [0]],
+			["PylonRack_1Rnd_Missile_AGM_01_F", [0]]
 		];
 		_weapons =
 		[
