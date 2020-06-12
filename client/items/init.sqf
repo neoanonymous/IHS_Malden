@@ -16,6 +16,18 @@
 [_this, "warchest"] call mf_init;
 [_this, "cratemoney"] call mf_init;
 
+
+// ########### <CUSTOM> ###########
+//[_this, "detonator"] call mf_init;
+//[_this, "bushkit"] call mf_init;
+//[_this, "hacktop"] call mf_init; 
+//[_this, "drugs"] call mf_init; 
+[_this, "quad"] call mf_init; 
+//[_this, "radio"] call mf_init; 
+// ########### </CUSTOM> ###########
+
+
+
 if (["A3W_artilleryStrike"] call isConfigOn) then
 {
 	[_this, "artillery"] call mf_init;
