@@ -29,5 +29,3 @@ _ai moveInDriver _veh;
 
 	["lockDriver", netId _veh] call A3W_fnc_towingHelper;
 };
-
-_veh enableGunLights "ForceOff";
