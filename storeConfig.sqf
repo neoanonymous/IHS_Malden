@@ -996,7 +996,7 @@ uniformArray = compileFinal str
 	["CTRG Stealth Uniform",                                              "U_B_CTRG_Soldier_F",                           300, "uni"],
 	["Special Purpose Suit (Hex)",                                        "U_O_V_Soldier_Viper_hex_F",                    300, "uni"],
 	["Special Purpose Suit (G Hex)",                                      "U_O_V_Soldier_Viper_F",                        300, "uni"],
-	["CBRN Suit (LDF)",													  "Item_U_I_E_CBRN_Suit_01_EAF_F"				  200, "uni"],
+	["CBRN Suit (LDF)",													  "Item_U_I_E_CBRN_Suit_01_EAF_F",				  200, "uni"],
 	["Survival Fatigues (NATO)",                                          "U_B_survival_uniform",                         200, "uni"],
 	["Default Uniform (NATO)",                                            "U_B_CombatUniform_mcam",                       20, "uni"],
 	["Default Uniform (CSAT)",                                            "U_O_OfficerUniform_ocamo",                     20, "uni"],
