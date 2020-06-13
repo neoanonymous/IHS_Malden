@@ -1889,7 +1889,7 @@ tanksArray = compileFinal str
 	["ZSU-39 Tigris AA",                                                  "O_APC_Tracked_02_AA_F",                        26000, "vehicle", "variant_tigrisOP"],
 	
 	["ZSU-39 UBER-Tigris AA",                                             "O_APC_Tracked_02_AA_F",                        150000, "vehicle", "variant_tigrisUber"],
-	["IFV-6a Uber Cheetah",                                               "B_APC_Tracked_01_AA_F",                        526969, "vehicle", "variant_cheetahUber"],
+	["IFV-6a Uber Cheetah",                                               "B_APC_Tracked_01_AA_F",                        155000, "vehicle", "variant_cheetahUber"],
 	
 	["M2A1 Slammer",                                                      "B_MBT_01_cannon_F",                            13000, "vehicle"],
 	["M2A4 Slammer HMG",                                                  "B_MBT_01_TUSK_F",                              15000, "vehicle"], // Commander gun variant
