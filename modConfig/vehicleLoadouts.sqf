@@ -777,8 +777,14 @@ switch (true) do
 	{
 		_mags =
 		[
-			["SmokeLauncherMag", [-1]],
-			["magazine_Missile_rim116_x21", [0]],
+			["SmokeLauncherMag",    [-1]],
+			["magazine_Missile_rim162_x8", [0]],
+			
+			["magazine_Missile_AA_R77_x1", [0]],
+			["magazine_Missile_AA_R77_x1", [0]],
+			
+			["4Rnd_AAA_missiles",       [0]],
+			
 			["magazine_Cannon_Phalanx_x1550", [0]],
 			["magazine_Cannon_Phalanx_x1550", [0]]
 			//["680Rnd_35mm_AA_shells_Tracer_Red", [0]]
@@ -786,7 +792,9 @@ switch (true) do
 		_weapons =
 		[
 			["weapon_Cannon_Phalanx", [0]],
-			["weapon_rim116Launcher", [0]]
+			["weapon_rim162Launcher", [0]],
+			["weapon_R77Launcher",    [0]],
+			["missiles_ASRAAM",       [0]]
 		];
 
 	};	
