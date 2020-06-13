@@ -710,6 +710,23 @@ switch (true) do
 	
 	//tanks
 	
+	// Suicide Squad
+	
+	case (_class isKindOf "C_Quadbike_01_F" && _variant == "SuicideQuadbike"):
+	{
+		_mags =
+		[
+			["PylonMissile_1Rnd_Bomb_04_F", [-1]],
+			["magazine_Bomb_GBU12_x1", [-1]],
+			["PylonMissile_1Rnd_Bomb_04_F", [-1]],
+			["PylonMissile_1Rnd_Bomb_04_F", [-1]],
+			
+			["magazine_Fighter01_Gun20mm_AA_x450", [-1]],
+			["magazine_Fighter01_Gun20mm_AA_x450", [-1]] // extra gun mag (non-explosive ammo)
+		];
+		_pylons = ["PylonRack_Missile_AGM_02_x1","PylonRack_Missile_AGM_02_x1","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_AP_F","PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Bomb_GBU12_x1","PylonMissile_Bomb_GBU12_x1"];
+	};
+	
 	// OP Caesar
 	
 	case (_class isKindOf "C_Plane_Civil_01_F" && _variant == "CaesarOP"):
