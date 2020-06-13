@@ -805,10 +805,10 @@ switch (true) do
 		[
 			["SmokeLauncherMag", [-1]],
 			/*["4Rnd_Titan_long_missiles", [0]],*/
-			["500Rnd_127x99_mag", [2]],
-			["500Rnd_127x99_mag", [2]],
-			["500Rnd_127x99_mag", [2]],
-			["500Rnd_127x99_mag", [2]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
 			["200Rnd_338_Mag", [0]],
 			["200Rnd_338_Mag", [0]],
 			["200Rnd_338_Mag", [0]],
@@ -825,7 +825,7 @@ switch (true) do
 		[
 			["cannon_125mm", [0]],
 			/*["missiles_titan", [0]],*/
-			["HMG_127_AFV", [2]],
+			["HMG_127_AFV", [0]],
 			["MMG_02_coax", [0]]
 		];
 		_customCode =
@@ -854,6 +854,9 @@ switch (true) do
 			["12Rnd_125mm_HE", [0]],
 			["12Rnd_125mm_HE", [0]],
 			
+			["250Rnd_30mm_HE_shells", [0]],
+			["250Rnd_30mm_APDS_shells", [0]],
+			
 			["12Rnd_PG_missiles", [0]],
 			
 			["6Rnd_LG_scalpel", [0]]
@@ -863,6 +866,7 @@ switch (true) do
 			["cannon_125mm", [0]],
 			/*["missiles_titan", [0]],*/
 			["LMG_coax", [0]],
+			["gatling_30mm", [0]],
 			["missiles_DAGR", [0]],
 			["missiles_SCALPEL", [0]]
 		];
@@ -891,6 +895,9 @@ switch (true) do
 			["12Rnd_125mm_HE", [0]],
 			["12Rnd_125mm_HE", [0]],
 			
+			["250Rnd_30mm_HE_shells", [0]],
+			["250Rnd_30mm_APDS_shells", [0]],
+			
 			["12Rnd_PG_missiles", [0]],
 			
 			["6Rnd_LG_scalpel", [0]]
@@ -900,6 +907,7 @@ switch (true) do
 			["cannon_125mm", [0]],
 			/*["missiles_titan", [0]],*/
 			["LMG_coax", [0]],
+			["gatling_30mm", [0]],
 			["missiles_DAGR", [0]],
 			["missiles_SCALPEL", [0]]
 		];
@@ -921,6 +929,10 @@ switch (true) do
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
 			["24Rnd_125mm_APFSDS", [0]],
 			["24Rnd_125mm_APFSDS", [0]],
 			["12Rnd_125mm_HEAT", [0]],
@@ -938,6 +950,7 @@ switch (true) do
 			["cannon_125mm", [0]],
 			/*["missiles_titan", [0]],*/
 			["LMG_coax", [0]],
+			["HMG_127_AFV", [0]],
 			["missiles_DAGR", [0]],
 			["missiles_SCALPEL", [0]]
 		];
@@ -959,6 +972,10 @@ switch (true) do
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
 			["24Rnd_125mm_APFSDS", [0]],
 			["24Rnd_125mm_APFSDS", [0]],
 			["12Rnd_125mm_HEAT", [0]],
@@ -976,6 +993,7 @@ switch (true) do
 			["cannon_125mm", [0]],
 			/*["missiles_titan", [0]],*/
 			["LMG_coax", [0]],
+			["HMG_127_AFV", [0]],
 			["missiles_DAGR", [0]],
 			["missiles_SCALPEL", [0]]
 		];
@@ -997,6 +1015,10 @@ switch (true) do
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
 			["24Rnd_125mm_APFSDS", [0]],
 			["24Rnd_125mm_APFSDS", [0]],
 			["12Rnd_125mm_HEAT", [0]],
@@ -1013,6 +1035,7 @@ switch (true) do
 			["cannon_125mm", [0]],
 			/*["missiles_titan", [0]],*/
 			["LMG_coax", [0]],
+			["HMG_127_AFV", [0]],
 			["missiles_DAGR", [0]],
 			["missiles_SCALPEL", [0]]
 		];
