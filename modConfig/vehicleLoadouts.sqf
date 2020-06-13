@@ -805,6 +805,7 @@ switch (true) do
 		[
 			["SmokeLauncherMag", [-1]],
 			/*["4Rnd_Titan_long_missiles", [0]],*/
+			["8Rnd_82mm_Mo_Smoke_white", [0]],
 			["500Rnd_127x99_mag", [0]],
 			["500Rnd_127x99_mag", [0]],
 			["500Rnd_127x99_mag", [0]],
@@ -825,6 +826,7 @@ switch (true) do
 		[
 			["cannon_125mm", [0]],
 			/*["missiles_titan", [0]],*/
+			["mortar_82mm", [0]],
 			["HMG_127_AFV", [0]],
 			["MMG_02_coax", [0]]
 		];
