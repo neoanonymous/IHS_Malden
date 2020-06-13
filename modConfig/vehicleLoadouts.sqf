@@ -805,10 +805,10 @@ switch (true) do
 		[
 			["SmokeLauncherMag", [-1]],
 			/*["4Rnd_Titan_long_missiles", [0]],*/
-			["500Rnd_127x99_mag", [1]],
-			["500Rnd_127x99_mag", [1]],
-			["500Rnd_127x99_mag", [1]],
-			["500Rnd_127x99_mag", [1]],
+			["500Rnd_127x99_mag", [2]],
+			["500Rnd_127x99_mag", [2]],
+			["500Rnd_127x99_mag", [2]],
+			["500Rnd_127x99_mag", [2]],
 			["200Rnd_338_Mag", [0]],
 			["200Rnd_338_Mag", [0]],
 			["200Rnd_338_Mag", [0]],
@@ -825,7 +825,7 @@ switch (true) do
 		[
 			["cannon_125mm", [0]],
 			/*["missiles_titan", [0]],*/
-			["HMG_127_AFV", [1]],
+			["HMG_127_AFV", [2]],
 			["MMG_02_coax", [0]]
 		];
 		_customCode =

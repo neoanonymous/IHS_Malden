@@ -1869,9 +1869,9 @@ armoredArray = compileFinal str
 	["MSE-3 Marid",                                                       "O_APC_Wheeled_02_rcws_v2_F",                   6500, "vehicle"],
 	["AMV-7 Marshall",                                                    "B_APC_Wheeled_01_cannon_F",                    7000, "vehicle"],
 	["AFV-4 Gorgon",                                                      "I_APC_Wheeled_03_cannon_F",                    9000, "vehicle"],
-	["Rhino MGS",                                                         "B_AFV_Wheeled_01_cannon_F",                    125000, "vehicle"],
-	["Rhino MGS UP",                                                      "B_AFV_Wheeled_01_up_cannon_F",                 125000, "vehicle"],
-	["Rhino MGS UP OP",                                                   "B_AFV_Wheeled_01_up_cannon_F",                 20000, "vehicle", "variant_RhinoMGSUPCust"]
+	["Rhino MGS",                                                         "B_AFV_Wheeled_01_cannon_F",                    125000, "vehicle", "HIDDEN"],
+	["Rhino MGS UP",                                                      "B_AFV_Wheeled_01_up_cannon_F",                 125000, "vehicle", "HIDDEN"],
+	["Rhino MGS UP No ATGM",                                              "B_AFV_Wheeled_01_up_cannon_F",                 20000, "vehicle", "variant_RhinoMGSUPCust"]
 	/*
 	
 	
