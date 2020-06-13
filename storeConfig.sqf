@@ -1587,7 +1587,7 @@ ssgenItemArray = compileFinal str
 	["Quadcopter UAV (NATO)",                                             "B_UAV_01_backpack_F",                          1500, "backpack"],
 	["Quadcopter UAV (CSAT)",                                             "O_UAV_01_backpack_F",                          1500, "backpack"],
 	["Quadcopter UAV (AAF)",                                              "I_UAV_01_backpack_F",                          1500, "backpack"],
-	["Quadcopter UAV (GBU)",                                              "B_UAV_01_backpack_F",                          100000, "backpack", "variant_GBUUAV"],
+	//["Quadcopter UAV (GBU)",                                              "B_UAV_01_backpack_F",                          100000, "backpack", "variant_GBUUAV"],
 	["Hexacopter UAV (NATO)",                                             "B_UAV_06_backpack_F",                          1250, "backpack"],
 	["Hexacopter UAV (CSAT)",                                             "O_UAV_06_backpack_F",                          1250, "backpack"],
 	["Hexacopter UAV (AAF)",                                              "I_UAV_06_backpack_F",                          1250, "backpack"],
@@ -1782,7 +1782,7 @@ landArray = compileFinal str
 	["Quadbike (CSAT)",                                                   "O_Quadbike_01_F",                              65, "vehicle", "SKIPSAVE"],
 	["Quadbike (AAF)",                                                    "I_Quadbike_01_F",                              65, "vehicle", "SKIPSAVE"],
 	["Quadbike (FIA)",                                                    "B_G_Quadbike_01_F",                            65, "vehicle", "SKIPSAVE"],
-	["Quadbike (Suicide)",                                                "C_Quadbike_01_F",                              20000, "vehicle", "variant_SuicideQuadbike", "SKIPSAVE"],
+	//["Quadbike (Suicide)",                                                "C_Quadbike_01_F",                              20000, "vehicle", "variant_SuicideQuadbike", "SKIPSAVE"],
 
 	["Hatchback",                                                         "C_Hatchback_01_F",                             80, "vehicle", "SKIPSAVE"],
 	["Hatchback Sport",                                                   "C_Hatchback_01_sport_F",                       100, "vehicle", "SKIPSAVE"],
@@ -1807,7 +1807,7 @@ landArray = compileFinal str
 	["Truck",                                                             "C_Van_01_transport_F",                         70, "vehicle", "SKIPSAVE"],
 	["Truck Camo",                                                        "B_G_Van_01_transport_F",                       80, "vehicle", "SKIPSAVE"],
 	["Truck Box",                                                         "C_Van_01_box_F",                               90, "vehicle", "SKIPSAVE"],
-	["Haji Mobile",                                                       "C_Van_01_box_F",                               20000, "vehicle", "variant_HajiMobile", "SKIPSAVE"],
+	//["Haji Mobile",                                                       "C_Van_01_box_F",                               20000, "vehicle", "variant_HajiMobile", "SKIPSAVE"],
 	["Fuel Truck",                                                        "C_Van_01_fuel_F",                              200, "vehicle", "SKIPSAVE"],
 	["Fuel Truck Camo",                                                   "B_G_Van_01_fuel_F",                            210, "vehicle", "SKIPSAVE"],
 
