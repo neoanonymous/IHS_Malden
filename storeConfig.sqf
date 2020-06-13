@@ -1870,7 +1870,8 @@ armoredArray = compileFinal str
 	["AMV-7 Marshall",                                                    "B_APC_Wheeled_01_cannon_F",                    7000, "vehicle"],
 	["AFV-4 Gorgon",                                                      "I_APC_Wheeled_03_cannon_F",                    9000, "vehicle"],
 	["Rhino MGS",                                                         "B_AFV_Wheeled_01_cannon_F",                    125000, "vehicle"],
-	["Rhino MGS UP",                                                      "B_AFV_Wheeled_01_up_cannon_F",                 125000, "vehicle"]
+	["Rhino MGS UP",                                                      "B_AFV_Wheeled_01_up_cannon_F",                 125000, "vehicle"],
+	["Rhino MGS UP OP",                                                   "B_AFV_Wheeled_01_up_cannon_F",                 125000, "vehicle", "variant_RhinoMGSUPOP"]
 	/*
 	
 	
@@ -1888,17 +1889,18 @@ tanksArray = compileFinal str
 	["IFV-6a Cheetah AA",                                                 "B_APC_Tracked_01_AA_F",                        26000, "vehicle", "variant_cheetahOP"],
 	["ZSU-39 Tigris AA",                                                  "O_APC_Tracked_02_AA_F",                        26000, "vehicle", "variant_tigrisOP"],
 	
-	["ZSU-39 UBER-Tigris AA",                                             "O_APC_Tracked_02_AA_F",                        150000, "vehicle", "variant_tigrisUber"],
-	["IFV-6a Uber Cheetah",                                               "B_APC_Tracked_01_AA_F",                        155000, "vehicle", "variant_cheetahUber"],
+	["ZSU-39 UBER Tigris AA",                                             "O_APC_Tracked_02_AA_F",                        150000, "vehicle", "variant_tigrisUber"],
+	["IFV-6a UBER Cheetah AA",                                            "B_APC_Tracked_01_AA_F",                        155000, "vehicle", "variant_cheetahUber"],
 	
 	["M2A1 Slammer",                                                      "B_MBT_01_cannon_F",                            13000, "vehicle"],
 	["M2A4 Slammer HMG",                                                  "B_MBT_01_TUSK_F",                              15000, "vehicle"], // Commander gun variant
+	["M2A4 OP Slammer HMG",                                               "B_MBT_01_TUSK_F",                              50000, "vehicle", "variant_OPSlammer"],
 	
 	["T-100 Varsuk",                                                      "O_MBT_02_cannon_F",                            15000, "vehicle"],
-	
-	["T-100 AA Varsuk",                                                   "O_MBT_02_cannon_F",                            40000, "vehicle", "variant_AAT100"],
+	["T-100 OP Varsuk",                                                   "O_MBT_02_cannon_F",                            50000, "vehicle", "variant_OPT100"],
 	
 	["MBT-52 Kuma",                                                       "I_MBT_03_cannon_F",                            13000, "vehicle"],
+	["MBT-52 OP Kuma",                                                    "I_MBT_03_cannon_F",                            50000, "vehicle", "variant_OPKuma"],
 	
 	["T-140 Angara Sand",                                                 "O_MBT_04_cannon_F",                            15000, "vehicle"],
 	["T-140k Angara Sand",                                                "O_MBT_04_command_F",                           20000, "vehicle"],
@@ -1908,6 +1910,9 @@ tanksArray = compileFinal str
 	
 	["T-140 Angara",                                                      "O_MBT_04_cannon_F",                            15000, "vehicle"],
 	["T-140K Angara",                                                     "O_MBT_04_command_F",                           20000, "vehicle"],
+	["T-140k OP Angara Green",                                            "O_T_MBT_04_command_F",                         60000, "vehicle", "variant_T140KOPg"],
+	["T-140k OP Angara Sand",                                             "O_MBT_04_command_F",                           60000, "vehicle", "variant_T140KOPs"],
+	
 	
 	["AWC301 Nyx (AT)",                                                   "I_LT_01_AT_F",                                 7000, "vehicle"],
 	["AWC301 Nyx (Recon)",                                                "I_LT_01_scout_F",                              3000, "vehicle"],

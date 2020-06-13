@@ -798,15 +798,56 @@ switch (true) do
 		];
 
 	};	
-	//UberCheatah
-	// T140KAA
-	case (_class isKindOf "O_MBT_04_command_F" && _variant == "T140KAAs"):
+	//RhinoMGSUP
+	case (_class isKindOf "B_T_AFV_Wheeled_01_up_cannon_F" && _variant == "RhinoMGSUPOP"):
 	{
 		_mags =
 		[
 			["SmokeLauncherMag", [-1]],
-			["4Rnd_Titan_long_missiles", [0]],
-			["2000Rnd_762x51_Belt_T_Yellow", [0]],
+			/*["4Rnd_Titan_long_missiles", [0]],*/
+			["500Rnd_127x99_mag", [1]],
+			["500Rnd_127x99_mag", [1]],
+			["500Rnd_127x99_mag", [1]],
+			["500Rnd_127x99_mag", [1]],
+			["200Rnd_338_Mag", [0]],
+			["200Rnd_338_Mag", [0]],
+			["200Rnd_338_Mag", [0]],
+			["200Rnd_338_Mag", [0]],
+			["24Rnd_125mm_APFSDS", [0]],
+			["24Rnd_125mm_APFSDS", [0]],
+			["12Rnd_125mm_HEAT", [0]],
+			["12Rnd_125mm_HEAT", [0]],
+			["12Rnd_125mm_HE", [0]],
+			["12Rnd_125mm_HE", [0]],
+			
+			["12Rnd_PG_missiles", [0]],
+			
+			["6Rnd_LG_scalpel", [0]]
+		];
+		_weapons =
+		[
+			["cannon_125mm", [0]],
+			/*["missiles_titan", [0]],*/
+			["HMG_127_AFV", [1]],
+			["MMG_02_coax", [0]],
+			["missiles_DAGR", [0]],
+			["missiles_SCALPEL", [0]]
+		];
+		_customCode =
+		{
+			_veh enableVehicleSensor   ["ActiveRadarSensorComponent",true];
+			_veh enableVehicleSensor   ["DataLinkSensorComponent",true];
+			_veh setVehicleRadar 1;
+		};
+	};
+
+	// T140KOPs
+	case (_class isKindOf "O_MBT_04_command_F" && _variant == "T140KOPs"):
+	{
+		_mags =
+		[
+			["SmokeLauncherMag", [-1]],
+			/*["4Rnd_Titan_long_missiles", [0]],*/
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
@@ -816,28 +857,34 @@ switch (true) do
 			["12Rnd_125mm_HEAT", [0]],
 			["12Rnd_125mm_HEAT", [0]],
 			["12Rnd_125mm_HE", [0]],
-			["12Rnd_125mm_HE", [0]]
+			["12Rnd_125mm_HE", [0]],
+			
+			["12Rnd_PG_missiles", [0]],
+			
+			["6Rnd_LG_scalpel", [0]]
 		];
 		_weapons =
 		[
-			["cannon_125mm_advanced", [0]],
-			["missiles_titan", [0]],
-			["LMG_coax", [0]]
+			["cannon_125mm", [0]],
+			/*["missiles_titan", [0]],*/
+			["LMG_coax", [0]],
+			["missiles_DAGR", [0]],
+			["missiles_SCALPEL", [0]]
 		];
 		_customCode =
 		{
-			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
+			_veh enableVehicleSensor   ["ActiveRadarSensorComponent",true];
 			_veh setVehicleRadar 1;
 		};
 	};
 	
-	// T140KAA
-	case (_class isKindOf "O_T_MBT_04_command_F" && _variant == "T140KAAg"):
+	// T140KOPg
+	case (_class isKindOf "O_T_MBT_04_command_F" && _variant == "T140KOPg"):
 	{
 		_mags =
 		[
 			["SmokeLauncherMag", [-1]],
-			["4Rnd_Titan_long_missiles", [0]],
+			/*["4Rnd_Titan_long_missiles", [0]],*/
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
@@ -847,58 +894,72 @@ switch (true) do
 			["12Rnd_125mm_HEAT", [0]],
 			["12Rnd_125mm_HEAT", [0]],
 			["12Rnd_125mm_HE", [0]],
-			["12Rnd_125mm_HE", [0]]
+			["12Rnd_125mm_HE", [0]],
+			
+			["12Rnd_PG_missiles", [0]],
+			
+			["6Rnd_LG_scalpel", [0]]
 		];
 		_weapons =
 		[
-			["cannon_125mm_advanced", [0]],
-			["missiles_titan", [0]],
-			["LMG_coax", [0]]
+			["cannon_125mm", [0]],
+			/*["missiles_titan", [0]],*/
+			["LMG_coax", [0]],
+			["missiles_DAGR", [0]],
+			["missiles_SCALPEL", [0]]
 		];
 		_customCode =
 		{
-			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
+			_veh enableVehicleSensor   ["ActiveRadarSensorComponent",true];
 			_veh setVehicleRadar 1;
 		};
 	};
 	
 	// Kuma
-	case (_class isKindOf "I_MBT_03_cannon_F" && _variant == "AAKuma"):
+	case (_class isKindOf "I_MBT_03_cannon_F" && _variant == "OPKuma"):
 	{
 		_mags =
 		[
 			["SmokeLauncherMag", [-1]],
-			["4Rnd_Titan_long_missiles", [0]],
+			/*["4Rnd_Titan_long_missiles", [0]],*/
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
-			["32Rnd_120mm_APFSDS_shells", [0]],
-			["32Rnd_120mm_APFSDS_shells", [0]],
-			["20Rnd_120mm_HEAT_MP", [0]],
-			["30Rnd_120mm_HE_shells", [0]]
+			["24Rnd_125mm_APFSDS", [0]],
+			["24Rnd_125mm_APFSDS", [0]],
+			["12Rnd_125mm_HEAT", [0]],
+			["12Rnd_125mm_HEAT", [0]],
+			["12Rnd_125mm_HE", [0]],
+			["12Rnd_125mm_HE", [0]],
+			
+			["12Rnd_PG_missiles", [0]],
+			
+			["6Rnd_LG_scalpel", [0]]
 		];
 		_weapons =
 		[
 
-			["cannon_120mm_long", [0]],
-			["missiles_titan", [0]],
-			["LMG_coax", [0]]
+			["cannon_125mm", [0]],
+			/*["missiles_titan", [0]],*/
+			["LMG_coax", [0]],
+			["missiles_DAGR", [0]],
+			["missiles_SCALPEL", [0]]
 		];
 		_customCode =
 		{
-			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
+			_veh enableVehicleSensor   ["ActiveRadarSensorComponent",true];
 			_veh setVehicleRadar 1;
 		};
 	};
 	
-	// t-100
-	case (_class isKindOf "O_MBT_02_cannon_F" && _variant == "AAT100"):
+	// T-100
+	case (_class isKindOf "O_MBT_02_cannon_F" && _variant == "OPT100"):
 	{
 		_mags =
 		[
 			["SmokeLauncherMag", [-1]],
-			["4Rnd_Titan_long_missiles", [0]],
+			/*["4Rnd_Titan_long_missiles", [0]],*/
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
@@ -918,43 +979,51 @@ switch (true) do
 		_weapons =
 		[
 			["cannon_125mm", [0]],
-			["missiles_titan", [0]],
+			/*["missiles_titan", [0]],*/
 			["LMG_coax", [0]],
 			["missiles_DAGR", [0]],
 			["missiles_SCALPEL", [0]]
 		];
 		_customCode =
 		{
-			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
+			_veh enableVehicleSensor   ["ActiveRadarSensorComponent",true];
 			_veh setVehicleRadar 1;
 		};
 	};
 	
 	// Slammer
-	case (_class isKindOf "B_MBT_01_TUSK_F" && _variant == "AASlammer"):
+	case (_class isKindOf "B_MBT_01_TUSK_F" && _variant == "OPSlammer"):
 	{
 		_mags =
 		[
 			["SmokeLauncherMag", [-1]],
-			["4Rnd_Titan_long_missiles", [0]],
+			/*["4Rnd_Titan_long_missiles", [0]],*/
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
 			["2000Rnd_762x51_Belt_T_Yellow", [0]],
-			["32Rnd_120mm_APFSDS_shells", [0]],
-			["32Rnd_120mm_APFSDS_shells", [0]],
-			["20Rnd_120mm_HEAT_MP", [0]],
-			["30Rnd_120mm_HE_shells", [0]]
+			["24Rnd_125mm_APFSDS", [0]],
+			["24Rnd_125mm_APFSDS", [0]],
+			["12Rnd_125mm_HEAT", [0]],
+			["12Rnd_125mm_HEAT", [0]],
+			["12Rnd_125mm_HE", [0]],
+			["12Rnd_125mm_HE", [0]],
+			
+			["12Rnd_PG_missiles", [0]],
+			
+			["6Rnd_LG_scalpel", [0]]
 		];
 		_weapons =
 		[
-			["cannon_120mm", [0]],
-			["missiles_titan", [0]],
-			["LMG_coax", [0]]
+			["cannon_125mm", [0]],
+			/*["missiles_titan", [0]],*/
+			["LMG_coax", [0]],
+			["missiles_DAGR", [0]],
+			["missiles_SCALPEL", [0]]
 		];
 		_customCode =
 		{
-			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
+			_veh enableVehicleSensor   ["ActiveRadarSensorComponent",true];
 			_veh setVehicleRadar 1;
 		};
 	};
