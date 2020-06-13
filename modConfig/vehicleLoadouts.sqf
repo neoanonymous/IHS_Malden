@@ -541,19 +541,6 @@ switch (true) do
 		_pylons = ["PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonMissile_1Rnd_Bomb_03_F","PylonRack_20Rnd_Rocket_03_HE_F","PylonRack_20Rnd_Rocket_03_AP_F","PylonMissile_1Rnd_Bomb_03_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_03_F"];
 	};
 
-// OP Caesar
-	case (_class isKindOf "C_Plane_Civil_01_F" && _variant == "CaesarOP"):
-	{
-		_mags =
-		[
-			["1000Rnd_Gatling_30mm_Plane_CAS_01_F", [0]]
-		];
-		_weapons =
-		[
-			["Gatling_30mm_Plane_CAS_01_F", [0]]
-		];
-	};
-
 	// Greyhawk/Ababil UAVs
 	case (_class isKindOf "UAV_02_dynamicLoadout_base_F"):
 	{
@@ -723,55 +710,17 @@ switch (true) do
 	
 	//tanks
 	
-	// Suicide Quadbike
-	case (_class isKindOf "C_Quadbike_01_F" && _variant == "SuicideQuadbike"):
-	{
-		_mags =
-		[
-			["SatchelCharge_Remote_Mag", [1]],
-			["SatchelCharge_Remote_Mag", [1]],
-			["SatchelCharge_Remote_Mag", [1]],
-			["SatchelCharge_Remote_Mag", [1]],
-			["SatchelCharge_Remote_Mag", [1]],
-			["SatchelCharge_Remote_Mag", [1]],
-			["SatchelCharge_Remote_Mag", [1]],
-			["SatchelCharge_Remote_Mag", [1]],
-			["SatchelCharge_Remote_Mag", [1]],
-			["SatchelCharge_Remote_Mag", [1]],
-			["SatchelCharge_Remote_Mag", [1]],
-			["SatchelCharge_Remote_Mag", [1]],
-			
-			["SatchelCharge_Remote_Mag", [1]]
-		];
-		_weapons =
-		[
-			["SatchelCharge_Remote_Ammo", [1]]
-		];
-	};
+	// OP Caesar
 	
-	// Haji Mobile
-	case (_class isKindOf "C_Van_01_box_F" && _variant == "HajiMobile"):
+	case (_class isKindOf "C_Plane_Civil_01_F" && _variant == "CaesarOP"):
 	{
 		_mags =
 		[
-			["2Rnd_Mk82", [-1]]
+			["1000Rnd_Gatling_30mm_Plane_CAS_01_F", [0]]
 		];
 		_weapons =
 		[
-			["Mk82BombLauncher", [-1]]
-		];
-	};
-	
-	// Quadcopter UAV (GBU)
-	case (_class isKindOf "B_UAV_01_backpack_F" && _variant == "GBUUAV"):
-	{
-		_mags =
-		[
-			["magazine_Bomb_GBU12_x1", [0]]
-		];
-		_weapons =
-		[
-			["weapon_GBU12Launcher", [0]]
+			["Gatling_30mm_Plane_CAS_01_F", [0]]
 		];
 	};
 	
@@ -897,7 +846,6 @@ switch (true) do
 		];
 		_customCode =
 		{
-			vehicle enableVehicleSensor ["ActiveRadarSensorComponent",true];
 			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
 			_veh enableVehicleSensor   ["DataLinkSensorComponent",true];
 			_veh setVehicleRadar 1;
