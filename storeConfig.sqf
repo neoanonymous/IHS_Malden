@@ -1781,6 +1781,7 @@ landArray = compileFinal str
 	["Quadbike (CSAT)",                                                   "O_Quadbike_01_F",                              65, "vehicle", "SKIPSAVE"],
 	["Quadbike (AAF)",                                                    "I_Quadbike_01_F",                              65, "vehicle", "SKIPSAVE"],
 	["Quadbike (FIA)",                                                    "B_G_Quadbike_01_F",                            65, "vehicle", "SKIPSAVE"],
+	["Quadbike (Suicide)",                                                "C_Quadbike_01_F",                              20000, "vehicle", "variant_SuicideQuadbike", "SKIPSAVE"],
 
 	["Hatchback",                                                         "C_Hatchback_01_F",                             80, "vehicle", "SKIPSAVE"],
 	["Hatchback Sport",                                                   "C_Hatchback_01_sport_F",                       100, "vehicle", "SKIPSAVE"],
@@ -1805,6 +1806,7 @@ landArray = compileFinal str
 	["Truck",                                                             "C_Van_01_transport_F",                         70, "vehicle", "SKIPSAVE"],
 	["Truck Camo",                                                        "B_G_Van_01_transport_F",                       80, "vehicle", "SKIPSAVE"],
 	["Truck Box",                                                         "C_Van_01_box_F",                               90, "vehicle", "SKIPSAVE"],
+	["Haji Mobile",                                                       "C_Van_01_box_F",                               20000, "vehicle", "variant_HajiMobile", "SKIPSAVE"],
 	["Fuel Truck",                                                        "C_Van_01_fuel_F",                              200, "vehicle", "SKIPSAVE"],
 	["Fuel Truck Camo",                                                   "B_G_Van_01_fuel_F",                            210, "vehicle", "SKIPSAVE"],
 
@@ -2002,7 +2004,7 @@ attackHelicoptersArray = compileFinal str
 planesArray = compileFinal str
 [
 	["Caesar BTT",                                                        "C_Plane_Civil_01_F",                           100, "vehicle"],
-	["Caesar OP",                                                         "C_Plane_Civil_01_F",                           20000, "vehicle", "variant_CaesarOP"],
+	["Reverse Thrustmaster 3000",                                         "C_Plane_Civil_01_F",                           2000, "vehicle", "variant_CaesarOP"],
 
 	["A-143 Buzzard AA",                                                  "I_Plane_Fighter_03_dynamicLoadout_F",          40000, "vehicle", "variant_buzzardAA"],
 	["A-143 Buzzard CAS",                                                 "I_Plane_Fighter_03_dynamicLoadout_F",          40000, "vehicle", "variant_buzzardCAS"],

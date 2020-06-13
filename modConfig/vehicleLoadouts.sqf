@@ -541,6 +541,19 @@ switch (true) do
 		_pylons = ["PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonMissile_1Rnd_Bomb_03_F","PylonRack_20Rnd_Rocket_03_HE_F","PylonRack_20Rnd_Rocket_03_AP_F","PylonMissile_1Rnd_Bomb_03_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_03_F"];
 	};
 
+// OP Caesar
+	case (_class isKindOf "C_Plane_Civil_01_F" && _variant == "CaesarOP"):
+	{
+		_mags =
+		[
+			["1000Rnd_Gatling_30mm_Plane_CAS_01_F", [0]]
+		];
+		_weapons =
+		[
+			["Gatling_30mm_Plane_CAS_01_F", [0]]
+		];
+	};
+
 	// Greyhawk/Ababil UAVs
 	case (_class isKindOf "UAV_02_dynamicLoadout_base_F"):
 	{
@@ -710,17 +723,29 @@ switch (true) do
 	
 	//tanks
 	
-	// OP Caesar
-	
-	case (_class isKindOf "C_Plane_Civil_01_F" && _variant == "CaesarOP"):
+	// Suicide Quadbike
+	case (_class isKindOf "C_Quadbike_01_F" && _variant == "SuicideQuadbike"):
 	{
 		_mags =
 		[
-			["1000Rnd_Gatling_30mm_Plane_CAS_01_F", [0]]
+			["magazine_Bomb_GBU12_x1", [0]]
 		];
 		_weapons =
 		[
-			["Gatling_30mm_Plane_CAS_01_F", [0]]
+			["weapon_GBU12Launcher", [0]]
+		];
+	};
+	
+	/ Haji Mobile
+	case (_class isKindOf "C_Quadbike_01_F" && _variant == "HajiMobile"):
+	{
+		_mags =
+		[
+			["2Rnd_Mk82", [-1]]
+		];
+		_weapons =
+		[
+			["Mk82BombLauncher", [-1]]
 		];
 	};
 	
