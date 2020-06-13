@@ -737,7 +737,7 @@ switch (true) do
 	};
 	
 	// Haji Mobile
-	case (_class isKindOf "C_Quadbike_01_F" && _variant == "HajiMobile"):
+	case (_class isKindOf "C_Van_01_box_F" && _variant == "HajiMobile"):
 	{
 		_mags =
 		[
