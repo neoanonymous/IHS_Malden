@@ -728,11 +728,24 @@ switch (true) do
 	{
 		_mags =
 		[
-			["magazine_Bomb_GBU12_x1", [0]]
+			["SatchelCharge_Remote_Mag", [0]],
+			["SatchelCharge_Remote_Mag", [0]],
+			["SatchelCharge_Remote_Mag", [0]],
+			["SatchelCharge_Remote_Mag", [0]],
+			["SatchelCharge_Remote_Mag", [0]],
+			["SatchelCharge_Remote_Mag", [0]],
+			["SatchelCharge_Remote_Mag", [0]],
+			["SatchelCharge_Remote_Mag", [0]],
+			["SatchelCharge_Remote_Mag", [0]],
+			["SatchelCharge_Remote_Mag", [0]],
+			["SatchelCharge_Remote_Mag", [0]],
+			["SatchelCharge_Remote_Mag", [0]],
+			["SatchelCharge_Remote_Mag", [0]],
+			["SatchelCharge_Remote_Mag", [0]]
 		];
 		_weapons =
 		[
-			["weapon_GBU12Launcher", [0]]
+			["SatchelCharge_Remote_Ammo", [0]]
 		];
 	};
 	
