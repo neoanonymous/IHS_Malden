@@ -736,7 +736,7 @@ switch (true) do
 		];
 	};
 	
-	/ Haji Mobile
+	// Haji Mobile
 	case (_class isKindOf "C_Quadbike_01_F" && _variant == "HajiMobile"):
 	{
 		_mags =
@@ -746,6 +746,19 @@ switch (true) do
 		_weapons =
 		[
 			["Mk82BombLauncher", [-1]]
+		];
+	};
+	
+	// Quadcopter UAV (GBU)
+	case (_class isKindOf "B_UAV_01_backpack_F" && _variant == "GBUUAV"):
+	{
+		_mags =
+		[
+			["magazine_Bomb_GBU12_x1", [0]]
+		];
+		_weapons =
+		[
+			["weapon_GBU12Launcher", [0]]
 		];
 	};
 	

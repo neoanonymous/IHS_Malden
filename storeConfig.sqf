@@ -1587,6 +1587,7 @@ ssgenItemArray = compileFinal str
 	["Quadcopter UAV (NATO)",                                             "B_UAV_01_backpack_F",                          1500, "backpack"],
 	["Quadcopter UAV (CSAT)",                                             "O_UAV_01_backpack_F",                          1500, "backpack"],
 	["Quadcopter UAV (AAF)",                                              "I_UAV_01_backpack_F",                          1500, "backpack"],
+	["Quadcopter UAV (GBU)",                                              "B_UAV_01_backpack_F",                          100000, "backpack", "variant_GBUUAV"],
 	["Hexacopter UAV (NATO)",                                             "B_UAV_06_backpack_F",                          1250, "backpack"],
 	["Hexacopter UAV (CSAT)",                                             "O_UAV_06_backpack_F",                          1250, "backpack"],
 	["Hexacopter UAV (AAF)",                                              "I_UAV_06_backpack_F",                          1250, "backpack"],
