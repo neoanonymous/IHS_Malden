@@ -884,6 +884,7 @@ switch (true) do
 		];
 		_customCode =
 		{
+			vehicle enableVehicleSensor ["ActiveRadarSensorComponent",true];
 			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
 			_veh enableVehicleSensor   ["DataLinkSensorComponent",true];
 			_veh setVehicleRadar 1;
