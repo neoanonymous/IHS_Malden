@@ -902,17 +902,18 @@ switch (true) do
 			["12Rnd_125mm_HE", [0]],
 			["12Rnd_125mm_HE", [0]],
 			
-			["PylonRack_1Rnd_Missile_AGM_01_F", [0]],
-			["PylonRack_1Rnd_Missile_AGM_01_F", [0]],
-			["PylonRack_1Rnd_Missile_AGM_01_F", [0]],
-			["PylonRack_1Rnd_Missile_AGM_01_F", [0]]
+			["12Rnd_PG_missiles", [0]],
+			
+			["6Rnd_LG_scalpel", [0]]
+			
 		];
 		_weapons =
 		[
 			["cannon_125mm", [0]],
 			["missiles_titan", [0]],
 			["LMG_coax", [0]],
-			["Missile_AGM_01_Plane_CAS_02_F", [0]]
+			["missiles_DAGR", [0]],
+			["missiles_SCALPEL", [0]]
 		];
 		_customCode =
 		{
