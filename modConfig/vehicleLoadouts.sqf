@@ -799,7 +799,7 @@ switch (true) do
 
 	};	
 	//RhinoMGSUP
-	case (_class isKindOf "B_T_AFV_Wheeled_01_up_cannon_F" && _variant == "RhinoMGSUPOP"):
+	case (_class isKindOf "B_AFV_Wheeled_01_up_cannon_F" && _variant == "RhinoMGSUPCust"):
 	{
 		_mags =
 		[
@@ -818,24 +818,19 @@ switch (true) do
 			["12Rnd_125mm_HEAT", [0]],
 			["12Rnd_125mm_HEAT", [0]],
 			["12Rnd_125mm_HE", [0]],
-			["12Rnd_125mm_HE", [0]],
+			["12Rnd_125mm_HE", [0]]
 			
-			["12Rnd_PG_missiles", [0]],
-			
-			["6Rnd_LG_scalpel", [0]]
 		];
 		_weapons =
 		[
 			["cannon_125mm", [0]],
 			/*["missiles_titan", [0]],*/
 			["HMG_127_AFV", [1]],
-			["MMG_02_coax", [0]],
-			["missiles_DAGR", [0]],
-			["missiles_SCALPEL", [0]]
+			["MMG_02_coax", [0]]
 		];
 		_customCode =
 		{
-			_veh enableVehicleSensor   ["ActiveRadarSensorComponent",true];
+			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
 			_veh enableVehicleSensor   ["DataLinkSensorComponent",true];
 			_veh setVehicleRadar 1;
 		};
@@ -873,7 +868,7 @@ switch (true) do
 		];
 		_customCode =
 		{
-			_veh enableVehicleSensor   ["ActiveRadarSensorComponent",true];
+			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
 			_veh setVehicleRadar 1;
 		};
 	};
@@ -910,7 +905,7 @@ switch (true) do
 		];
 		_customCode =
 		{
-			_veh enableVehicleSensor   ["ActiveRadarSensorComponent",true];
+			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
 			_veh setVehicleRadar 1;
 		};
 	};
@@ -948,7 +943,7 @@ switch (true) do
 		];
 		_customCode =
 		{
-			_veh enableVehicleSensor   ["ActiveRadarSensorComponent",true];
+			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
 			_veh setVehicleRadar 1;
 		};
 	};
@@ -986,7 +981,7 @@ switch (true) do
 		];
 		_customCode =
 		{
-			_veh enableVehicleSensor   ["ActiveRadarSensorComponent",true];
+			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
 			_veh setVehicleRadar 1;
 		};
 	};
@@ -1023,7 +1018,7 @@ switch (true) do
 		];
 		_customCode =
 		{
-			_veh enableVehicleSensor   ["ActiveRadarSensorComponent",true];
+			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
 			_veh setVehicleRadar 1;
 		};
 	};
