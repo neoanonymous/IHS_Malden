@@ -957,7 +957,7 @@ switch (true) do
 	{
 		_customCode =
 		{
-			_veh setAutonomous false;
+			_veh disableAI "AUTOTARGET";
 		};
 	};
 	//UAV's
@@ -967,7 +967,7 @@ switch (true) do
 	{
 		_customCode =
 		{
-			_veh setAutonomous false;
+			_veh disableAI "AUTOTARGET";
 		};
 	};
 	//UAV's
@@ -977,7 +977,7 @@ switch (true) do
 	{
 		_customCode =
 		{
-			_veh setAutonomous false;
+			_veh disableAI "AUTOTARGET";
 		};
 	};
 	//UAV's

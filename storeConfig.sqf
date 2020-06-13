@@ -1911,7 +1911,7 @@ tanksArray = compileFinal str
 	["AWC301 Nyx (AT)",                                                   "I_LT_01_AT_F",                                 7000, "vehicle"],
 	["AWC301 Nyx (Recon)",                                                "I_LT_01_scout_F",                              3000, "vehicle"],
 	["AWC301 Nyx (AutoCannon)",                                           "I_LT_01_cannon_F",                             6600, "vehicle"],
-	["AWC301 Nyx (AA)",													  "I_LT_01_AA_F", 								  7000, "vehicle"],
+	["AWC301 Nyx (AA)",													  "I_LT_01_AA_F", 								  7000, "vehicle"]
 	
 	
 	/*
