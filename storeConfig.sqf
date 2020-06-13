@@ -2002,6 +2002,7 @@ attackHelicoptersArray = compileFinal str
 planesArray = compileFinal str
 [
 	["Caesar BTT",                                                        "C_Plane_Civil_01_F",                           100, "vehicle"],
+	["Caesar OP",                                                         "C_Plane_Civil_01_F",                           20000, "vehicle", "variant_CaesarOP"],
 
 	["A-143 Buzzard AA",                                                  "I_Plane_Fighter_03_dynamicLoadout_F",          40000, "vehicle", "variant_buzzardAA"],
 	["A-143 Buzzard CAS",                                                 "I_Plane_Fighter_03_dynamicLoadout_F",          40000, "vehicle", "variant_buzzardCAS"],

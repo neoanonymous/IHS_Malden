@@ -710,6 +710,20 @@ switch (true) do
 	
 	//tanks
 	
+	// OP Caesar
+	
+	case (_class isKindOf "C_Plane_Civil_01_F" && _variant == "CaesarOP"):
+	{
+		_mags =
+		[
+			["1000Rnd_Gatling_30mm_Plane_CAS_01_F", [0]]
+		];
+		_weapons =
+		[
+			["Gatling_30mm_Plane_CAS_01_F", [0]]
+		];
+	};
+	
 	// OP tigris
 	case (_class isKindOf "O_APC_Tracked_02_AA_F" && _variant == "tigrisOP"):
 	{
