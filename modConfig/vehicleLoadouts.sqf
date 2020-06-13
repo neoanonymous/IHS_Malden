@@ -728,24 +728,24 @@ switch (true) do
 	{
 		_mags =
 		[
-			["SatchelCharge_Remote_Mag", [0]],
-			["SatchelCharge_Remote_Mag", [0]],
-			["SatchelCharge_Remote_Mag", [0]],
-			["SatchelCharge_Remote_Mag", [0]],
-			["SatchelCharge_Remote_Mag", [0]],
-			["SatchelCharge_Remote_Mag", [0]],
-			["SatchelCharge_Remote_Mag", [0]],
-			["SatchelCharge_Remote_Mag", [0]],
-			["SatchelCharge_Remote_Mag", [0]],
-			["SatchelCharge_Remote_Mag", [0]],
-			["SatchelCharge_Remote_Mag", [0]],
-			["SatchelCharge_Remote_Mag", [0]],
-			["SatchelCharge_Remote_Mag", [0]],
-			["SatchelCharge_Remote_Mag", [0]]
+			["SatchelCharge_Remote_Mag", [1]],
+			["SatchelCharge_Remote_Mag", [1]],
+			["SatchelCharge_Remote_Mag", [1]],
+			["SatchelCharge_Remote_Mag", [1]],
+			["SatchelCharge_Remote_Mag", [1]],
+			["SatchelCharge_Remote_Mag", [1]],
+			["SatchelCharge_Remote_Mag", [1]],
+			["SatchelCharge_Remote_Mag", [1]],
+			["SatchelCharge_Remote_Mag", [1]],
+			["SatchelCharge_Remote_Mag", [1]],
+			["SatchelCharge_Remote_Mag", [1]],
+			["SatchelCharge_Remote_Mag", [1]],
+			
+			["SatchelCharge_Remote_Mag", [1]]
 		];
 		_weapons =
 		[
-			["SatchelCharge_Remote_Ammo", [0]]
+			["SatchelCharge_Remote_Ammo", [1]]
 		];
 	};
 	
