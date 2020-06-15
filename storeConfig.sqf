@@ -1897,13 +1897,13 @@ tanksArray = compileFinal str
 	
 	["M2A1 Slammer",                                                      "B_MBT_01_cannon_F",                            13000, "vehicle"],
 	["M2A4 Slammer HMG",                                                  "B_MBT_01_TUSK_F",                              15000, "vehicle"], // Commander gun variant
-	["M2A4 OP Slammer HMG",                                               "B_MBT_01_TUSK_F",                              50000, "vehicle", "variant_OPSlammer"],
+	["M2A4 OP Slammer HMG",                                               "B_MBT_01_TUSK_F",                              60000, "vehicle", "variant_OPSlammer"],
 	
 	["T-100 Varsuk",                                                      "O_MBT_02_cannon_F",                            15000, "vehicle"],
-	["T-100 OP Varsuk",                                                   "O_MBT_02_cannon_F",                            50000, "vehicle", "variant_OPT100"],
+	["T-100 OP Varsuk",                                                   "O_MBT_02_cannon_F",                            60000, "vehicle", "variant_OPT100"],
 	
 	["MBT-52 Kuma",                                                       "I_MBT_03_cannon_F",                            13000, "vehicle"],
-	["MBT-52 OP Kuma",                                                    "I_MBT_03_cannon_F",                            50000, "vehicle", "variant_OPKuma"],
+	["MBT-52 OP Kuma",                                                    "I_MBT_03_cannon_F",                            60000, "vehicle", "variant_OPKuma"],
 	
 	["T-140 Angara Sand",                                                 "O_MBT_04_cannon_F",                            15000, "vehicle"],
 	["T-140k Angara Sand",                                                "O_MBT_04_command_F",                           20000, "vehicle"],
