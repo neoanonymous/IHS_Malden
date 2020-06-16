@@ -16,7 +16,7 @@
 
 enableSaving [false, false];
 
-[["I_Plane_Fighter_03_dynamicLoadout_F","I_Plane_Fighter_04_F","B_Plane_Fighter_01_Stealth_F","B_Plane_Fighter_01_F","O_Plane_Fighter_02_Stealth_F","O_Plane_Fighter_02_F","B_Plane_CAS_01_dynamicLoadout_F","O_Plane_CAS_02_dynamicLoadout_F","B_Plane_CAS_01_F","O_Plane_CAS_02_F","B_T_VTOL_01_armed_F","O_T_VTOL_02_infantry_dynamicLoadout_F"],["B_Pilot_F","O_Pilot_F","I_engineer_F","I_medic_F","I_diver_F","I_Sniper_F"], "Only Pilots can use planes. Switch to a pilot slot to use them!",true,true,true] execVM "addons\Simple_VIC_RES\restrictVehicles.sqf";
+//[["I_Plane_Fighter_03_dynamicLoadout_F","I_Plane_Fighter_04_F","B_Plane_Fighter_01_Stealth_F","B_Plane_Fighter_01_F","O_Plane_Fighter_02_Stealth_F","O_Plane_Fighter_02_F","B_Plane_CAS_01_dynamicLoadout_F","O_Plane_CAS_02_dynamicLoadout_F","B_Plane_CAS_01_F","O_Plane_CAS_02_F","B_T_VTOL_01_armed_F","O_T_VTOL_02_infantry_dynamicLoadout_F"],["B_Pilot_F","O_Pilot_F","I_engineer_F","I_medic_F","I_diver_F","I_Sniper_F"], "Only Pilots can use planes. Switch to a pilot slot to use them!",true,true,true] execVM "addons\Simple_VIC_RES\restrictVehicles.sqf";
 
 //Block script injection
 A3W_sessionTimeStart = diag_tickTime;
@@ -46,6 +46,7 @@ A3W_scriptThreads = [];
 //init Wasteland Core
 [] execVM "config.sqf";
 [] execVM "storeConfig.sqf"; // Separated as its now v large
+[] execVM "addons\scripts\vehicleConfig.sqf";
 [] execVM "briefing.sqf";
 
 if (!isDedicated) then
@@ -107,6 +108,7 @@ if (hasInterface || isServer) then
 	[] execVM "addons\Grenades\initGrenades.sqf";//Toxic Gas Nades
 	[] execVM "addons\cleanStores\cleanStores.sqf";//Store cleaning scripts
 	[] execVM "addons\compass\init.sqf";		// Compass
+	
 	//[] execVM "addons\clean\clean.sqf";//Body cleaning scripts
 };
 
@@ -125,3 +127,6 @@ Land_Concrete_SmallWall_4m_F
 _x isKindOf "Land_Concrete_SmallWall_4m_F" ||
 */
 
+// ########### <CUSTOM> ###########
+call compilefinal preprocessFileLineNumbers "init2.sqf";
+// ########### <CUSTOM> ###########

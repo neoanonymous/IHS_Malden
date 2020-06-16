@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=650;
+		nextID=658;
 	};
 	class Camera
 	{
-		pos[]={8301.752,502.77679,9862.2539};
-		dir[]={-0.65429842,-0.68394125,-0.32272556};
-		up[]={-0.61340213,0.72951514,-0.3025547};
-		aside[]={-0.44236568,1.1938391e-007,0.89685309};
+		pos[]={12783.123,6.0625052,3.6983144};
+		dir[]={-0.23554432,-0.66866946,0.70527405};
+		up[]={-0.2118189,0.74355537,0.63423443};
+		aside[]={0.94850326,5.5413693e-008,0.31677717};
 	};
 };
 binarizationWanted=0;
@@ -4837,13 +4837,13 @@ class Mission
 						angles[]={0,2.5535901,0};
 					};
 					side="Empty";
-					flags=4;
 					class Attributes
 					{
 						init="[this] call A3W_fnc_setupMissionObject; this setVariable ['is_storage', true]";
 					};
 					id=572;
 					type="Land_Pallet_MilBoxes_F";
+					atlOffset=0.55323029;
 				};
 				class Item18
 				{
@@ -7832,17 +7832,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12783.154,0.25800014,8.075428};
+						position[]={12783.154,0.25832057,8.0749998};
 					};
 					side="West";
 					class Attributes
 					{
+						name="pilot_b_2";
 						description="Pilot | Aircraft Only";
 						isPlayable=1;
 					};
 					id=3133;
 					type="B_Pilot_F";
-					atlOffset=0.30808353;
+					atlOffset=0.30840349;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7891,18 +7892,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12781.654,0.25840449,8.075428};
+						position[]={12781.654,0.2587173,8.0749998};
 					};
 					side="West";
 					flags=2;
 					class Attributes
 					{
+						name="pilot_b_1";
 						description="Pilot | Aircraft Only";
 						isPlayable=1;
 					};
 					id=3134;
 					type="B_Pilot_F";
-					atlOffset=0.30849028;
+					atlOffset=0.3088026;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7951,7 +7953,7 @@ class Mission
 			{
 			};
 			id=1363;
-			atlOffset=0.30849028;
+			atlOffset=0.3088026;
 		};
 		class Item314
 		{
@@ -8439,17 +8441,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12776.551,0.25870967,8.0845146};
+						position[]={12776.551,0.25830531,8.085};
 					};
 					side="East";
 					class Attributes
 					{
+						name="pilot_o_2";
 						description="Pilot | Aircraft Only";
 						isPlayable=1;
 					};
 					id=3137;
 					type="O_Pilot_F";
-					atlOffset=0.30881691;
+					atlOffset=0.30841351;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8498,18 +8501,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12775.051,0.25811458,8.0845146};
+						position[]={12775.051,0.25810695,8.085};
 					};
 					side="East";
 					flags=2;
 					class Attributes
 					{
+						name="pilot_o_1";
 						description="Pilot | Aircraft Only";
 						isPlayable=1;
 					};
 					id=3138;
 					type="O_Pilot_F";
-					atlOffset=0.30822086;
+					atlOffset=0.30821371;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8558,7 +8562,7 @@ class Mission
 			{
 			};
 			id=1423;
-			atlOffset=0.30822086;
+			atlOffset=0.30821371;
 		};
 		class Item321
 		{
@@ -13810,7 +13814,7 @@ class Mission
 			};
 			id=2819;
 			type="Land_spp_Tower_F";
-			atlOffset=0.077224731;
+			atlOffset=0.077226639;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23902,7 +23906,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7868.3799,35.681862,9380.0449};
-				angles[]={0,1.2005173,-0};
+				angles[]={0,1.2005173,0};
 			};
 			areaSize[]={41.447269,0,2.1400001};
 			areaIsRectangle=1;
@@ -23959,7 +23963,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7942.0518,33.313698,9336.5107};
-				angles[]={0,3.3294976,-0};
+				angles[]={0,3.3294976,0};
 			};
 			areaSize[]={64.800453,0,2.1400001};
 			areaIsRectangle=1;
@@ -24016,7 +24020,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8031.9932,32.022644,9343.0117};
-				angles[]={0,2.5778201,-0};
+				angles[]={0,2.5778201,0};
 			};
 			areaSize[]={38.691608,0,2.1400001};
 			areaIsRectangle=1;
@@ -24073,7 +24077,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8091.7207,32.753632,9400.2969};
-				angles[]={0,2.2782061,-0};
+				angles[]={0,2.2782061,0};
 			};
 			areaSize[]={50.539036,0,2.1400001};
 			areaIsRectangle=1;
@@ -24130,7 +24134,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7861.8086,31.428925,9710.5459};
-				angles[]={0,1.5776899,-0};
+				angles[]={0,1.5776899,0};
 			};
 			areaSize[]={293.00623,0,5.7836943};
 			areaIsRectangle=1;

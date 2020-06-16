@@ -192,4 +192,6 @@ inGameUISetEventHandler ["Action", "_this call A3W_fnc_inGameUIActionEvent"];
 if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
 [] execVM "addons\disableThermal\disablethermal.sqf";  //disable thermal vision
 
+[] execVM "addons\Simple_VIC_RES\pilot.sqf"; //pilot slot
+
 setTerrainGrid 1;
