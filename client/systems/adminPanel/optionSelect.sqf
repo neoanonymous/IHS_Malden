@@ -87,9 +87,13 @@ if (_uid call isAdmin) then
 				case 9: //Money
 				{
 					_money = 500000;
-					//player setVariable ["cmoney", (player getVariable ["cmoney",0]) + _money, true];
+					player setVariable ["cmoney", (player getVariable ["cmoney",0]) + _money, true];
 					[player, _money] call A3W_fnc_setCMoney;
 					if (!isNil "notifyAdminMenu") then { ["money", _money] call notifyAdminMenu };
+					
+					/*closeDialog 0;
+					execVM "client\systems\adminPanel\loadPlayerMoneyMenu.sqf";*/
+					
 				};
 				case 10: //Debug Menu
 				{

@@ -59,6 +59,7 @@ briefing = 0; // if 0, skip Continue button
 #include "client\systems\adminPanel\dialog\adminMenu.hpp"
 #include "client\systems\adminPanel\dialog\modMenu.hpp"
 #include "client\systems\adminPanel\dialog\serverAdminMenu.hpp"
+#include "client\systems\adminPanel\dialog\playerMoneyMenu.hpp"
 #include "client\systems\adminPanel\dialog\debugMenu.hpp"
 #include "client\systems\adminPanel\dialog\playerMenu.hpp"
 #include "client\systems\adminPanel\dialog\vehicleManagement.hpp"
