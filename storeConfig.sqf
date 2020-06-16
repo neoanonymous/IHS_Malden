@@ -1782,7 +1782,7 @@ landArray = compileFinal str
 	["Quadbike (CSAT)",                                                   "O_Quadbike_01_F",                              65, "vehicle", "SKIPSAVE"],
 	["Quadbike (AAF)",                                                    "I_Quadbike_01_F",                              65, "vehicle", "SKIPSAVE"],
 	["Quadbike (FIA)",                                                    "B_G_Quadbike_01_F",                            65, "vehicle", "SKIPSAVE"],
-	["Suicide Squad",                                              	      "C_Quadbike_01_F",                              20000, "vehicle", "variant_SuicideQuadbike", "SKIPSAVE"],
+	//["Suicide Squad",                                              	      "C_Quadbike_01_F",                              20000, "vehicle", "variant_SuicideQuadbike", "SKIPSAVE"],
 
 	["Hatchback",                                                         "C_Hatchback_01_F",                             80, "vehicle", "SKIPSAVE"],
 	["Hatchback Sport",                                                   "C_Hatchback_01_sport_F",                       100, "vehicle", "SKIPSAVE"],
