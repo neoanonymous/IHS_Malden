@@ -1874,7 +1874,8 @@ armoredArray = compileFinal str
 	["AFV-4 Gorgon",                                                      "I_APC_Wheeled_03_cannon_F",                    9000, "vehicle"],
 	["Rhino MGS",                                                         "B_AFV_Wheeled_01_cannon_F",                    125000, "vehicle", "HIDDEN"],
 	["Rhino MGS UP",                                                      "B_AFV_Wheeled_01_up_cannon_F",                 125000, "vehicle", "HIDDEN"],
-	["Rhino MGS UP No ATGM",                                              "B_AFV_Wheeled_01_up_cannon_F",                 20000, "vehicle", "variant_RhinoMGSUPCust"]
+	["Rhino MGS UP No ATGM",                                              "B_AFV_Wheeled_01_up_cannon_F",                 20000, "vehicle", "variant_RhinoMGSUPCust"],
+	["Rhino MGS UP OP No ATGM",											  "B_AFV_Wheeled_01_up_cannon_F",				  60000, "vehicle", "variant_RhinoMGSUPOP"]							
 	/*
 	
 	
@@ -1887,6 +1888,7 @@ tanksArray = compileFinal str
 	["CRV-6e Bobcat (Resupply)",                                          "B_APC_Tracked_01_CRV_F",                       5000, "vehicle"],
 	["IFV-6c Panther",                                                    "B_APC_Tracked_01_rcws_F",                      5000, "vehicle"],
 	["FV-720 Mora",                                                       "I_APC_tracked_03_cannon_F",                    5700, "vehicle"],
+	["FV-720 OP Mora",                                                    "I_APC_tracked_03_cannon_F",                    35000, "vehicle", "variant_OPMora"],
 	["BTR-K Kamysh",                                                      "O_APC_Tracked_02_cannon_F",                    6300, "vehicle"],
 	
 	["IFV-6a Cheetah AA",                                                 "B_APC_Tracked_01_AA_F",                        26000, "vehicle", "variant_cheetahOP"],

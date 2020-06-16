@@ -829,6 +829,35 @@ switch (true) do
 		];
 
 	};	
+	
+	//OPMora
+	case (_class isKindOf "I_APC_tracked_03_cannon_F" && _variant == "OPMora"):
+	{
+		_mags =
+		[
+			["SmokeLauncherMag",    [-1]],
+			["2000Rnd_762x51_Belt_T_Yellow", [0]],
+			["2000Rnd_762x51_Belt_T_Yellow", [0]],
+			["2000Rnd_762x51_Belt_T_Yellow", [0]],
+			["2000Rnd_762x51_Belt_T_Yellow", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			
+			["magazine_Cannon_Phalanx_x1550", [0]],
+			["magazine_Cannon_Phalanx_x1550", [0]]
+			//["680Rnd_35mm_AA_shells_Tracer_Red", [0]]
+		];
+		_weapons =
+		[
+			["weapon_Cannon_Phalanx", [0]],
+			["LMG_coax", [0]],
+			["HMG_127_AFV", [0]]
+		];
+
+	};	
+	
 	//RhinoMGSUP
 	case (_class isKindOf "B_AFV_Wheeled_01_up_cannon_F" && _variant == "RhinoMGSUPCust"):
 	{
@@ -860,6 +889,56 @@ switch (true) do
 			["mortar_82mm", [0]],
 			["HMG_127_AFV", [0]],
 			["MMG_02_coax", [0]]
+		];
+		_customCode =
+		{
+			_veh enableVehicleSensor   ["PassiveRadarSensorComponent",true];
+			_veh enableVehicleSensor   ["DataLinkSensorComponent",true];
+			_veh setVehicleRadar 1;
+		};
+	};
+
+//RhinoMGSUPOP
+	case (_class isKindOf "B_AFV_Wheeled_01_up_cannon_F" && _variant == "RhinoMGSUPOP"):
+	{
+		_mags =
+		[
+			["SmokeLauncherMag", [-1]],
+			/*["4Rnd_Titan_long_missiles", [0]],*/
+			["8Rnd_82mm_Mo_Smoke_white", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["500Rnd_127x99_mag", [0]],
+			["200Rnd_338_Mag", [0]],
+			["200Rnd_338_Mag", [0]],
+			["200Rnd_338_Mag", [0]],
+			["200Rnd_338_Mag", [0]],
+			["24Rnd_125mm_APFSDS", [0]],
+			["24Rnd_125mm_APFSDS", [0]],
+			["12Rnd_125mm_HEAT", [0]],
+			["12Rnd_125mm_HEAT", [0]],
+			["12Rnd_125mm_HE", [0]],
+			["12Rnd_125mm_HE", [0]],
+			
+			["250Rnd_30mm_HE_shells", [0]],
+			["250Rnd_30mm_HE_shells", [0]],
+			["250Rnd_30mm_APDS_shells", [0]],
+			
+			["12Rnd_PG_missiles", [0]],
+			
+			["6Rnd_LG_scalpel", [0]]
+		];
+		_weapons =
+		[
+			["cannon_125mm", [0]],
+			/*["missiles_titan", [0]],*/
+			["mortar_82mm", [0]],
+			["HMG_127_AFV", [0]],
+			["MMG_02_coax", [0]],
+			["gatling_30mm", [0]],
+			["missiles_DAGR", [0]],
+			["missiles_SCALPEL", [0]]
 		];
 		_customCode =
 		{
