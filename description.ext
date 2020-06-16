@@ -317,7 +317,7 @@ class CfgSounds
    {
 
         name = "O_Store";
-        sound[] = {"client\sounds\O_Store.ogg", db+5,1};//filename with path, loudness, pitch, distance
+        sound[] = {"client\sounds\O_Store.ogg", db+2.5,1};//filename with path, loudness, pitch, distance
 		titles[] = {};
 
     };
