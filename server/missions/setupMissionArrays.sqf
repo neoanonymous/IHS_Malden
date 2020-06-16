@@ -18,7 +18,8 @@ MainMissions =
 	["mission_LightArmVeh", 1],
 	["mission_ArmedHeli", 1],
 	["mission_CivHeli", 1],
-	["mission_shikra", 0.6]
+	["mission_shikra", 0.6],
+	["mission_shikra2", 0.6]
 ];
 
 SideMissions =
