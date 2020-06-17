@@ -2045,6 +2045,11 @@ uavPlanesArray = compileFinal str
 	["UCAV Sentinel Missile",                                             "B_UAV_05_F",                                   125000, "vehicle", "variant_sentinelMissile"],
 	["MQ-12 Falcon UAV",                                                  "B_T_UAV_03_dynamicLoadout_F",                  125000, "vehicle"], // Do NOT use "B_T_UAV_03_dynamicLoadout_F" (doesn't support ASRAAM pylons)
 	
+	["AN/MPQ-105 Radar", 												  "I_E_Radar_System_01_F", 						  20000, "vehicle"],
+	//["MIM-145 Defender", 												  "I_E_SAM_System_03_F", 			          	  350000, "vehicle"],
+	["R-760 Cronus Radar", 												  "O_Radar_System_02_F", 						  20000, "vehicle"],
+	//["S-750 Rhea", 													  "O_SAM_System_04_F", 							  350000, "vehicle"]
+	
 	["Mk-49 Spartan SAM",                                                 "B_SAM_System_01_F",                            52500, "variant_sam1", "HIDDEN"],
 	["Praetorian 1C AAA",                                                 "B_AAA_System_01_F",                            22500, "variant_sam2", "HIDDEN"],
 	["Mk21 Centurion",													  "B_SAM_System_02_F",							  85000, "variant_sam3", "HIDDEN"]
