@@ -1875,7 +1875,7 @@ armoredArray = compileFinal str
 	["Rhino MGS",                                                         "B_AFV_Wheeled_01_cannon_F",                    125000, "vehicle", "HIDDEN"],
 	["Rhino MGS UP",                                                      "B_AFV_Wheeled_01_up_cannon_F",                 125000, "vehicle", "HIDDEN"],
 	["Rhino MGS UP No ATGM",                                              "B_AFV_Wheeled_01_up_cannon_F",                 20000, "vehicle", "variant_RhinoMGSUPCust"],
-	["Rhino MGS UP OP No ATGM",											  "B_AFV_Wheeled_01_up_cannon_F",				  60000, "vehicle", "variant_RhinoMGSUPOP"]							
+	["Rhino MGS UP OP No ATGM",											  "B_AFV_Wheeled_01_up_cannon_F",				  50000, "vehicle", "variant_RhinoMGSUPOP"]							
 	/*
 	
 	
