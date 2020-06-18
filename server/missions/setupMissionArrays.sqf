@@ -35,7 +35,7 @@ SideMissions =
 
 MoneyMissions =
 [
-	["mission_Hackers", 0.02],
+	["mission_Hackers", 0.09],
 	["mission_MoneyShipment", 2],
 	["mission_MoneyShipment1", 2],
 	["mission_SunkenTreasure", 0.35]
