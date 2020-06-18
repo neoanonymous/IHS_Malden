@@ -131,7 +131,6 @@ pilotWhitelist = compileFinal str
 pilotArray = compileFinal str 
 [
 	"O_T_VTOL_02_infantry_dynamicLoadout_F", // Y-32 Xi'an
-	"B_T_VTOL_01_infantry_F", // V-44 X Blackfish (Infantry)
 	"B_T_VTOL_01_armed_F", // V-44 X Blackfish (Gunship)
 	"I_Plane_Fighter_03_dynamicLoadout_F",
 	"I_Plane_Fighter_04_F",
