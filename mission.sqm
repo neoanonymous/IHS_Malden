@@ -8,7 +8,7 @@ class EditorData
 	toggles=586;
 	class ItemIDProvider
 	{
-		nextID=4976;
+		nextID=4979;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=674;
+		nextID=682;
 	};
 	class Camera
 	{
-		pos[]={5513.5601,86.185097,11436.037};
-		dir[]={-0.16722862,-0.56859154,0.80554062};
-		up[]={-0.11557695,0.82261294,0.5567292};
-		aside[]={0.97920126,-1.6657577e-007,0.20327896};
+		pos[]={3657.0027,44.606094,3432.4072};
+		dir[]={-0.70853961,-0.53481054,-0.46049812};
+		up[]={-0.44844171,0.84495634,-0.29145452};
+		aside[]={-0.54497594,-8.2611223e-008,0.83852333};
 	};
 };
 binarizationWanted=0;
@@ -88,7 +88,8 @@ addons[]=
 	"A3_Props_F_Enoch_Items_AluminiumFoil",
 	"A3_Structures_F_Civ_Offices",
 	"A3_Structures_F_Households_House_Small03",
-	"A3_Modules_F"
+	"A3_Modules_F",
+	"A3_Structures_F_Households_House_Big02"
 };
 class AddonsMetaData
 {
@@ -329,7 +330,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=817;
+		items=818;
 		class Item0
 		{
 			dataType="Group";
@@ -12171,8 +12172,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5531.7173,3.4627016,11641.551};
-						angles[]={0,2.448303,0};
+						position[]={5538.7339,3.2876728,11642.321};
+						angles[]={0,4.6931505,-0};
 					};
 					side="Civilian";
 					flags=7;
@@ -12183,12 +12184,14 @@ class Mission
 					};
 					id=2592;
 					type="C_man_1_1_F";
+					atlOffset=0.11231971;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2591;
+			atlOffset=0.11231971;
 		};
 		class Item412
 		{
@@ -12251,17 +12254,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5537.0942,4.7474108,11640.576};
-				angles[]={0,0.13986652,0};
+				position[]={5528.7573,4.4153447,11638.103};
+				angles[]={0,1.5727032,-0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="[this] call A3W_fnc_setupMissionATM";
 			};
 			id=2595;
 			type="Land_ATM_02_malden_F";
+			atlOffset=0.40255713;
 		};
 		class Item415
 		{
@@ -18628,8 +18631,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3637.0688,32.312347,3430.5967};
-				angles[]={0,1.3530811,0};
+				position[]={3635.449,32.755043,3422.74};
+				angles[]={0,4.4590645,-0};
 			};
 			side="Empty";
 			flags=5;
@@ -18641,7 +18644,7 @@ class Mission
 			};
 			id=3112;
 			type="Land_Billboard_02_blank_F";
-			atlOffset=-1.4125347;
+			atlOffset=-0.92225075;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18678,11 +18681,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3632.6191,32.766983,3428.7876};
+						position[]={3640.5007,32.956154,3419.9353};
 						angles[]={0,5.9455738,0};
 					};
 					side="Civilian";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						init="[this] spawn A3W_fnc_setupStoreNPC";
@@ -18702,14 +18705,14 @@ class Mission
 					};
 					id=3114;
 					type="C_man_1_1_F";
-					atlOffset=0.24206924;
+					atlOffset=0.40471649;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=3113;
-			atlOffset=0.24206924;
+			atlOffset=0.40471649;
 		};
 		class Item613
 		{
@@ -25520,7 +25523,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="this allowDamage false;";
 						};
 					};
 				};
@@ -25539,7 +25542,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=5;
 						};
 					};
 				};
@@ -25653,33 +25656,17 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5534.3145,2.1176598,11639.328};
+				position[]={5535.5391,3.132349,11636.817};
 			};
-			areaSize[]={1,-1,1};
-			id=4975;
-			type="ModuleEditTerrainObject_F";
+			areaSize[]={7.948,0,12.403};
+			areaIsRectangle=1;
+			flags=1;
+			id=4976;
+			type="ModuleHideTerrainObjects_F";
+			atlOffset=-0.022000074;
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="#name";
-					expression="_this setVariable [""#name"",_value]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="#filter";
 					expression="_this setVariable [""#filter"",_value]";
@@ -25694,52 +25681,14 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=7;
+							value=11;
 						};
 					};
 				};
-				class Attribute2
+				class Attribute1
 				{
-					property="#initServer";
-					expression="_this setVariable [""#initServer"",_value]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="#state";
-					expression="_this setVariable [""#state"",_value]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="#allowDamage";
-					expression="_this setVariable [""#allowDamage"",_value]";
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
 					class Value
 					{
 						class data
@@ -25755,10 +25704,30 @@ class Mission
 						};
 					};
 				};
-				class Attribute5
+				nAttributes=2;
+			};
+		};
+		class Item817
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5534.2402,5.931221,11640.963};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=4977;
+			type="Land_i_House_Big_02_V3_F";
+			atlOffset=1.7790004;
+			class CustomAttributes
+			{
+				class Attribute0
 				{
-					property="#doorStates";
-					expression="_this setVariable [""#doorStates"",_value]";
+					property="allowDamage";
+					expression="_this allowdamage _value;";
 					class Value
 					{
 						class data
@@ -25767,78 +25736,14 @@ class Mission
 							{
 								type[]=
 								{
-									"ARRAY"
+									"BOOL"
 								};
 							};
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"SCALAR"
-											};
-										};
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"SCALAR"
-											};
-										};
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"SCALAR"
-											};
-										};
-										value=0;
-									};
-								};
-							};
+							value=0;
 						};
 					};
 				};
-				class Attribute6
-				{
-					property="#init";
-					expression="_this setVariable [""#init"",_value]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				nAttributes=7;
+				nAttributes=1;
 			};
 		};
 	};
