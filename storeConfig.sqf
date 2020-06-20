@@ -413,6 +413,7 @@ ssthrowputArray = compileFinal str
 	["APERS Tripwire Mine",                                               "APERSTripMine_Wire_Mag",                       150],
 	["APERS Bounding Mine",                                               "APERSBoundingMine_Range_Mag",                  250],
 	["APERS Mine",                                                        "APERSMine_Range_Mag",                          200],
+	["APERS Mine Dispenser",                                              "APERSMineDispenser_Mag",                       1500],
 	["Claymore Charge",                                                   "ClaymoreDirectionalMine_Remote_Mag",           350],
 	["M6 SLAM Mine",                                                      "SLAMDirectionalMine_Wire_Mag",                 400],
 	["AT Mine",                                                           "ATMine_Range_Mag",                             1000],
