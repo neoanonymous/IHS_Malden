@@ -39,13 +39,13 @@ _setupObjects =
 	_obj1 = createVehicle ["I_GMG_01_high_F", _missionPos,[], 10,"None"];
 	_obj1 setPosATL [(_missionPos select 0) - 2, (_missionPos select 1) + 2, _missionPos select 2];
 
-	_obj2 = createVehicle ["I_Mortar_01_F", _missionPos,[], 10,"None"];
+	_obj2 = createVehicle ["I_GMG_01_high_F", _missionPos,[], 10,"None"];
 	_obj2 setPosATL [(_missionPos select 0) + 2, (_missionPos select 1) + 2, _missionPos select 2];
 
 	_obj3 = createVehicle ["I_GMG_01_high_F", _missionPos,[], 10,"None"];
 	_obj3 setPosATL [(_missionPos select 0) - 2, (_missionPos select 1) - 2, _missionPos select 2];
 
-	_obj4 = createVehicle ["I_Mortar_01_F", _missionPos,[], 10,"None"];
+	_obj4 = createVehicle ["I_GMG_01_high_F", _missionPos,[], 10,"None"];
 	_obj4 setPosATL [(_missionPos select 0) + 2, (_missionPos select 1) - 2, _missionPos select 2];
 
 	AddLaptopHandler = _laptop;
