@@ -38,9 +38,7 @@ for "_i" from 1 to _nbUnits do
 	removeGoggles _unit;
 
 	_unit addVest "V_PlateCarrier1_rgr";
-	_unit addMagazine "30Rnd_556x45_Stanag";
-	_unit addMagazine "30Rnd_556x45_Stanag";
-	_unit addMagazine "30Rnd_556x45_Stanag";
+	_unit addMagazines ["30Rnd_556x45_Stanag", 4];
 
 	switch (true) do
 	{
@@ -53,16 +51,16 @@ for "_i" from 1 to _nbUnits do
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
 		};
-		// PCML every 6 units, starting from #6
+		// AA every 6 units, starting from #6
 		case (_i % 6 == 0):
 		{
 			_unit addUniform "U_B_CombatUniform_mcam_tshirt";
 			_unit addBackpack "B_Kitbag_mcamo";
 			_unit addWeapon "arifle_TRG20_F";
-			_unit addMagazine "NLAW_F";
-			_unit addWeapon "launch_NLAW_F";
-			_unit addMagazine "NLAW_F";
-			_unit addMagazine "NLAW_F";
+			_unit addMagazines ["Titan_AA", 4];
+			_unit addWeapon "launch_Titan_F";
+			//_unit addMagazine "NLAW_F";
+			//_unit addMagazine "NLAW_F";
 		};
 		// RPG-42 every 6 units, starting from #3
 		case ((_i + 3) % 6 == 0):
