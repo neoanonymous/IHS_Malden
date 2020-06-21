@@ -26,7 +26,6 @@ A3W_survivalSystem = 1;            // Food and water are required to stay alive 
 A3W_unlimitedStamina = 1;          // Allow unlimited sprinting, jumping, etc. (0 = no, 1 = yes) - this also removes energy drinks from the mission
 A3W_bleedingTime = 60;             // Time in seconds for which to allow revive after a critical injury (minimum 10 seconds) - to disable revive, go in addons\far_revive\FAR_defines.sqf
 A3W_headshotNoRevive = 0;          // BROKEN - Instant death on fatal headshot by enemy player with non-explosive ammo (0 = no, 1 = yes)
-A3W_startingBankMoney = 10000;
 
 // Artillery settings
 A3W_artilleryStrike = 1;           // Availability of Artillery Strike item (0 = no, 1 = yes)
@@ -67,7 +66,6 @@ A3W_bountyMax = 100000;
 A3W_bountyMin = 1000;
 A3W_bountyFee = 50;
 A3W_bountyKillsLifetime = 3*24;
-
 
 // Persistence settings
 A3W_savingMethod = "profile";      // Method used for saving data ("profile", "iniDB", "extDB")
