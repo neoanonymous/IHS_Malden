@@ -177,8 +177,7 @@ if (isServer) then
 		"A3W_artilleryAmmo",
 		"A3W_territoryWarningIcons",
 		"A3W_disableBuiltInThermal",
-		"A3W_headshotNoRevive",
-		"A3W_maxMoney"
+		"A3W_headshotNoRevive"
 	];
 
 	addMissionEventHandler ["PlayerConnected", fn_onPlayerConnected];
