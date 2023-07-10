@@ -32,7 +32,7 @@ _unit setSkill ["aimingShake", 0.15];
 _unit setSkill ["aimingSpeed", 0.6];
 _unit setSkill ["endurance", 1];
 _unit setSkill ["spotDistance", 0.4];
-_unit setSkill ["spotTime", 0.35];
+_unit setSkill ["spotTime", 1];
 _unit setSkill ["courage", 1];
 _unit setSkill ["reloadSpeed", 1];
 _unit setSkill ["commanding", 1];
